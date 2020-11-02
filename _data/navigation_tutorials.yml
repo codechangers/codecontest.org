@@ -1,6 +1,6 @@
-- title: Files
+- title: Getting Started
   docs:
-  - installation&#46;js
+  - installation
   - setup
   - navigation
   - footer
