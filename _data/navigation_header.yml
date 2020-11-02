@@ -4,20 +4,29 @@ left:
   - title: Home
     url: /
 
-  - title: Docs
+  - title: Tutorials
+    url: /tutorials/installation/
+
+  - title: Documentation
     url: /docs/installation/
 
-  - title: Blog
-    url: /blog/
+  - title: Example Games
+    url: /examples/
 
-  - title: Changelogs
-    dropdown:
+  - title: FAQS
+    url: /faq/
 
-      - title: Timeline Style
-        url: /changelog-timeline/
+  - title: Inspiration
+    url: /inspiration/
 
-      - title: Post Style
-        url: /changelog-posts/
+  # title: Example Games
+  #  dropdown:
+
+  #- title: Timeline Style
+  #      url: /changelog-timeline/
+
+  #    - title: Post Style
+  #      url: /changelog-posts/
 
 
 # Navbar right menu navigation links
