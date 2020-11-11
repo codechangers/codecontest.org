@@ -19,43 +19,43 @@ permalink:          /:title/
 url:                ""
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               
+logo:
 
 navbar:
     sticky:         true
     search:         true
-  
+
 # Default author settings
 author:
-    name:           Pete Seth
-    title:          Lead Developer  
+    name:           Jason Schallenberger
+    title:          Support
     avatar:         avatar-tom.png
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
-    john:
-      name:         John Brown
-      title:        Support     
+    jason:
+      name:         Jason Schallenberger
+      title:        Support
       avatar:       avatar-john.png
-    evan:
-      name:         Evan Wells
-      title:        Support    
-      avatar:       avatar-evan.png
-    sara:
-      name:         Sara Galen
-      title:        Lead Developer     
+    macuyler:
+      name:         Macuyler Dunn
+      title:        Support
+      avatar:       avatar-john.png
+    madi:
+      name:         Madi Clark
+      title:        Lead Developer
       avatar:       avatar-sara.png
-    alex:
-      name:         Alex Koch
-      title:        Design Engineer     
+    garett:
+      name:         Garett Garcia
+      title:        Design Engineer
       avatar:       avatar-alex.png
-    daniel:
-      name:         Daniel Shultz
-      title:        Developer      
+    sydney:
+      name:         Sydney Sneddon
+      title:        Developer
       avatar:       avatar-daniel.png
-    tom:
-      name:         Tom Farrell
-      title:        Developer     
+    kaden:
+      name:         Kaden Klein
+      title:        Developer
       avatar:       avatar-tom.png
 
 # Social icons displayed in footer
@@ -78,7 +78,7 @@ social:
 share:
     post:           true # Display share buttons on a post page
     doc:            true # Display share buttons on a doc page
-    twitter:        username # Enable by adding Twitter handle 
+    twitter:        username # Enable by adding Twitter handle
     facebook:       true # Enable by setting true (Facebook handle not required)
 
 # Default footer image settings
@@ -125,7 +125,8 @@ collections:
     output:         false
   changelogs:
     output:         false
-
+  tutorials:
+    output:         true
 # Defaults
 defaults:
   # _posts
@@ -140,3 +141,9 @@ defaults:
       type:         docs
     values:
       layout:       doc
+  # _tutorials
+  - scope:
+      path:         ""
+      type:         tutorials
+    values:
+      layout:       tutorial

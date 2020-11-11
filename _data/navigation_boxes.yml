@@ -1,16 +1,31 @@
 # Boxes include navigation
 
-- title: Getting Started
-  desc: Get started fast with installation and theme setup instructions
+- title: Tutorials
+  desc: Start here to learn how to get started on build your game
   icon: cog
   doc: installation
 
-- title: Theme Features
-  desc: Lean about all the theme options, features and how to use them
+- title: Documentation
+  desc: Once you have finished the tutorials, you can look here to learn more
   icon: settings
   doc: hero
 
 - title: Customization
-  desc: Get help or tailor the theme to your specific requirements
+  desc: Click Here to view
   icon: code
+  doc: customize
+
+- title: Frequently Asked Questions
+  desc: Click Here to view
+  icon: question
+  doc: customize
+
+- title: Example Games
+  desc: Click Here to view
+  icon: play-circle
+  doc: customize
+
+- title: Contact
+  desc: Click Here to view
+  icon: comment
   doc: customize

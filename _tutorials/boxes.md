@@ -2,7 +2,7 @@
 title: Category boxes section
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 tags: [features]
-author: evan
+author: jason
 ---
 
 Home page category boxes are added in `_data/navigation_boxes.yml`, e.g.:

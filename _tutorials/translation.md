@@ -2,7 +2,7 @@
 title: Translation
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 tags: [customize]
-author: evan
+author: jason
 ---
 
 Set your language code in `_config.yml`:

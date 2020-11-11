@@ -2,7 +2,7 @@
 layout: doc
 title: Google Analytics
 categories: [Features]
-author: evan
+author: jason
 tags: 
 ---
 

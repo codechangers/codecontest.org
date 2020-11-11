@@ -8,7 +8,7 @@ left:
     url: /tutorials/installation/
 
   - title: Documentation
-    url: /docs/installation/
+    url: /docs/gamejskeycodes/
 
   - title: Example Games
     url: /examples/
@@ -16,8 +16,8 @@ left:
   - title: FAQS
     url: /faq/
 
-  - title: Inspiration
-    url: /inspiration/
+  - title: Customize
+    url: /customize/
 
   # title: Example Games
   #  dropdown:

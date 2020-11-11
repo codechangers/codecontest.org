@@ -1,36 +1,29 @@
-- title: Files
+- title: Functions
   docs:
-  - installation&#46;js
-  - setup
-  - navigation
-  - footer
-  - posts
-  - docs
-  - comments
-  - analytics
+  - functionaddCharacters
+  - functiongetCharacters
+  - functionsendCharacterSize
+  - functionsetupCharacters
+  - functioncreateACharacter
+  - functiongetACharacter
+  - functiondeleteACharacter
+  - functionnextCharacterId
 
-- title: Theme Features
+- title: client > src > game.js
   docs:
-  - hero
-  - boxes
-  - featured
-  - videos
-  - faq
-  - team
-  - cta
-  - changelog
-  - contact
-  - media
-  - toc
-  - alerts
+  - gamejsintro
+  - gamejsconstructor
+  - gamejsinit
+  - gamejspreLoad
+  - gamejscreate
+  - gamejsclick
+  - gamejsupdate
+  - gamejskeycodes
 
-- title: Customization
+- title: server > rooms > room.js
   docs:
-  - translation
-  - customize
-  - development
-  - sources
-
-- title: Help
-  docs:
-  - support
+  - roomjsintro
+  - roomjsoninit
+  - roomjsonjoin
+  - roomjsonleave
+  - roomjsonmessage

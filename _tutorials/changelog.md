@@ -2,7 +2,7 @@
 title: Creating a changelog
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 tags: [setup]
-author: evan
+author: jason
 ---
 
 Theme comes with two different changelogs, timeline and post style.

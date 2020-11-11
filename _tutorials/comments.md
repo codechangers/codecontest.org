@@ -1,5 +1,5 @@
 ---
-layout: tutorial
+layout: doc
 title: Enabling comments (via Disqus)
 subtitle: Disqus is a third party service that can be used to comment on blog posts. This document covers adding Disqus to a Jekyll blog
 categories: [Features]

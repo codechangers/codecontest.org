@@ -2,7 +2,7 @@
 title: Creating docs posts
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 tags: [setup]
-author: evan
+author: jason
 ---
 
 Create new doc post entries in `_docs` folder, similar to creating posts, but with following front matter settings:

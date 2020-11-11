@@ -7,14 +7,15 @@ layout: default
         <div class="uk-grid-large" data-uk-grid>
 
             <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-tutorials uk-position-fixed uk-margin-top">
+                <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% for section in site.data.navigation_tutorials %}
                     <h5>{{ section.title }}</h5>
+                    <h6>{{ section.subtitle }}</h6>
                     <ul class="uk-nav uk-nav-default doc-nav">
-                    {% for doc in section.tutorials %}
-                      {% assign doc_url = tutorial | prepend:"/tutorials/" | append:"/" %}
-                      {% assign p = site.tutorials | where:"url", tutorial_url | first %}
-                      <li class="{% if tutorial_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                    {% for doc in section.docs %}
+                      {% assign doc_url = doc | prepend:"/tutorials/" | append:"/" %}
+                      {% assign p = site.tutorials | where:"url", doc_url | first %}
+                      <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
                     {% endfor %}
                     </ul>
                     {% endfor %}
@@ -35,7 +36,7 @@ layout: default
 
                     <div class="article-content link-primary">
                         {{ content }}
-                        {% if site.share.tutorial %}
+                        {% if site.share.doc %}
                             {% include share.html %}
                         {% endif %}
                     </div>
@@ -46,7 +47,7 @@ layout: default
 
                     {% include paginate-doc.html %}
 
-                    {% include related-tutorials.html %}
+                    {% include related-docs.html %}
 
                     {% if site.disqus.shortname %}
                         {% include disqus_comments.html %}
