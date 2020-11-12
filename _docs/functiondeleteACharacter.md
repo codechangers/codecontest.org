@@ -1,34 +1,38 @@
 ---
 title: deleteACharacter()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
+subtitle:
 tags: [customize]
 author: jason
 ---
-## Parameters
-**type**: `string`  The name of the character group, ie. players, wizards, goblins.
+[ *This is a `room.js` method.*  ] This method will delete a character instance. This means a character will be taken out of the game.
 
-**scale**: `number`  The scale of the character image, ie. 0.5 for half size.
+## Parameters
+**type**: `string` - The type of characters to get, ie. player, wizards, goblins.
+​
+**id**: `string` - A unique character id, ie. player1, player2, goblin3.
 ​
 ## Returns
 **Nothing**
 ​
 ## Usage
-This method should only be called in the `init` method of the `game.js` file. It should always be called with a *type* but the *scale* is optional.
+This method is intended to be used inside the `onLeave` method. But can be used in other methods as well.
 ​
 ## Examples
 ### Example 1
 ```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('players');
+// File: code/server/rooms/room.js
+onLeave(client) {
 	...
+	g.deleteACharacter('players', client.sessionId);
 }
 ```
 ### Example 2
 ```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('goblins', 0.5);
+// File: code/server/rooms/room.js
+onUpdate() {
 	...
+	g.handleCollision('players', 'badGuys', (player) => {
+		g.deleteACharacter('players', player.id);
+	});
 }
 ```

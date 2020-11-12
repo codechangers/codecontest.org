@@ -1,6 +1,8 @@
 - title: Welcome
   docs:
   - welcome
+  - phaser
+  - keycodes
 
 - title: Characters
   docs:
