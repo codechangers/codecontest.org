@@ -5,10 +5,10 @@ left:
     url: /
 
   - title: Tutorials
-    url: /tutorials/installation/
+    url: /tutorials/welcometutorials/
 
   - title: Documentation
-    url: /docs/gamejskeycodes/
+    url: /docs/welcome/
 
   - title: Example Games
     url: /examples/

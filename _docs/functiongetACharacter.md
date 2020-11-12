@@ -1,34 +1,42 @@
 ---
 title: getACharacter()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
+subtitle: 'This method will get a character instance from the game state. Allowing you to then modify or review that character's data.'
 tags: [customize]
 author: jason
 ---
 ## Parameters
-**type**: `string`  The name of the character group, ie. players, wizards, goblins.
-
-**scale**: `number`  The scale of the character image, ie. 0.5 for half size.
+**type**: `string` - The type of characters to get, ie. player, wizards, goblins.
+​
+**id**: `string` - A unique character id, ie. player1, player2, goblin3.
 ​
 ## Returns
-**Nothing**
+**character**: `object` - The character data that was retrieved from the game state.
 ​
 ## Usage
-This method should only be called in the `init` method of the `game.js` file. It should always be called with a *type* but the *scale* is optional.
+This method can be used anywhere, but **MUST** be called with a valid id! To check if your id is valid try using the following code:
+> **Note:** replace `{type}` with the type of character and `{id}` with the id you are testing.
+```
+const idIsValid = {id} in this.state.{type};
+// This will equal true if the id is valid.
+```
 ​
 ## Examples
 ### Example 1
 ```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('players');
+// File: code/server/rooms/room.js
+onMessage(client, data) {
+	const player = g.getACharacter('players', client.sessionId);
 	...
 }
 ```
 ### Example 2
 ```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('goblins', 0.5);
+// File: code/server/rooms/room.js
+onUpdate() {
+	const id = "skywalker";
+	if (id in this.state.jedis) {
+		const jedi = g.getACharacter('jedis', id);
+	}
 	...
 }
 ```

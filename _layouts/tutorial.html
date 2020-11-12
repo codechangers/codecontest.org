@@ -10,7 +10,6 @@ layout: default
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% for section in site.data.navigation_tutorials %}
                     <h5>{{ section.title }}</h5>
-                    <h6>{{ section.subtitle }}</h6>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     {% for doc in section.docs %}
                       {% assign doc_url = doc | prepend:"/tutorials/" | append:"/" %}
