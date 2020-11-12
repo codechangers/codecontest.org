@@ -13,21 +13,53 @@
   - functiondeleteACharacter
   - functionnextCharacterId
 
-- title: client > src > game.js
+- title: Collisions
   docs:
-  - gamejsintro
-  - gamejsconstructor
-  - gamejsinit
-  - gamejspreLoad
-  - gamejscreate
-  - gamejsclick
-  - gamejsupdate
-  - gamejskeycodes
+  - handlecollision
 
-- title: server > rooms > room.js
+- title: Connection
   docs:
-  - roomjsintro
-  - roomjsoninit
-  - roomjsonjoin
-  - roomjsonleave
-  - roomjsonmessage
+  - connect
+  - canSend
+  - sendAction
+  - handleActions
+
+- title: Draw
+  docs:
+  - drawBackground
+  - createSquare
+  - createSprite
+  - setupBoard
+
+- title: Game
+  docs:
+  - setSize
+  - loadImage
+  - setupKeys
+  - getKeysDown
+  - cameraFollows
+  - cameraBounds
+  - setBounds
+  - checkBounds
+  - move
+  - setDefaultActions
+  - runGameLoop
+
+- title: Resources
+  docs:
+  - addResources
+  - getResources
+  - setupResources
+  - createResources
+  - createAResource
+  - deleteAResource
+
+- title: User Interface
+  docs:
+  - useLoginScreen
+  - handleLeaderboard
+
+- title: Barriers
+  docs:
+  - useBarrier
+  - checkBarriers
