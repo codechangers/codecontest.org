@@ -71,7 +71,8 @@
   - useBarrier
   - checkBarriers
 
-- title: locations
+- title: Locations
+  docs:
   - addLocations
   - getLocations
   - setupLocations
