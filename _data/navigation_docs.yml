@@ -6,13 +6,13 @@
 
 - title: Characters
   docs:
-  - functionaddCharacters
-  - functiongetCharacters
-  - functionsetupCharacters
-  - functioncreateACharacter
-  - functiongetACharacter
-  - functiondeleteACharacter
-  - functionnextCharacterId
+  - addCharacters
+  - getCharacters
+  - setupCharacters
+  - createACharacter
+  - getACharacter
+  - deleteACharacter
+  - nextCharacterId
   - attachTo
   - unAttach
   - follow

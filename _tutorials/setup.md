@@ -1,8 +1,10 @@
 ---
-title: 2. Setup
+title: Build Your Game
 tags: [customize]
 author: jason
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AgLijCaT6eA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 In order to code out a project you will need to have create a folder that stores all of your code related files, your assets (images, sound). You will also need to be able to open these files in a text editor.
 
 We have built this whole experience around repl.it. Repl.it is an online text editor that will let you open our starter project. It's important that you create a free account at repl.it. We like this option because you will be able to add your fellow team members to your project and you can all work together simultaneously.

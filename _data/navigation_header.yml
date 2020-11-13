@@ -25,14 +25,14 @@ right:
     - title: Documentation
       url: /docs/welcome/
 
-    - title: Example Games
-      url: /examples/
+  #  - title: Example Games
+  #    url: /examples/
 
-    - title: FAQS
-      url: /faq/
+  #  - title: FAQS
+  #    url: /faq/
 
-    - title: Customize
-      url: /customize/
+  #  - title: Customize
+  #    url: /customize/
   # title: Changelog
   #  url: /changelog-timeline/
   #  button: primary-outline
