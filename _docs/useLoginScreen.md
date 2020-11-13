@@ -16,3 +16,11 @@ This method will show an interactive login screen when a player first joins, so 
 **Nothing**
 ## Usage
 This method should be used if you want players to be able to login to your game. For example, if you think players should have display names when they join your server.
+# Examples
+### Example 1
+```
+//File code/client/src/game.js
+create() {
+	g.useLoginScreen(() => console.log("LOGIN"), 'FUN GAME', 'Username', 'Start!');
+}
+```

@@ -9,4 +9,4 @@ Setup the default/implicit game library actions.
 ## Returns
 **none**
 ## Usage
-Macuyler probably knows what this actually does
+Used to setup the default actions which is run for you.

@@ -10,4 +10,12 @@ This method will send the size of a sprite to the server.
 ## Returns
 **Nothing**
 ## Usage
-This can be used after you have created a sprite for your game. It should be used if you need to find the height of your sprite.
+This can be used after you have created a sprite for your game. It should be used if you need to send the height of your sprite.
+# Examples
+### Example 1
+```
+//File code/client/src/game.js
+create() {
+	g.sendCharacterSize('players', 0.2);
+}
+```

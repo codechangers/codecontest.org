@@ -3,29 +3,29 @@
 - title: Tutorials
   desc: Start here to learn how to get started on build your game
   icon: cog
-  doc: installation
+  doc: welcometutorials
 
 - title: Documentation
   desc: Once you have finished the tutorials, you can look here to learn more
   icon: settings
-  doc: hero
+  doc: welcome
 
 - title: Customization
-  desc: Click Here to view
+  desc: Coming Soon
   icon: code
   doc: customize
 
 - title: Frequently Asked Questions
-  desc: Click Here to view
+  desc: Coming Soon
   icon: question
   doc: customize
 
 - title: Example Games
-  desc: Click Here to view
+  desc: Coming Soon
   icon: play-circle
   doc: customize
 
 - title: Contact
-  desc: Click Here to view
+  desc: Coming Soon
   icon: comment
   doc: customize

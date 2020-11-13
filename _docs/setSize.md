@@ -13,3 +13,11 @@ This method will allow you to set the size of your game.
 ​
 ## Usage
 This method should be used when you're ready to set boundaries on your game.
+# Examples
+### Example 1
+```
+//File code/client/src/game.js
+init() {
+	g.setSize(1200, 2000);
+}
+```

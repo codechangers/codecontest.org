@@ -9,11 +9,11 @@ In order to code out a project you will need to have create a folder that stores
 
 We have built this whole experience around repl.it. Repl.it is an online text editor that will let you open our starter project. It's important that you create a free account at repl.it. We like this option because you will be able to add your fellow team members to your project and you can all work together simultaneously.
 
-1. Go to [repl.it](https://repl.it/signup) and enter your information and click "sign up".
+1. Go to [repl.it](https://repl.it/signup){:target="_blank"} and enter your information and click "sign up".
 
     <img src="/uploads/resources/signup.png" width="300">
 
-2. Once you are logged into Repl, you will need to click on this link --> [https://repl.it/@codechangers/io-template](https://repl.it/@codechangers/io-template). This is the starter code that you will need to start your project.
+2. Once you are logged into Repl, you will need to click on this link --> [https://repl.it/@codechangers/io-template](https://repl.it/@codechangers/io-template){:target="_blank"}. This is the starter code that you will need to start your project.
 
 3. You are currently looking at CodeChanger's project under their Repl Profile, you will need to click the `fork` button at the top of your profile (only one member of your team will need to do this). This will add the project to your profile.<br />
 
