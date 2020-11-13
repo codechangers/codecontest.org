@@ -17,3 +17,16 @@ This method will allow you to purchase items in your game using in-game currency
 **Nothing**
 ## Usage
 This method can be used if you have a score/currency system set up for your game. This should be used to set up purchasing capability.
+# Examples
+### Example 1
+```
+//File code/server/rooms/room.js
+onMessage(client, data) {
+	const actions = {
+		const  player = g.getACharacter('players', client.sessionId);
+		buyItem: () => {
+	         g.purchase(player, 'points', 50, 'ninjaStar', 2);
+	    },
+	}
+ }
+```

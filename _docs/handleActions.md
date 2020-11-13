@@ -16,4 +16,15 @@ This method will handle all the action messages sent in through the client side.
 **Nothing**
 ​
 ## Usage
-This method should be set up in room.js to receive all the action messages from game.js.
+This method should be set up in room.js to receive all the action messages from game.js and run them when the message is sent.
+# Examples
+### Example 1
+```
+//File code/server/rooms/room.js
+onMessage(client, data) {
+	const actions = {
+		moveUp: () => console.log("Move Up")
+	}
+	g.handleActions(actions, data);
+}
+```
