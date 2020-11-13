@@ -1,8 +1,6 @@
 ---
-title: Welcome to the Tutorials
+title: Upload to the
 subtitle: Navigate through these docs to learn how the implement the CodeChangers io Game Library
 tags: [customize]
 author: jason
 ---
-1. [Build Your Game](/tutorials/setup)
-2. [Upload Your Game to the Server](/tutorials/uploadtoserver)

@@ -8,4 +8,4 @@ hero:
     search: false
 ---
 
-{% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
+{% include cta.html title="Didn't find an answer?" button_text="Join us on Google Meet" button_url="https://meet.google.com/gmp-cgky-udm" subtitle="Contact us with help on your game!" %}

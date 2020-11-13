@@ -10,7 +10,7 @@
         <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
             {% if include.title %}<h2 class="uk-h1 uk-margin-bottom">{{ include.title }}</h2>{% endif %}
             {% if include.subtitle %}<p class="uk-text-lead uk-text-center">{{ include.subtitle | escape }}</p>{% endif %}
-            <a class="uk-button uk-button-primary uk-button-large uk-margin-medium-top" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
+            <a class="uk-button uk-button-primary uk-button-large uk-margin-medium-top" target="_blank" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
         </div>
     </div>
 </div>

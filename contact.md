@@ -5,8 +5,8 @@ title: Got Any Questions
 permalink: /contact/
 ---
 
-##### Send us an email!
+##### Connect with us on Google Meet
 
 We are trying to build the best io game creation experience. We want to hear from you.
 
-{% include formspree.html email="jason@codechangers.com" redirect="/thanks/" name="true" subject="true" %}
+<a class="uk-button uk-button-primary uk-align-center" style="max-width:300px;" href="https://meet.google.com/gmp-cgky-udm">Join Our Google Meet</a>
