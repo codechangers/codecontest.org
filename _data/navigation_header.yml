@@ -1,23 +1,6 @@
 # Navbar left menu navigation links
 
 left:
-  - title: Home
-    url: /
-
-  - title: Tutorials
-    url: /tutorials/welcometutorials/
-
-  - title: Documentation
-    url: /docs/welcome/
-
-  - title: Example Games
-    url: /examples/
-
-  - title: FAQS
-    url: /faq/
-
-  - title: Customize
-    url: /customize/
 
   # title: Example Games
   #  dropdown:
@@ -33,13 +16,26 @@ left:
 
 right:
 
-  - title: Changelog
-    url: /changelog-timeline/
-    button: primary-outline
+    - title: Home
+      url: /
 
-  - title: Contact
-    url: /contact/
-    button: success
+    - title: Tutorials
+      url: /tutorials/welcometutorials/
+
+    - title: Documentation
+      url: /docs/welcome/
+
+    - title: Example Games
+      url: /examples/
+
+    - title: FAQS
+      url: /faq/
+
+    - title: Customize
+      url: /customize/
+  # title: Changelog
+  #  url: /changelog-timeline/
+  #  button: primary-outline
 
   # - title: Changelog
   #   url: /contact/

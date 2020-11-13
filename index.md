@@ -9,5 +9,3 @@ hero:
 ---
 
 {% include boxes.html columns="3" title="Browse Topics" subtitle="Chose an option that you need help with or search above" %}
-
-{% include cta.html title="Didn't find an answer?" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup and additional custom services pricing" %}

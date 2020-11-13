@@ -79,3 +79,22 @@
   - createALocation
   - handleLocations
   - nextLocationId
+
+- title: Animations
+  docs:
+  - playAnimation
+  - handleAnimation
+
+- title: Items
+  docs:
+  - useItemBar
+  - hideItemBar
+  - showItembar
+  - createNewItem
+  - addItemToCharacter
+  - useItem
+  - getItemPosition
+  - switchItem
+  - getSelectedItem
+  - getItem
+  - removeItemFromCharacter

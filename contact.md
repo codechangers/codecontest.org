@@ -5,8 +5,8 @@ title: Got Any Questions
 permalink: /contact/
 ---
 
-##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
+##### Send us an email!
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+We are trying to build the best io game creation experience. We want to hear from you.
 
-{% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}
+{% include formspree.html email="jason@codechangers.com" redirect="/thanks/" name="true" subject="true" %}

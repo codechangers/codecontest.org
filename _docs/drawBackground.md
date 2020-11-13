@@ -18,3 +18,22 @@ This method will draw the background for your game.
 ​
 ## Usage
 You can use this at any time although, It's recommended to use in your addConnectEvent function so the background will be there as soon as the game starts.
+# Examples
+### Example 1
+```
+//Link code/client/src/game.js
+​
+create() {
+	...
+	g.drawBackground('background.png');
+}
+```
+### Example 2
+```
+//Link code/client/src/game.js
+​
+create() {
+	...
+	g.drawBackground('background.png', 0.5, 1000, 2000);
+}
+```

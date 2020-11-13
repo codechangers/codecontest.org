@@ -147,5 +147,3 @@ defaults:
       type:         tutorials
     values:
       layout:       tutorial
-
-include: ['.htaccess']
