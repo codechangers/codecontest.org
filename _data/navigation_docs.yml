@@ -24,6 +24,7 @@
 - title: Connection
   docs:
   - connect
+  - addConnectEvent
   - canSend
   - sendAction
   - handleActions
@@ -43,9 +44,11 @@
   - getKeysDown
   - cameraFollow
   - cameraBounds
+  - sendCharacterSize
   - setBounds
   - checkBounds
   - move
+  - purchase
   - setDefaultActions
   - runGameLoop
 
@@ -67,3 +70,11 @@
   docs:
   - useBarrier
   - checkBarriers
+
+- title: locations
+  - addLocations
+  - getLocations
+  - setupLocations
+  - createALocation
+  - handleLocations
+  - nextLocationId
