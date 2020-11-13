@@ -1,34 +1,16 @@
 ---
 title: checkBarriers()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+This method will check if when a character moves they will run into a barrier.
 ## Parameters
-**type**: `string`  The name of the character group, ie. players, wizards, goblins.
-
-**scale**: `number`  The scale of the character image, ie. 0.5 for half size.
+**object**: `object` - The game object you want to move.
 ​
+**axis**: `string` - x or y axis of movement.
+​
+**distance**: `number` - How far  you want to move along the given axis.
 ## Returns
-**Nothing**
-​
+**{ validMove, fallbackPos }** - This tells if the move is valid, and if not, gives the character a fallback position to move to instead.
 ## Usage
-This method should only be called in the `init` method of the `game.js` file. It should always be called with a *type* but the *scale* is optional.
-​
-## Examples
-### Example 1
-```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('players');
-	...
-}
-```
-### Example 2
-```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('goblins', 0.5);
-	...
-}
-```
+You should use this method when trying to set up Character interaction with barriers, in order to check and see when they run into one.

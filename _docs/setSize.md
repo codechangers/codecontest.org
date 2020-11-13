@@ -1,6 +1,15 @@
 ---
 title: setSize()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+This method will allow you to set the size of your game.
+## Parameters
+**width**: `number` - The width of your game
+​
+**height**: `number`  - The height of your game
+## Returns
+**Nothing**
+​
+## Usage
+This method should be used when you're ready to set boundaries on your game.

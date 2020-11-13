@@ -1,6 +1,17 @@
 ---
 title: move()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+This method will allow you to set up movement for your characters within the boundaries of the game.
+## parameters
+**object**:  `object` - The game object that you want to move.
+​
+**axis**: `string` - The axis of movement (x or y).
+
+**distance**: `number` - The distance you want your object to move.
+​
+## Returns
+**Nothing**
+## Usage
+This can be used once you have an object in your game that you are ready to set up movement for.

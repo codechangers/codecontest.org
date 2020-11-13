@@ -4,31 +4,16 @@ subtitle: 'This method will create a new set of characters. A set of characters 
 tags: [customize]
 author: jason
 ---
+This method will show an interactive login screen when a player first joins, so they can login to your game.
 ## Parameters
-**type**: `string`  The name of the character group, ie. players, wizards, goblins.
-
-**scale**: `number`  The scale of the character image, ie. 0.5 for half size.
+**onStart**: `function` - What to do when they click the button.
 ​
+**title**:`string` - What the header should say.
+​
+**input**:`string` - What the input should say.
+​
+**button**:`string` - What the button should say.
 ## Returns
 **Nothing**
-​
 ## Usage
-This method should only be called in the `init` method of the `game.js` file. It should always be called with a *type* but the *scale* is optional.
-​
-## Examples
-### Example 1
-```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('players');
-	...
-}
-```
-### Example 2
-```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('goblins', 0.5);
-	...
-}
-```
+This method should be used if you want players to be able to login to your game. For example, if you think players should have display names when they join your server.

@@ -1,6 +1,14 @@
 ---
 title: loadImage()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+This method will load an image into the game
+## Parameters
+**name**: `string` The name of the image you want to use.
+​
+**path**: `string` The path to the image file inside of the asset folder.
+## Returns
+**this.game.load.image(name,  `asset/${path}`)** -the code used to load your image into the game for you
+## Usage
+This should be used anytime you need an image somewhere in your game.

@@ -1,6 +1,11 @@
 ---
 title: runGameLoop()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+Run an iteration loop on the server that calls your onUpdate method.
+## parameters
+**none**
+## Returns
+**none**
+## Usage

@@ -1,6 +1,12 @@
 ---
 title: setDefaultActions()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+Setup the default/implicit game library actions.
+## parameters
+**none**
+## Returns
+**none**
+## Usage
+Macuyler probably knows what this actually does

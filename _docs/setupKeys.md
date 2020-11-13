@@ -1,6 +1,12 @@
 ---
 title: setupKeys()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+This method will get your game to start listening to when you push a key on the keyboard.
+## Parameters
+**keys**: `object` - phaser [key codes](Jason add a link to the key codes here)
+## Returns
+**Nothing**
+## Usage
+Use this method when you need to start using the keyboard in your game to complete actions.

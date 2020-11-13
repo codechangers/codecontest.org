@@ -8,12 +8,14 @@
   docs:
   - functionaddCharacters
   - functiongetCharacters
-  - functionsendCharacterSize
   - functionsetupCharacters
   - functioncreateACharacter
   - functiongetACharacter
   - functiondeleteACharacter
   - functionnextCharacterId
+  - attachTo
+  - unAttach
+  - follow
 
 - title: Collisions
   docs:
@@ -39,7 +41,7 @@
   - loadImage
   - setupKeys
   - getKeysDown
-  - cameraFollows
+  - cameraFollow
   - cameraBounds
   - setBounds
   - checkBounds

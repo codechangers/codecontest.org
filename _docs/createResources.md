@@ -1,34 +1,14 @@
 ---
 title: createResources()
-subtitle: 'This method will create a new set of characters. A set of characters represents a certain group of characters, for example: players and enemies, or storm troopers and wizards.'
 tags: [customize]
 author: jason
 ---
+Creates resources around the map
 ## Parameters
-**type**: `string`  The name of the character group, ie. players, wizards, goblins.
-
-**scale**: `number`  The scale of the character image, ie. 0.5 for half size.
+**type** `string` - The type of resource you'd like to create.
 ​
+**amount** `int` - The amount of resources you want to create on the map.
 ## Returns
 **Nothing**
-​
 ## Usage
-This method should only be called in the `init` method of the `game.js` file. It should always be called with a *type* but the *scale* is optional.
-​
-## Examples
-### Example 1
-```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('players');
-	...
-}
-```
-### Example 2
-```
-// File: code/client/src/game.js
-init() {
-	g.addCharacters('goblins', 0.5);
-	...
-}
-```
+You can use this method after you have defined a type of resource. You should use it when you are ready for resources to spawn around the map.
