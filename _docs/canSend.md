@@ -4,7 +4,7 @@ subtitle: 'This method will create a new set of characters. A set of characters 
 tags: [customize]
 author: jason
 ---
-This method will tell you if messages are ready.
+This method will tell you if player joined the game and is ready to send messages to the server
 ​
 ## Parameters
 **none**
@@ -13,4 +13,15 @@ This method will tell you if messages are ready.
 boolean value (true/false)
 ​
 ## Usage
-This method should be used in order to see if a player has successfully joined the chatroom.
+This method should be used in order to see if a player has successfully joined the chatroom before sending actions.
+# Examples
+### Example 1
+```
+//File code/client/src/game.js
+​
+update() {
+	if (g.canSend()) {
+		...
+	}
+}
+```
