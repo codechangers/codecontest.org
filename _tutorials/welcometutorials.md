@@ -4,4 +4,4 @@ subtitle: Navigate through these docs to learn how the implement the CodeChanger
 tags: [customize]
 author: jason
 ---
-1. [Introduction](/introduction)
+1. [Build Your Game](/setup)
