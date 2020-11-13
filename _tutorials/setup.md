@@ -1,37 +1,28 @@
 ---
-title: Basic theme setup
-subtitle: This document covers the setup and options of theme feature described in the doc title
-author: sara
-tags: [setup]
+title: 2. Setup
+tags: [customize]
+author: jason
 ---
+In order to code out a project you will need to have create a folder that stores all of your code related files, your assets (images, sound). You will also need to be able to open these files in a text editor.
 
-### Site and author details
-Add your site and author details in `_config.yml`:
+We have built this whole experience around repl.it. Repl.it is an online text editor that will let you open our starter project. It's important that you create a free account at repl.it. We like this option because you will be able to add your fellow team members to your project and you can all work together simultaneously.
 
-```yaml
-title:              Docs
-description:        Documentation Jekyll theme.
-lang:               en
+1. Go to [repl.it](https://repl.it/signup) and enter your information and click "sign up".
 
-# Site subpath, e.g. /blog
-baseurl:            ""
+    <img src="/uploads/resources/signup.png" width="300">
 
-# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
-permalink:          /:title/
+2. Once you are logged into Repl, you will need to click on this link --> [https://repl.it/@codechangers/io-template](https://repl.it/@codechangers/io-template). This is the starter code that you will need to start your project.
 
-# Site base hostname & protocol, e.g. http://example.com
-url:                "https://docs.jekyll.plus"
+3. You are currently looking at CodeChanger's project under their Repl Profile, you will need to click the `fork` button at the top of your profile (only one member of your team will need to do this). This will add the project to your profile.<br />
 
-# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:      
+    <img src="/uploads/resources/fork.png" width="100">
 
-# Default author settings
-author:
-    name:           Pete Seth
-    title:          Lead Developer  
-    avatar:         avatar-tom.png
-```
+4. When you `fork` the project it keeps the same name. If you want to change the name of your project click on the name and change it to whatever you want (you can continue to change it at any time). Repl.it automatically saves, you don't need to constantly save your code.<br />
 
-### Update favicon
+    <img src="/uploads/resources/rename.png" width="300">
 
-You can find the current favicon (favicon.png) inside the theme `/uploads/` directory, just replace it with your new favicon.
+5. Next, add your fellow teammates to your project. Click `share` located on the top right of the website. You can add your teammates by putting in their usernames or emails or you can send them a link. They will see a notification in repl or receive an email. From there you can all collaborate on the same files!<br />
+
+    <img src="/uploads/resources/invite.png" width="300">
+
+Now you are all set up and ready to code. Repl.it has a "run" button at the top, for smaller projects that works great, for complex projects like this that won't work. Don't worry we will teach you how to see your project in action but don't worry if you hit `run` in repl.it and nothing happens.

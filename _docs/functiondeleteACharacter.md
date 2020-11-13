@@ -4,7 +4,9 @@ subtitle:
 tags: [customize]
 author: jason
 ---
-[ *This is a `room.js` method.*  ] This method will delete a character instance. This means a character will be taken out of the game.
+> This is a `room.js` method.
+
+This method will delete a character instance. This means a character will be taken out of the game.
 
 ## Parameters
 **type**: `string` - The type of characters to get, ie. player, wizards, goblins.

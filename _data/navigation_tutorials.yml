@@ -1,7 +1,5 @@
-- title: Welcome
+- title: Tutorials
   docs:
   - welcometutorials
-
-- title: Game Elements
-  docs:
-  - tutcharacters
+  - introduction
+  - setup
