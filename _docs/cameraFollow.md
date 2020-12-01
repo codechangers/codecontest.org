@@ -18,7 +18,7 @@ This can be used after you have created a character, it should be used if you wa
 create() {
 	...
 	g.getCharacters('players', player => {
-		if (player.id = g.myId()) {
+		if (player.id === g.myId()) {
 			g.cameraFollow(player);
 		}
 	});
