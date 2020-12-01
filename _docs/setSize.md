@@ -5,7 +5,7 @@ author: jason
 ---
 This method will allow you to set the size of your game.
 ## Parameters
-**width**: `number` - The width of your game
+**width**: `number` - The width of your game<br><br>
 ​
 **height**: `number`  - The height of your game
 ## Returns

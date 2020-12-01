@@ -4,7 +4,7 @@ tags: [customize]
 ---
 This method allows users to remove an item from a specific character's item bar. This can be used to take away functionality or reset in game events.
 ## Parameters
-**character**: `obj` - The character instance.
+**character**: `obj` - The character instance.<br><br>
 ​
 **type**: `string` - The type of the item to remove
 ​

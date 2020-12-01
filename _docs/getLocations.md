@@ -5,11 +5,11 @@ tags: [customize]
 # getLocations
 This method will allow you to keep track of all your created locations on the server.
 ## Parameters
-**type**: `string` - The type of location.
+**type**: `string` - The type of location.<br><br>
 ​
-**onAdd**: `function` - This will run when a location is added.
+**onAdd**: `function` - This will run when a location is added.<br><br>
 ​
-**onRemove**: `function` - This will run when a location is removed.
+**onRemove**: `function` - This will run when a location is removed.<br><br>
 ​
 **onUpdate**: `function` - This will run when a location is updated.
 ​

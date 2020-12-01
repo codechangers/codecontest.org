@@ -5,11 +5,11 @@ author: jason
 ---
 This method will draw the background for your game.
 ## Parameters
-**img**: `string` - The background image used for the game.
+**img**: `string` - The background image used for the game.<br><br>
 ​
-**scale**: `number` - Scale of the background image.
+**scale**: `number` - Scale of the background image.<br><br>
 ​
-**gameW**: `number` - The width of the game.
+**gameW**: `number` - The width of the game.<br><br>
 ​
 **gameH**: `number` - The height of the game.
 ​

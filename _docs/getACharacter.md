@@ -6,7 +6,7 @@ author: jason
 This method will get a character instance from the game state. Allowing you to then modify or review that character's data.
 ​
 ## Parameters
-**type**: `string` - The type of characters to get, ie. player, wizards, goblins.
+**type**: `string` - The type of characters to get, ie. player, wizards, goblins.<br><br>
 ​
 **id**: `string` - A unique character id, ie. player1, player2, goblin3.
 ​

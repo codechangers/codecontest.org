@@ -7,7 +7,7 @@ This method will handle all the action messages sent in through the client side.
 ​
 ## Parameters
 ​
-**actions**: `object` - The action functions that were sent in.
+**actions**: `object` - The action functions that were sent in.<br><br>
 ​
 **data**: `object` - The data from the message that was sent in.
 ​

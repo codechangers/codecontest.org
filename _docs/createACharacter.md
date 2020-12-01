@@ -5,9 +5,9 @@ tags: [customize]
 author: jason
 ---
 ## Parameters
-**type**: `string` - The type of characters to get, ie. player, wizards, goblins.
+**type**: `string` - The type of characters to get, ie. player, wizards, goblins.<br><br>
 ​
-**id**: `string` - A unique character id, ie. player1, player2, goblin3.
+**id**: `string` - A unique character id, ie. player1, player2, goblin3.<br><br>
 ​
 **data**: `object` - The character data. This should contain important information like the character's position.
 ​

@@ -5,7 +5,7 @@ tags: [customize]
 This method will set up a function call to run as soon as the server is connected. (This is intended for more advanced users)
 ​
 ## Parameters
-**funcName**: `string` - The name of the library function that you want to run.
+**funcName**: `string` - The name of the library function that you want to run.<br><br>
 ​
 **params**:  `array` - The parameters that need to be be passed into the function that's being called.
 ​

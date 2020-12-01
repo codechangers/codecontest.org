@@ -5,7 +5,7 @@ author: jason
 ---
 Creates resources around the map
 ## Parameters
-**type** `string` - The type of resource you'd like to create.
+**type** `string` - The type of resource you'd like to create.<br><br>
 ​
 **amount** `int` - The amount of resources you want to create on the map.
 ## Returns

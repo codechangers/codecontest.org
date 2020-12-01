@@ -1,15 +1,15 @@
 ---
 title: getCharacters()
-subtitle: 'Listen to Characters on the server. This will get live updates from the server about the characters in the game. When one is create, delete, and updated!'
+subtitle: 'Listen to Characters on the server. This will get live updates from the server about the characters in the game. When one is created, deleted, or updated!'
 tags: [customize]
 author: jason
 ---
 ## Parameters
-**type**: `string` - The type of characters to get, ie. player, wizards, goblins.
+**type**: `string` - The type of characters to get, ie. player, wizards, goblins.<br><br>
 ​
-**onAdd**: `function` - Code that is run when a character is added.
+**onAdd**: `function` - Code that is run when a character is added.<br><br>
 ​
-**onRemove**: `function` - Code that is run when a character is removed.
+**onRemove**: `function` - Code that is run when a character is removed.<br><br>
 ​
 **onUpdate**:  `function` - Code that is run when an existing character is updated.
 ​

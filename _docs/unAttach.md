@@ -5,9 +5,9 @@ tags: [customize]
 [ *This is a `room.js` method.*  ] This method will remove a single item, bar, or text field from a character or resource.
 ​
 ## Parameters
-**type**: `string` - The type of characters/resource you want to unattach something from, ie. player, wizards, goblins.
+**type**: `string` - The type of characters/resource you want to unattach something from, ie. player, wizards, goblins.<br><br>
 ​
-**id**: `string` -  The unique character/resource id you want to unattach something from, ie. player1, player2, goblin3.
+**id**: `string` -  The unique character/resource id you want to unattach something from, ie. player1, player2, goblin3.<br><br>
 ​
 **name**: `string` - The name of  the character/resource you want to unattach, ie. healthBar, nameTag, sword.
 ​
