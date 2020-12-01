@@ -4,7 +4,7 @@ tags: [customize]
 ---
 This method allows players to switch their characters selected item. This can be called with a specific index or used to toggle through each item.
 ## Parameters
-**character**: `obj` - The character instance.
+**character**: `obj` - The character instance.<br><br>
 ​
 **position**: `number` - The index of the item on the hot bar you want to select.
 ## Returns

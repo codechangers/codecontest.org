@@ -6,7 +6,7 @@ author: jason
 This method will send an action command to the server. This will be used for any action's you want to take place in the game.
 ​
 ## Parameters
-**action**: `string` - The action you want to send to the server.
+**action**: `string` - The action you want to send to the server.<br><br>
 ​
 **data**: `object` - Anything you need to send to the backend.
 ​

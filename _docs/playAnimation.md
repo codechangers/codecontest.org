@@ -4,11 +4,11 @@ tags: [customize]
 ---
 This method allows you to create an animation on anything that you want to change over a certain time.
 ## Parameters
-**obj**: `obj` - The character/resource instance.
+**obj**: `obj` - The character/resource instance.<br><br>
 ​
-**attribute**: `string` - The attribute you want to animate e.g. x, y, rotation or anything else.
+**attribute**: `string` - The attribute you want to animate e.g. x, y, rotation or anything else.<br><br>
 ​
-**value**: `number` - The value the attribute should be changed by.
+**value**: `number` - The value the attribute should be changed by.<br><br>
 ​
 **duration**: `number` - (milliseconds) how long the animation should run.
 ​

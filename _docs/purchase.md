@@ -4,13 +4,13 @@ tags: [customize]
 ---
 This method will allow you to purchase items in your game using in-game currency.
 ## parameters
-**customer**: `object` - The character/resource that is making the purchase.
+**customer**: `object` - The character/resource that is making the purchase.<br><br>
 ​
-**currency**: `string` - The customer attribute that is used as currency.
+**currency**: `string` - The customer attribute that is used as currency.<br><br>
 ​
-**cost**: `number` - How much currency the purchase costs.
+**cost**: `number` - How much currency the purchase costs.<br><br>
 ​
-**item**: `string` - The customer attribute that holds the purchased item.
+**item**: `string` - The customer attribute that holds the purchased item.<br><br>
 ​
 **amount**: `number` - How many items are given per purchase.
 ## Returns

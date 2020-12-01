@@ -6,11 +6,11 @@ tags: [customize]
 ​
 ## Parameters
 ​
-**type1**:  `string` - The type of character or resource that will be followed, ie. players, wizards, knights.
+**type1**:  `string` - The type of character or resource that will be followed, ie. players, wizards, knights.<br><br>
 ​
-**type2**:  `string` - The type of character or resources that will follow the type1 character, ie. enemies, pets, resources.
+**type2**:  `string` - The type of character or resources that will follow the type1 character, ie. enemies, pets, resources.<br><br>
 ​
-**range**:  `number` - How close the followers can get to the character being followed.
+**range**:  `number` - How close the followers can get to the character being followed.<br><br>
 ​
 **speed**:  `number` - The rate of speed the followers move at, ie. 0.5 for half speed, 2 for double speed.
 ​

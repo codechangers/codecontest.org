@@ -5,9 +5,9 @@ tags: [character create, mac, gucci]
 [ *This is a `room.js` method.*  ] This method will attach a single item, bar, or text field to a character or resource. This can be used to create health bars, name tags, and allow characters to hold items.
 
 ## Parameters
-**type**: `string` - The type of characters/resources to get, ie. player, wizards, goblins.
+**type**: `string` - The type of characters/resources to get, ie. player, wizards, goblins.<br><br>
 ​
-**id**: `string` - A unique character/resource id, ie. player1, player2, goblin3.
+**id**: `string` - A unique character/resource id, ie. player1, player2, goblin3.<br><br>
 ​
 **data**: `object` - The attachment data. This should contain the configuration options for the attachment.
 ​

@@ -6,11 +6,11 @@ author: jason
 This method will create an a sprite to be used in-game for characters, resources etc.
 ​
 ## Parameters
-**image**: `string` - The name of the image to make a sprite with.
+**image**: `string` - The name of the image to make a sprite with.<br><br>
 ​
-**x**: `number` - The x position of your sprite
+**x**: `number` - The x position of your sprite<br><br>
 ​
-**y**: `number` - The y position of your sprite
+**y**: `number` - The y position of your sprite<br><br>
 ​
 **scale**: `number` - The scale of the sprite, ie. 0.5 for half size.
 ​

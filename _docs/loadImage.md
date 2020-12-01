@@ -5,7 +5,7 @@ author: jason
 ---
 This method will load an image into the game
 ## Parameters
-**name**: `string` The name of the image you want to use.
+**name**: `string` The name of the image you want to use.<br><br>
 ​
 **path**: `string` The path to the image file inside of the asset folder.
 ## Returns

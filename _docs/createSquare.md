@@ -1,19 +1,19 @@
 ---
-title: creatSquare()
+title: createSquare()
 tags: [customize]
 author: jason
 ---
 This method will create a square to be used inside the game.
 ## Parameters
-**width**: `number` - The width of the square you want to create.
+**width**: `number` - The width of the square you want to create.<br><br>
 ​
-**height**: `number` - The height of the square you want to create.
+**height**: `number` - The height of the square you want to create.<br><br>
 ​
-**x**: `number` - The starting x position of the top left of your square.
+**x**: `number` - The starting x position of the top left of your square.<br><br>
 ​
-**y**: `number` - The starting y position of the top left of your square.
+**y**: `number` - The starting y position of the top left of your square.<br><br>
 ​
-**color**: `string` - The color of your square as a hex value. e.g. "125242".
+**color**: `string` - The color of your square as a hex value. e.g. "125242".<br><br>
 ​
 **depth**: `number` - The ranking used to decide what layer the square is on (what is drawn over and below the square.)
 ​

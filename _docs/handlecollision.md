@@ -7,9 +7,9 @@ this method will check for collision between two different objects in your game,
 ​
 ## Parameters
 ​
-**typeA**: `string/object` - The first type of object (string), if you want to check all of one type of object, ie. enemies. OR a single object instance (object) if you only need to check a single object, ie. sword.
+**typeA**: `string/object` - The first type of object (string), if you want to check all of one type of object, ie. enemies. OR a single object instance (object) if you only need to check a single object, ie. sword.<br><br>
 ​
-**typeB**: `string/object` - The second type of object (string) OR a single object instance (object).
+**typeB**: `string/object` - The second type of object (string) OR a single object instance (object).<br><br>
 ​
 **callback**: `function` - A function telling what to do if a collision is detected.
 ​

@@ -5,11 +5,11 @@ author: jason
 ---
 This method will show an interactive login screen when a player first joins, so they can login to your game.
 ## Parameters
-**onStart**: `function` - What to do when they click the button.
+**onStart**: `function` - What to do when they click the button.<br><br>
 ​
-**title**:`string` - What the header should say.
+**title**:`string` - What the header should say.<br><br>
 ​
-**input**:`string` - What the input should say.
+**input**:`string` - What the input should say.<br><br>
 ​
 **button**:`string` - What the button should say.
 ## Returns

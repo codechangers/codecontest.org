@@ -5,7 +5,7 @@ author: jason
 ---
 Delete an instance of a resource from your game.
 ## Parameters
-**type**: `string` - The type of resource that. you'd like to delete.
+**type**: `string` - The type of resource that. you'd like to delete.<br><br>
 ​
 **id**: `number` - The id of the resource.
 ## Returns

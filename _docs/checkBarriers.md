@@ -5,9 +5,9 @@ author: jason
 ---
 This method will check if when a character moves they will run into a barrier.
 ## Parameters
-**object**: `object` - The game object you want to move.
+**object**: `object` - The game object you want to move.<br><br>
 ​
-**axis**: `string` - x or y axis of movement.
+**axis**: `string` - x or y axis of movement.<br><br>
 ​
 **distance**: `number` - How far  you want to move along the given axis.
 ## Returns

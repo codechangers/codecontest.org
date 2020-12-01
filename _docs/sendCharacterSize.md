@@ -4,7 +4,7 @@ tags: [customize]
 ---
 This method will send the size of a sprite to the server.
 ## Parameters
-**type**: `string` - The name of the image used by the sprite.
+**type**: `string` - The name of the image used by the sprite.<br><br>
 ​
 **scale**: `number` - The scale of the sprite, ie. 0.5 for half size.
 ## Returns

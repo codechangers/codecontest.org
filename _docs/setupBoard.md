@@ -6,7 +6,7 @@ author: jason
 This method will create your game board with the boundaries set by you.
 ​
 ## Parameters
-**width**: `number` - The game width
+**width**: `number` - The game width<br><br>
 ​
 **height**: `number`  - The game height
 

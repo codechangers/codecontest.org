@@ -6,7 +6,7 @@ author: jason
 This method will create a set area for the camera that it cannot leave.
 ​
 ## Parameters
-**width**: `this.game.width` - The width of the area the camera is bound to.
+**width**: `this.game.width` - The width of the area the camera is bound to.<br><br>
 ​
 **height**:  `this.game.height` - The height of the area the camera is bound to.
 ## Returns
