@@ -19,3 +19,14 @@ this method will check for collision between two different objects in your game,
 ## Usage
 ​
 This method can be used after you have created at least two objects in your game and a callback function created as well. It should be used when you want to have an action take place when two objects collide.
+
+## Examples
+
+### Example 1
+``` 
+//Link code/server/rooms/room.js
+onUpdate() {
+g.handleCollision('players', 'zombie', player => player.healthBar.filled -= .5);
+}
+
+```
