@@ -20,6 +20,7 @@
 - title: Collisions
   docs:
   - handlecollision
+  - handleItemCollision
 
 - title: Connection
   docs:
@@ -27,14 +28,18 @@
   - addConnectEvent
   - canSend
   - sendAction
+  - myId
   - handleActions
 
 - title: Draw
   docs:
   - drawBackground
   - createSquare
+  - updateSquare
   - createSprite
+  - getSpriteSize
   - setupBoard
+  - getSize
 
 - title: Game
   docs:
@@ -63,8 +68,12 @@
 
 - title: User Interface
   docs:
+  - storeItem
   - useLoginScreen
   - handleLeaderboard
+  - useStore
+  - toggleStore
+  - unlockStore
 
 - title: Barriers
   docs:
@@ -83,7 +92,7 @@
 - title: Animations
   docs:
   - playAnimation
-  - handleAnimation
+  - handleAnimations
 
 - title: Items
   docs:
