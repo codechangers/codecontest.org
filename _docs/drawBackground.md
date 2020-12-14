@@ -17,7 +17,7 @@ This method will draw the background for your game.
 **Nothing**
 ​
 ## Usage
-You can use this at any time although, It's recommended to use in your addConnectEvent function so the background will be there as soon as the game starts.
+You can use this at any time although, It's recommended to use in your Create function so the background will be there as soon as the game starts.
 # Examples
 ### Example 1
 ```

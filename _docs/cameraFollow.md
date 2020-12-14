@@ -19,7 +19,7 @@ create() {
 	...
 	g.getCharacters('players', player => {
 		if (player.id === g.myId()) {
-			g.cameraFollow(player);
+			g.cameraFollow(player.sprite);
 		}
 	});
 }
