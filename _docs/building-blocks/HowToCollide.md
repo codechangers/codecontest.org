@@ -1,5 +1,5 @@
 ﻿# How to set up collision
-
+Before using this tutorial you might want to checkout the Adding a new Character set tutorial, and the All about Items tutorial to make sure your game is to the point that you are able to setup collision.
 ## 1 . Setting up Character/Resource Collision
 To set up collision between two characters, or a character and a resource the handleCollision method should be used. If you want the game to always be searching for the collision the handleCollision method should be placed in your room.js file in your onUpdate function.  In this example I am checking for collision between two characters, so that I can lower the health of one when they collide. 
 ```javascript
