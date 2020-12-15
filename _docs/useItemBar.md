@@ -9,3 +9,11 @@ This method allows users to create an in game item bar for displaying a characte
 **Nothing**
 ## Usage
 You can use this method to display the item bar with a custom amount of item spaces.
+## Examples
+### 1.
+```
+//Link code/client/src/game.js
+init() {
+	g.useItemBar(8);
+}
+```

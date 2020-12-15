@@ -9,3 +9,11 @@ Run an iteration loop on the server that calls your onUpdate method.
 ## Returns
 **none**
 ## Usage
+## Examples
+### 1.
+```
+//Link code/server/rooms/room.js
+onInit() {
+	g.runGameLoop();
+}
+```
