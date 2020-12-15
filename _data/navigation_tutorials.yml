@@ -4,8 +4,9 @@
   - setup
   - uploadtoserver
 
-- title: Example Game
+- title: Example Games
   docs:
+  - examples/horseGame
   - examples/zombieGame
 
 - title: Building Blocks
