@@ -1,4 +1,9 @@
-﻿# How to set up a Leaderboard
+---
+title: Setup Leaderboard
+subtitle: Learn how to use the in-game leaderboard.
+tags: [customize]
+author: jason
+---
 ## 1. Setup Leaderboard
 To setup a leaderboard the handleLeaderboard method needs to be used in game.js file, in the create function, then in the getCharacters function for the character that the leaderboard is for. The handle Leaderboard will be passed into the getCharacters function as the second third and fourth parameters, so that the leader board will update when a player joins, when a player's score is updated, and when a player leaves the game. 
 ```javascript

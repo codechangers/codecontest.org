@@ -1,4 +1,9 @@
-﻿# Create a new Character set
+---
+title: New Character Set
+subtitle: Learn how to add a new set of characters to your game.
+tags: [customize]
+author: jason
+---
 ## 1. Uploading an image
 First, we need to upload a new image to use for the new _character_ set. To do this we will go into the `preload` _method_ in **game.js** and add a new image named after the new _character_ set.
 ```javascript

@@ -1,5 +1,9 @@
-﻿# How to add Animations
-
+---
+title: All About Animations
+subtitle: Learn all you need to know to get started animating your game!
+tags: [customize]
+author: jason
+---
 ## 1. Creating animations 
 The playAnimation method is the main step in creating an animation for the game. It can be placed in any function in the room.js file. In this example it will be used in the onMessage function in the click function so that the animation will be played any time a user clicks. 
 

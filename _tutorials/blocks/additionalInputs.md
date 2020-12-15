@@ -1,5 +1,9 @@
-﻿# Adding additional inputs
-
+---
+title: Additional Inputs
+subtitle: Learn how to add aditional user input options to your game.
+tags: [customize]
+author: jason
+---
 ## 1. Adding a key input
 To add a new key into the game the first thing needed is the keyCode that goes along with that key. You can find a list of all the key codes here: 
 [key codes](https://www.codecontest.org/docs/keycodes/) 

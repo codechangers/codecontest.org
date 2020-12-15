@@ -3,3 +3,17 @@
   - welcometutorials
   - setup
   - uploadtoserver
+
+- title: Example Game
+  docs:
+  - examples/zombieGame
+
+- title: Building Blocks
+  docs:
+  - blocks/additionalInputs
+  - blocks/allAboutAnimations
+  - blocks/gameBoundsAndBackground
+  - blocks/howToCollide
+  - blocks/loginAndHowToPlay
+  - blocks/newCharacterSet
+  - blocks/setupLeaderboard

@@ -1,5 +1,9 @@
-﻿# Zombies
-
+---
+title: Zombie Game
+subtitle: Learn how to make a super cool zombie game
+tags: [customize]
+author: jason
+---
 ## 1. Follow the build your game tutorial
 To start, follow the game setup tutorial video from the tutorials tab on the website. You should now have a movable character, and be able to have multiple players join your server.
     

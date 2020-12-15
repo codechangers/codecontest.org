@@ -1,5 +1,9 @@
-﻿# Setting Game Boundaries and Background
-
+---
+title: Game Bounds & Background
+subtitle: Learn how to add boundries and a background to your game.
+tags: [customize]
+author: jason
+---
 ## 1. Drawing the background
 To draw the background the drawBackground method should be used, and the loadImage method should be used. The background image should be added to the assets folder first. Then using a loadImage method, it should be added to the game.js file in the preload function. 
 ```javascript
@@ -37,6 +41,3 @@ create(){
 }});
 }
 ```
-
-
-

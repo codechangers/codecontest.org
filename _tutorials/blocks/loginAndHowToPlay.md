@@ -1,5 +1,9 @@
-﻿# Login & How to play screen
-
+---
+title: Login & How To Play
+subtitle: Learn how to add a Login and How To Play screen.
+tags: [customize]
+author: jason
+---
 ## 1. Adding a login screen
 To add a login screen the useLoginScreen method should be used in the game.js file in the create function.  To make sure that their game to start until they login the connect function will be moved into the useLoginScreen method. To be able to use the name that the user inputs it should be passed in as a variable. 
 ```javascript
