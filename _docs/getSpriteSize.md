@@ -12,5 +12,14 @@ This method can be used to get the size of an image at a certain scale.
 **{width, height}** - an object with the width and height of the sprite/image. 
 ## Usage
 You can use this method to get the size of an image at a certain scale.
+## Examples
+### 1.
+```
+//Link code/client/src/game.js
+create() {
+	let size = g.getSpriteSize('players', 0.5);
+	g.createSquare(size.width, size.height, 50, 150 '999999');
+}
+```
 
 

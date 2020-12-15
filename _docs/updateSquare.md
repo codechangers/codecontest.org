@@ -19,3 +19,13 @@ This method will allow you to update a previously drawn square.
 **Nothing**
 ## Usage
 This method can be used after you have created at least one square in your game already. It should be used if you want to update the size, color or location of a square you have already drawn.
+
+## Examples
+### 1.
+```
+//Link code/client/src/game.js
+create() {
+	let square = g.createSquare(500, 500, 50, 150, '111111');
+	g.updateSquare(500, 500, 50, 150, '999999', square);
+}
+```

@@ -39,7 +39,7 @@ Make sure that you write it after your `setup` function or else it will mess wit
 ## 4.  Add the zombies
 Now let’s add the Zombies! First, we need to upload a new image to use for the zombies, so we go back into our `preload` function in the `game.js`  file and add a new image called zombies:
 ```javascript
-g.loadImage('zombie'', 'zombie.png');
+g.loadImage('zombie', 'zombie.png');
 ```
 Then we need to add our zombie character to our `game.js` and `room.js` files, to do this we need to go into our `onInit` function in `room.js` and add a `setupCharacters` function to it:
 ```javascript
