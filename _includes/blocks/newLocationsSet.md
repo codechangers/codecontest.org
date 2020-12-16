@@ -35,3 +35,4 @@ onUpdate() {
 	g.handleLocations('safeZone', 'players');  
 }
 ```
+
