@@ -72,7 +72,7 @@
 
 - title: User Interface
   docs:
-  - storeItem
+  - StoreItem
   - useLoginScreen
   - useHowToScreen
   - usePlayerSelectScreen

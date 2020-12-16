@@ -1,5 +1,5 @@
 ## 1. Show the store
-In order to create a store for your game you will have to put all of the items in the store with the [useStore](/docs/useStore/) _function_ in the **game.js** file in the `create` _method_. In here you will make a list of items that you want in your store that the players can buy.
+In order to create a store for your game you will have to put all of the _items_ in the store with the [useStore](/docs/useStore/) _function_ in the **game.js** file in the `create` _method_. In here you will make a list of items that you want in your store that the players can buy.
 ```javascript
 // Click on: code > client > src > game.js
 
@@ -46,7 +46,7 @@ update() {
 This will make the store open and close when the tab key is pressed as long as you add the tab key into your keys.
 
 ## 3. Adding the item when bought
-At this point we can use the action you sent in the `StoreItem` to add the item that you bought to your item bar.
+At this point we can use the action you added in the [StoreItem](/docs/StoreItem/) _object_ to add the item that you bought to your item bar.
 > **Note:** if you haven't made an item bar yet checkout the [setup items tutorial](/tutorials/blocks/setupItems/).
 
 We will do this in the `onMessage` _method_ in the **room.js** file with the [purchase](/docs/purchase/) _function_.
@@ -54,9 +54,11 @@ We will do this in the `onMessage` _method_ in the **room.js** file with the [pu
 // Click on: code > server > rooms > room.js
 
 onMessage(client, data) {
+	// There is probably some code up here.
 	const actions = {
-		// You might have some other code here.
-		// Add this new code below your other code:
+		// There might be a little bit more code here.
+		// Don't forget to add a comma at the end.
+		// Add this new code here:
 		littleAnt: () => {
 			let prevItems = player['ants'];	
 			g.purchase(player, 'score', 5, 'ants');
@@ -66,7 +68,7 @@ onMessage(client, data) {
 			} else  if (prevItems < player['ants']) {
 				player.items.ants.uses += 1;
 			} else {
-				//Not enough money;
+				// Not enough money.
 			}
 		},
 		star: () => g.purchase(player, 'score', 15, 'stars'),
@@ -74,4 +76,4 @@ onMessage(client, data) {
 	};
 }
 ```
-The `littleAnt` action will now add the ant to their hot bar and give them one more use each time they buy it. As long as you have already created the item with `createNewItem` action.
+The `littleAnt` action will now add the ant to their hot bar and give them one more use each time they buy it. As long as you have already created the _item_ with [createNewItem](/docs/createNewItem/) _function_.
