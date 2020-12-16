@@ -184,7 +184,7 @@ Now, we need to give our character the ability to fight back against the zombies
 init() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.addCharacter('bullets', 0.5);
+	g.addCharacters('bullets', 0.5);
 	// End of the new code.
 }
 ```
