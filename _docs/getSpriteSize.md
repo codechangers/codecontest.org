@@ -1,4 +1,4 @@
-﻿---
+---
 title: getSpriteSize()
 tags: [customize]
 ---

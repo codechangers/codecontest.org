@@ -1,4 +1,4 @@
-﻿---
+---
 title: getSize()
 tags: [customize]
 ---

@@ -1,5 +1,5 @@
-﻿---
-title: StoreItem
+---
+title: StoreItem()
 tags: [customize]
 ---
 This is a data type for items that are for sale in the in game store. You would only use this inside of the useStore function to create the store items. 
@@ -25,5 +25,3 @@ new g.StoreItem(
 	'createPickaxe'
 )
 ```
-
-

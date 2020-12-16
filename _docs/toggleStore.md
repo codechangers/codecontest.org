@@ -1,4 +1,4 @@
-﻿---
+---
 title: toggleStore()
 tags: [customize]
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: unlockStore()
 tags: [customize]
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: getAllCharacters()
 tags: [customize]
 ---

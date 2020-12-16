@@ -1,4 +1,4 @@
-﻿---
+---
 title: getRotationTowards()
 tags: [customize]
 ---

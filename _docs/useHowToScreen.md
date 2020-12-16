@@ -1,4 +1,4 @@
-﻿---
+---
 title: useHowToScreen()
 tags: [customize]
 ---

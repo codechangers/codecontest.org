@@ -1,4 +1,4 @@
-﻿---
+---
 title: getXTowards()
 tags: [customize]
 ---

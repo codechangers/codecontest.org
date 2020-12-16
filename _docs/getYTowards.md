@@ -1,4 +1,4 @@
-﻿---
+---
 title: getYTowards()
 tags: [customize]
 ---
