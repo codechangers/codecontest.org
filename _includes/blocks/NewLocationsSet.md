@@ -1,6 +1,3 @@
-
-# Create a new Locations set
-
 ## 1. Add locations in game.js
 To set up a location we will need to do almost the same thing as setting up characters but we’re going to use Location functions instead. So we first go into our **game.js** file and use an `addLocations` _function_ in the 
 ```javascript  
