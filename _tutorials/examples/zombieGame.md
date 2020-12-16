@@ -7,7 +7,6 @@ author: jason
 ## 1. Follow the build your game tutorial
 To start, follow the [game setup tutorial video](/tutorials/setup/) from the tutorials tab on the codecontest.org website. You should now have a movable character, and be able to have multiple players join your server.
 
-**MOVE TO NewCharacterSets**If you want to change the size of your character you can do this in the `addCharacters` function by adding another parameter. ie. `addCharacters(players, 0.5)`, the lower the number the smaller your character will be: 0.5 would be half size, 2 would be twice as big.
 ## 2. Setup the camera follow function
 > **Hint:** Click on a _function_ name, to get more information on how to customize it!
 

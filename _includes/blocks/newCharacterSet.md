@@ -12,7 +12,7 @@ onInit() {
 	g.setupCharacters("zombies");
 }
 ```
-Then, in the **game.js** file we need to put the `addCharacters` _function_ in the `init` _method_.
+Then, in the **game.js** file we need to put the `addCharacters` _function_ in the `init` _method_. If you want to change the size of your _character_ you can do this in the `addCharacters` _function_ by adding another _parameter_. ie. `addCharacters('players', 0.5)`, the lower the number the smaller your _character_ will be: 0.5 would be half size, 2 would be twice as big.
 ```javascript
 init() {
 	g.addCharacters("zombies");
