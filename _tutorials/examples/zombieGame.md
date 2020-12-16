@@ -6,9 +6,11 @@ author: jason
 ---
 ## 1. Follow the build your game tutorial
 To start, follow the [game setup tutorial video](/tutorials/setup/) from the tutorials tab on the codecontest.org website. You should now have a movable character, and be able to have multiple players join your server.
-    
+
 **MOVE TO NewCharacterSets**If you want to change the size of your character you can do this in the `addCharacters` function by adding another parameter. ie. `addCharacters(players, 0.5)`, the lower the number the smaller your character will be: 0.5 would be half size, 2 would be twice as big.
 ## 2. Setup the camera follow function
+> **Hint:** Click on a _function_ name, to get more information on how to customize it!
+
 The next step is to get the camera to follow your _character_ so that it won't be able to leave the screen. To do this we need to use two new _methods_, the [myId](/docs/myId/) _function_ (to get which player we want the camera to follow) and the [cameraFollow](/docs/cameraFollow/) _function_ (to get the camera to start following our player).
 
 We add the new _function_ into our **game.js** file in the `create` _method_, then in our [getCharacters](/docs/getCharacters/) _function_ as the second _parameter_. To do this we put a comma after the `'players'` _string_ and then write our _function_ in. We need an _if statement_ to determine if we're getting the right player, then when we know we do, we assign the camera to follow that player. It should look like this when it's finished:
@@ -18,10 +20,10 @@ We add the new _function_ into our **game.js** file in the `create` _method_, th
 create() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.getCharacters('players', (player) => {  
-		if (player.id === g.myId()) {  
-			g.cameraFollow(player.sprite);  
-		}  
+	g.getCharacters('players', (player) => {
+		if (player.id === g.myId()) {
+			g.cameraFollow(player.sprite);
+		}
 	});
 	// End of the new code.
 }
@@ -30,6 +32,7 @@ Make sure that you **don't** write a new [getCharacters](/docs/getCharacters/) _
 ## 3. Add the background
 Next, we'll get the background and our game boundaries setup. First, make sure that you have the image that you want for your background added to your asset folder **(Click on: code > client > asset)**. Next, let's use the [drawBackground](/docs/drawBackground/) _function_ to create our game background. To do this we'll go into our **game.js** file and into our `preload` _method_ and add the background image that we want to use. We do this by writing a [loadImage](/docs/loadImage/) _function_ like this:
 > **Note:** Put your own image name here if it isn't called `grass.png`.
+
 ```javascript
 // Click on: code > client > src > game.js
 
@@ -73,7 +76,7 @@ Now let's add the Zombies! First, we need to upload a new image to use for the z
 preload() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.loadImage('zombie', 'zombie.png');
+	g.loadImage('zombies', 'zombie.png');
 	// End of the new code.
 }
 ```
@@ -84,7 +87,7 @@ Then we need to add our zombie _character_ to our **game.js** and **room.js** _f
 onInit() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.setupCharacters('zombie');
+	g.setupCharacters('zombies');
 	// End of the new code.
 }
 ```
@@ -95,7 +98,7 @@ Next we go to our `init` _method_ in **game.js** and add an [addCharacters](/doc
 init() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.addCharacters('zombie', 0.5);
+	g.addCharacters('zombies', 0.5);
 	// End of the new code.
 }
 ```
@@ -106,7 +109,7 @@ Next we go into our `create` _method_ in **game.js** and add a [getCharacters](/
 create() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.getCharacters('zombie');
+	g.getCharacters('zombies');
 	// End of the new code.
 }
 ```
@@ -117,8 +120,8 @@ Then, since we want the zombies to spawn randomly all over the map, and just kee
 onInit() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	setInterval(() => g.createACharacter('zombie',
-		g.nextCharacterId('zombie'), {
+	setInterval(() => g.createACharacter('zombies',
+		g.nextCharacterId('zombies'), {
 			x: Math.floor((Math.random() * 2000) + 1),
 			y: Math.floor((Math.random() * 2000) + 1)
 		}), 2500);
@@ -132,7 +135,7 @@ The number at the end will determine how long to wait until it spawns another zo
 onUpdate(dt) {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.follow('players', 'zombie', 1, 0.1);
+	g.follow('players', 'zombies', 1, 0.1);
 	// End of the new code.
 }
 ```
@@ -165,7 +168,7 @@ Now we have a health bar but we don't lose health when we are hit, to fix this w
 onUpdate(dt) {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.handleCollision('players', 'zombie', (player) => {
+	g.handleCollision('players', 'zombies', (player) => {
 		if (player.healthBar.filled > 0) {
 			player.healthBar.filled -= 0.1;
 		}
@@ -175,14 +178,14 @@ onUpdate(dt) {
 ```
 Once we do that, we will be able to be hit by the zombies and have our health go down.
 ## 6.  Setup bullets
-Now, we need to give our character the ability to fight back against the zombies by using bullets. To create bullets what we can do is actually create another _character_ set and call it `'bullet'` so we'll do the same thing that we did to create the first _character_ set. In our **game.js** file in the `init` _method_ we'll add an [addCharacter](/doc/addCharacter/) _function_ with the name of bullet.
+Now, we need to give our character the ability to fight back against the zombies by using bullets. To create bullets what we can do is actually create another _character_ set and call it `'bullets'` so we'll do the same thing that we did to create the first _character_ set. In our **game.js** file in the `init` _method_ we'll add an [addCharacter](/doc/addCharacter/) _function_ with the name of bullet.
 ```javascript
 // Click on: code > client > src > game.js
 
 init() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.addCharacter('bullet', 0.5);
+	g.addCharacter('bullets', 0.5);
 	// End of the new code.
 }
 ```
@@ -193,7 +196,7 @@ Then we'll want to add an image for the bullet in the `preload` _method_ in **ga
 preload() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.loadImage('bullet', 'bullet.png');
+	g.loadImage('bullets', 'bullet.png');
 	// End of the new code.
 }
 ```
@@ -204,7 +207,7 @@ We then add a [getCharacters](/docs/getCharacters/) _function_ for our bullet in
 create() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.getCharacters('bullet');
+	g.getCharacters('bullets');
 	// End of the new code.
 }
 ```
@@ -215,7 +218,7 @@ Now we go into our **room.js** to set up our bullet in the server, to do this we
 onInit() {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.setupCharacters('bullet')
+	g.setupCharacters('bullets');
 	// End of the new code.
 }
 ```
@@ -240,17 +243,17 @@ onMessage() {
 Inside our `click` action the first thing we want to do is define a _variable_ to keep track of the Id of each bullet for when we tell them to move. The way we'll keep track of this is setting our _variable_ equal to the id that the [nextCharacterId](/docs/nextCharacterId/) _function_ gives us for the bullets.
 ```javascript
 			// Add this below the **Empty Space**
-			const index = g.nextCharacterId('bullet');	
+			const index = g.nextCharacterId('bullets');
 ```
 After that, we need to tell the game to create a bullet when we click, so we add a [createACharacter](/docs/createACharacter/) _function_ for creating our bullets, when we do this we can use the player's x and y values to tell the game to create the bullet in the same place that the player is.
 ```javascript
 			// Add this next.
-			g.createACharacter('bullet', index, { x: player.x, y: player.y, playerId: player.id });
+			g.createACharacter('bullets', index, { x: player.x, y: player.y, playerId: player.id });
 ```
-Now we'll use our _variable_ that keeps track of the bullet Id to define a new _variable_ that actually keeps track of each bullet
+Now we'll use our _variable_ that keeps track of the bullet Id to define a new _variable_ that actually keeps track of each bullet.
 ```javascript
 			// Then add this.
-			let newCharacter = g.getACharacter('bullet', index);
+			let newCharacter = g.getACharacter('bullets', index);
 ```
 Then we need to animate them so they don't stay in the same spot the whole time. So we'll use the [playAnimation](/docs/playAnimation/) _function_ to get them to move, and inside of those we will use the [getXTowards](/docs/getXTowards/) and the [getYTowards](/docs/getYTowards/) _functions_ to tell the bullets to move towards where a player clicked.
 ```javascript
@@ -263,9 +266,9 @@ Then we need to animate them so they don't stay in the same spot the whole time.
 You can change the first number to change the distance that the bullet will shoot, and the second number to change the speed of the bullet. Now there is only one more line that we need in our `click` action, and it will make our bullets disappear once they reach the end of their range. It's a `setTimeout` _function_ that will use the [deleteACharacter](/docs/deleteACharacter/) _function_ to delete a bullet.
 ```javascript
 			// This is the last step!
-			setTimeout(() => g.deleteACharacter('bullet', newCharacter.id), 2000);
+			setTimeout(() => g.deleteACharacter('bullets', newCharacter.id), 2000);
 ```
-When you write this function you want to make sure that the number at the end matches the number at the end of your [playAnimation](/docs/playAnimation/) _functions_, in this example they are both 2000. Now your `click` action should look similar to this
+When you write this function you want to make sure that the number at the end matches the number at the end of your [playAnimation](/docs/playAnimation/) _functions_, in this example they are both 2000. Now your `click` action should look similar to this.
 ```javascript
 // Click on: code > server > rooms > room.js
 
@@ -275,14 +278,14 @@ onMessage() {
 		// There is a little bit more code here.
 		click: () => {
 			// This is what we added: 
-			const index = g.nextCharacterId('bullet');	
-			g.createACharacter('bullet', index, { x: player.x, y: player.y });
-			let newCharacter = g.getACharacter('bullet', index);
+			const index = g.nextCharacterId('bullets');
+			g.createACharacter('bullets', index, { x: player.x, y: player.y });
+			let newCharacter = g.getACharacter('bullets', index);
 			g.playAnimation(newCharacter, 'x',
 				g.getXTowards(newCharacter, data.x, data.y) * 500, 2000);  
 			g.playAnimation(newCharacter, 'y',
 				g.getYTowards(newCharacter, data.x, data.y) * 500, 2000);
-			setTimeout(() => g.deleteACharacter('bullet', newCharacter.id), 2000);
+			setTimeout(() => g.deleteACharacter('bullets', newCharacter.id), 2000);
 			// End of what we added.
 		},
 	};
@@ -299,14 +302,14 @@ click(x, y) {
 	// End of the new code.
 }
 ```
-And finally, we just need to add a [handleAnimations](/docs/handleAnimations/) _function_ into our `onUpdate` _method_ in the **room.js** file _function_ for our bullets
+And finally, we just need to add a [handleAnimations](/docs/handleAnimations/) _function_ into our `onUpdate` _method_ in the **room.js** file _function_ for our bullets.
 ```javascript
 // Click on: code > server > rooms > room.js
 
 onUpdate(dt) {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.handleAnimations('bullet');
+	g.handleAnimations('bullets');
 	// End of the new code.
 }
 ```
@@ -317,9 +320,9 @@ Now our bullets should be shooting when we click, but they aren't killing the zo
 onUpdate(dt) {
 	// You might have some other code here.
 	// Add this new code below your other code:
-	g.handleCollision('bullet', 'zombie', (bullet, zombie) => {  
-		g.deleteACharacter('zombie', zombie.id);
-		g.deleteACharacter('bullet', bullet.id);
+	g.handleCollision('bullets', 'zombies', (bullet, zombie) => {
+		g.deleteACharacter('zombies', zombie.id);
+		g.deleteACharacter('bullets', bullet.id);
 	});
 	// End of the new code.
 }
@@ -348,11 +351,11 @@ onJoin(client, data) {
 	// You might have some other code here.
 	// Add this new code below your other code:
 	g.attachTo('players', client.sessionId, {  
-		name: 'nameTag',  
-		x: -50,  
-		y: -60,  
-		type: 'text',  
-		text: data.name  
+		name: 'nameTag',
+		x: -50,
+		y: -60,
+		type: 'text',
+		text: data.name
 	});
 	// End of the new code.
 }
@@ -376,7 +379,7 @@ onJoin(client, data) {
 ```javascript
 // Click on: code > client > src > game.js
 
-mousemove(x, y) {  
+mousemove(x, y) {
 	// You might have some other code here.
 	// Add this new code below your other code:
 	g.sendAction('mousemove', {x, y}); 
@@ -474,20 +477,21 @@ create() {
 	// You might have some other code here.
 }
 ```
-Now, to get the scoreboard to work we also need to add a couple things in our **room.js** file. First, in our `onUpdate` _method_ in the [handleCollision](/docs/handleCollision/) _method_ for our bullet, and zombie, we need to add a [getACharacter](/docs/getACharacter/) _method_. So we need to go after the [deleteACharacter](/docs/deleteACharacter/) _function_ for the `'bullet'` and hit the return key to create a new line. Then add a [getACharacter](/docs/getACharacter/) _function_ and add one hundred to that _character's_ score on the new line.
+Now, to get the scoreboard to work we also need to add a couple things in our **room.js** file. First, in our `onUpdate` _method_ in the [handleCollision](/docs/handleCollision/) _method_ for our bullet, and zombie, we need to add a [getACharacter](/docs/getACharacter/) _method_. So we need to go after the [deleteACharacter](/docs/deleteACharacter/) _function_ for the `'bullets'` and hit the return key to create a new line. Then add a [getACharacter](/docs/getACharacter/) _function_ and add one hundred to that _character's_ score on the new line.
 ```javascript
 // Click on: code > server > rooms > room.js
 
 onUpdate(dt) {
 	// You might have some other code here.
-	g.handleCollision('bullet', 'zombie', (bullet, zombie) => {  
-		g.deleteACharacter('zombie', zombie.id);
-		g.deleteACharacter('bullet', bullet.id);
+	g.handleCollision('bullets', 'zombies', (bullet, zombie) => {
+		g.deleteACharacter('zombies', zombie.id);
+		g.deleteACharacter('bullets', bullet.id);
 		// Add this new code below your other code:
 		g.getACharacter('players', bullet.playerId).score += 100;
 		// End of the new code.
 	});
 	// You might have some other code here.
+}
 ```
 Now the scoreboard should be set up and our game is almost finished!
 
@@ -499,9 +503,9 @@ The last thing that we are going to do in this tutorial is get the zombies to fa
 onUpdate(dt) {
 	// You might have some other code here.
 	// Delete this old code:
-	g.follow('players', 'zombie', 1, 0.1);
+	g.follow('players', 'zombies', 1, 0.1);
 	// Then add this new code where we deleted the old code:
-	g.follow('players', 'zombie', 1, 0.1,
+	g.follow('players', 'zombies', 1, 0.1,
 		(player, zombie) => {
 			zombie.rotation = g.getRotationTowards(zombie, player.x, player.y);
 		});

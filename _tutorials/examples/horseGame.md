@@ -28,7 +28,7 @@ After you find an image that you like complete the following steps:
 
 
 Once your image is in your **code/client/asset/** folder, all we need to do is change a few lines of code.
-> **Hint:** Click on a function name, to get more information on how to customize it!
+> **Hint:** Click on a _function_ name, to get more information on how to customize it!
 
 1. Add the [setSize](/docs/setSize/) and [cameraBounds](/docs/cameraBounds/) _functions_:
 ```javascript
