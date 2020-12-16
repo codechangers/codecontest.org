@@ -5,7 +5,7 @@ tags: [customize]
 author: jason
 ---
 ## 1. Follow the build your game tutorial
-To start, follow the [game setup tutorial video](/tutorials/setup/) from the tutorials tab on the codecontest.org website. You should now have a movable character, and be able to have multiple players join your server.
+{% include blocks/gettingStarted.md %}
 
 ## 2. Setup the camera follow function
 > **Hint:** Click on a _function_ name, to get more information on how to customize it!
@@ -515,9 +515,5 @@ onUpdate(dt) {
 And we should now have a fully functioning game! Feel free to customize it and change or add whatever you like!
 
 ## 12. Moving forward
-That's all that this tutorial has to offer, but that doesn't mean your game is done! You can still customize, add new features and improve it as much as you like. Be sure to checkout the following resources for additional tutorials, and information on how you can continue to make your game more and more amazing!
- - [Finished Code](https://repl.it/@macuyler/HorseGame)
- - [Code Contest Documentation](/docs/welcome/)
- - [List of tutorials](#)
- - etc...
+{% include blocks/movingForward.md %}
 

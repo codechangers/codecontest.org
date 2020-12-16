@@ -5,7 +5,7 @@ tags: [customize]
 author: jason
 ---
 ## 1. Follow the build your game tutorial
-To start, follow the [game setup tutorial video](/tutorials/setup/) from the tutorials tab on the codecontest.org website. You should now have a movable character, and be able to have multiple players join your server.
+{% include blocks/gettingStarted.md %}
 
 ## 2. Setting up the environment
 
@@ -434,9 +434,5 @@ onUpdate(dt) {
 After making these changes, if you download your code as a zip and upload it to blobbert.io, the apples should all re-spawn after all of them have been eaten!
 
 ## 10. Moving forward
-That's all that this tutorial has to offer, but that doesn't mean your game is done! You can still customize, add new features and improve it as much as you like. Be sure to checkout the following resources for additional tutorials, and information on how you can continue to make your game more and more amazing!
- - [Finished Code](https://repl.it/@macuyler/HorseGame)
- - [Code Contest Documentation](/docs/welcome/)
- - [List of tutorials](#)
- - etc...
+{% include blocks/movingForward.md %}
 
