@@ -6,29 +6,7 @@ author: jason
 ---
 ## 1. Follow the build your game tutorial
 {% include blocks/gettingStarted.md %}
-
-## 2. Setup the camera follow function
-> **Hint:** Click on a _function_ name, to get more information on how to customize it!
-
-The next step is to get the camera to follow your _character_ so that it won't be able to leave the screen. To do this we need to use two new _methods_, the [myId](/docs/myId/) _function_ (to get which player we want the camera to follow) and the [cameraFollow](/docs/cameraFollow/) _function_ (to get the camera to start following our player).
-
-We add the new _function_ into our **game.js** file in the `create` _method_, then in our [getCharacters](/docs/getCharacters/) _function_ as the second _parameter_. To do this we put a comma after the `'players'` _string_ and then write our _function_ in. We need an _if statement_ to determine if we're getting the right player, then when we know we do, we assign the camera to follow that player. It should look like this when it's finished:
-```javascript
-// Click on: code > client > src > game.js
-
-create() {
-	// You might have some other code here.
-	// Add this new code below your other code:
-	g.getCharacters('players', (player) => {
-		if (player.id === g.myId()) {
-			g.cameraFollow(player.sprite);
-		}
-	});
-	// End of the new code.
-}
-```
-Make sure that you **don't** write a new [getCharacters](/docs/getCharacters/) _function_, just change the one you already had for `'players'`. Don't worry if it looks like your character isn't moving now, we'll fix that in the next step.
-## 3. Add the background
+## 2. Add the background
 Next, we'll get the background and our game boundaries setup. First, make sure that you have the image that you want for your background added to your asset folder **(Click on: code > client > asset)**. Next, let's use the [drawBackground](/docs/drawBackground/) _function_ to create our game background. To do this we'll go into our **game.js** file and into our `preload` _method_ and add the background image that we want to use. We do this by writing a [loadImage](/docs/loadImage/) _function_ like this:
 > **Note:** Put your own image name here if it isn't called `grass.png`.
 
@@ -67,6 +45,28 @@ onInit() {
 }
 ```
 Make sure that you write it after your `setup` _function_ or else it will break your game. You can change the numbers to make the bounds whatever size you want.
+## 3. Setup the camera follow function
+> **Hint:** Click on a _function_ name, to get more information on how to customize it!
+
+The next step is to get the camera to follow your _character_ so that it won't be able to leave the screen. To do this we need to use two new _methods_, the [myId](/docs/myId/) _function_ (to get which player we want the camera to follow) and the [cameraFollow](/docs/cameraFollow/) _function_ (to get the camera to start following our player).
+
+We add the new _function_ into our **game.js** file in the `create` _method_, then in our [getCharacters](/docs/getCharacters/) _function_ as the second _parameter_. To do this we put a comma after the `'players'` _string_ and then write our _function_ in. We need an _if statement_ to determine if we're getting the right player, then when we know we do, we assign the camera to follow that player. It should look like this when it's finished:
+```javascript
+// Click on: code > client > src > game.js
+
+create() {
+	// You might have some other code here.
+	// Add this new code below your other code:
+	g.getCharacters('players', (player) => {
+		if (player.id === g.myId()) {
+			g.cameraFollow(player.sprite);
+		}
+	});
+	// End of the new code.
+}
+```
+Make sure that you **don't** write a new [getCharacters](/docs/getCharacters/) _function_, just change the one you already had for `'players'`.
+
 ## 4.  Add the zombies
 Now let's add the Zombies! First, we need to upload a new image to use for the zombies, so we go back into our `preload` _function_ in the **game.js** file and add a new image called zombies:
 ```javascript
