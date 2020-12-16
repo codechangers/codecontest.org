@@ -1,6 +1,3 @@
-  
-# Add Resources
-
 ## 1. Uploading an image
 
 Resources are for the players to be able to collect different resources in order to use or unlock certain items in the game. In order to create a resource we will start in the **game.js** file by uploading the image for our resource with the `loadImage` _function_. This will be done in the `preload` _method_.

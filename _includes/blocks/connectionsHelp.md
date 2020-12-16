@@ -1,6 +1,3 @@
-
-# Connections Help
-
 ## 1. Sending actions to server
 
 First, we are setting this up so that when someone uses the _keyboard_ or _mouse_ everyone else playing your game will know as well. To do this we will  need to send the ```action``` to a server that is running everyones game. This is done with the `sendAction` _function_ on the ```click``` _method_ in the **game.js** file.

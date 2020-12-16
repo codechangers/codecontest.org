@@ -1,6 +1,3 @@
-  
-# Setup Items
-
 ## 1. Creating item hotbar
 
 This will help create a hotbar for your game like minecraft that lets you see and use different items in your game. To create the hotbar you will start in the **game.js** file. Using the `useItemBar` _function_ in the `init` _method_ we can create this hotbar with the number being the amount of spaces that you want to put items in.

@@ -1,6 +1,3 @@
-  
-# Use Items
-
 ## 1. Using the item
 
 After creating your item and attaching it to the player we can now use the item by using the `useItem` _function_ in the **room.js** file. For this example we will use their item when they click which you can review in the events tutorial.
