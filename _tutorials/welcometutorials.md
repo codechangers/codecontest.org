@@ -18,20 +18,20 @@ Pick an example game:
 
 ## Checkpoint 3
 Customize your game with more tutorials:
- - [Add a Store](/blocks/addAStore/)
- - [Additional Inputs](/blocks/additionalInputs/)
- - [Add Resources](/blocks/addResources/)
- - [All About Animations](/blocks/allAboutAnimations/)
- - [Connections Help](/blocks/connectionsHelp/)
- - [Game Bounds & Background](/blocks/gameBoundsAndBackground/)
- - [How to Collide](/blocks/howToCollide/)
- - [Login & How to Play](/blocks/loginAndHowToPlay/)
- - [New Character Set](/blocks/newCharacterSet/)
- - [New Locations Set](/blocks/newLocationsSet/)
- - [Setup Items](/blocks/setupItems/)
- - [Setup Leaderboard](/blocks/setupLeaderboard/)
- - [Use Barriers](/blocks/useBarrier/)
- - [useItems](/blocks/useItems/)
+ - [Add a Store](/tutorials/blocks/addAStore/)
+ - [Additional Inputs](/tutorials/blocks/additionalInputs/)
+ - [Add Resources](/tutorials/blocks/addResources/)
+ - [All About Animations](/tutorials/blocks/allAboutAnimations/)
+ - [Connections Help](/tutorials/blocks/connectionsHelp/)
+ - [Game Bounds & Background](/tutorials/blocks/gameBoundsAndBackground/)
+ - [How to Collide](/tutorials/blocks/howToCollide/)
+ - [Login & How to Play](/tutorials/blocks/loginAndHowToPlay/)
+ - [New Character Set](/tutorials/blocks/newCharacterSet/)
+ - [New Locations Set](/tutorials/blocks/newLocationsSet/)
+ - [Setup Items](/tutorials/blocks/setupItems/)
+ - [Setup Leaderboard](/tutorials/blocks/setupLeaderboard/)
+ - [Use Barriers](/tutorials/blocks/useBarrier/)
+ - [useItems](/tutorials/blocks/useItems/)
 
 ## Checkpoint 4
 Use the Documentation to make fine tuned adjustments:
