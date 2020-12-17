@@ -11,9 +11,9 @@ $global-primary-background-three:             #bfebff;
 $global-warning-background:                   #fbc418;
 $global-success-background:                   #403e56;
 $global-danger-background:                    #ff62a5;
-$base-link-color:                               $global-color;
-$base-link-hover-color:                         $global-color;
-$link-muted-hover-color:                        $global-color;
+$base-link-color:                             #fff;
+$base-link-hover-color:                       #8f919e;
+$link-muted-hover-color:                      #fff;
 
 // Font
 $global-font-family:                            system-ui;
@@ -61,7 +61,7 @@ $global-xlarge-box-shadow:                      0 28px 50px rgba(0,0,0,0.16);
 // Logo
 $logo-font-size:                                1.5rem;
 $logo-color:                                    $global-color;
-$logo-hover-color:                              $global-color;
+$logo-hover-color:                              $global-secondary-background;
 
 // Table
 $table-divider-border:                          $border-light;
@@ -87,30 +87,30 @@ $label-text-transform:                          unset;
 $label-padding-vertical:                        2px;
 
 // Navbar
-$navbar-background:                           #fff;
+$navbar-background:                           #000;
 $navbar-nav-item-color:                         $global-secondary-background;
-$navbar-nav-item-hover-color:                   $global-primary-background;
+$navbar-nav-item-hover-color:                   $global-muted-color;
 $navbar-nav-item-active-color:                  $global-primary-background;
 $navbar-nav-item-font-size:                     0.9375rem;
 $navbar-nav-item-text-transform:                none;
-$navbar-toggle-color:                           $global-color;
-$navbar-toggle-hover-color:                     $global-primary-background;
+$navbar-toggle-color:                           $global-secondary-background;
+$navbar-toggle-hover-color:                     $global-muted-color;
 
 // Navbar dropdown
 $navbar-dropdown-margin:                        1px;
 $navbar-dropdown-nav-item-color:                $global-color;
-$navbar-dropdown-nav-item-hover-color:          $global-primary-background;
+$navbar-dropdown-nav-item-hover-color:          $global-muted-color;
 $navbar-dropdown-nav-item-active-color:         $global-primary-background;
 
 // Subnav
 $subnav-item-color:                             $global-muted-color;
-$subnav-item-hover-color:                       $global-color;
+$subnav-item-hover-color:                       $global-muted-color;
 $subnav-item-active-color:                      $global-color;
 $subnav-item-text-transform:                    none;
 
 // Pagination links
-$pagination-item-color:                         $global-color;
-$pagination-item-hover-color:                   $global-color;
+$pagination-item-color:                         $global-secondary-background;
+$pagination-item-hover-color:                   $global-muted-color;
 
 // Article
 $article-meta-font-size: 	                    $xsmall-font-size;
@@ -130,7 +130,7 @@ $card-default-title-color:                      $global-color;
 
 // Offcanvas
 $offcanvas-bar-color-mode:                      dark;
-$offcanvas-bar-background:                    #fff;
+$offcanvas-bar-background:                    #121212;
 $offcanvas-bar-width:                           320px;
 
 // Search
@@ -144,7 +144,7 @@ $search-default-background:                   #fff;
 $accordion-item-margin-top:                     16px;
 $accordion-title-font-size:                     $global-medium-font-size;
 $accordion-title-color:                         $global-primary-background;
-$accordion-title-hover-color:                   $global-primary-background;
+$accordion-title-hover-color:                   $global-muted-color;
 $accordion-content-margin-top:                  16px;
 $accordion-icon-color:                          $global-primary-background;
 $accordion-icon-background-color:               lighten( $global-primary-background, 57% );

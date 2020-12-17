@@ -587,7 +587,7 @@ textarea { touch-action: manipulation; }
 // Inverse
 // ========================================================================
 
-$inverse-base-color:                            $inverse-global-color !default;
+$inverse-base-color:                            $global-secondary-background !default;
 $inverse-base-link-color:                       $inverse-global-emphasis-color !default;
 $inverse-base-link-hover-color:                 $inverse-global-emphasis-color !default;
 $inverse-base-code-color:                       $inverse-global-color !default;

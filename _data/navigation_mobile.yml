@@ -1,17 +1,31 @@
 # Mobile menu navigation links
 
-- title: Home
-  url: /
+- title: Tutorials
+  docs:
+  - welcometutorials
+  - setup
+  - uploadtoserver
 
-- title: Docs
-  url: /docs/installation/
+- title: Example Games
+  docs:
+  - examples/horseGame
+  - examples/runGame
+  - examples/soccerGame
+  - examples/zombieGame
 
-- title: Blog
-  url: /blog/
-
-- title: Changelog
-  url: /changelog-timeline/
-
-- title: Contact
-  url: /contact/
-  button: success
+- title: Building Blocks
+  docs:
+  - blocks/addAStore
+  - blocks/additionalInputs
+  - blocks/addResources
+  - blocks/allAboutAnimations
+  - blocks/connectionsHelp
+  - blocks/gameBoundsAndBackground
+  - blocks/howToCollide
+  - blocks/loginAndHowToPlay
+  - blocks/newCharacterSet
+  - blocks/newLocationsSet
+  - blocks/setupItems
+  - blocks/setupLeaderboard
+  - blocks/useBarrier
+  - blocks/useItems
