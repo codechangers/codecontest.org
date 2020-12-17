@@ -8,4 +8,4 @@ hero:
     search: false
 ---
 
-{% include cta.html title="Didn't find an answer?" button_text="Join us on Google Meet" button_url="https://meet.google.com/gmp-cgky-udm" subtitle="Contact us with help on your game!" %}
+{% include cta.html title="Need Help?" button_text="Meet with a mentor!" button_url="https://meet.google.com/gmp-cgky-udm" subtitle="Proofread your code, check with your team and classmates, and if you’re still stuck" %}
