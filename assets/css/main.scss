@@ -21,3 +21,15 @@
 // Other vendor styles
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
+
+.uk-sticky {
+  background: black;
+}
+
+.uk-logo {
+  max-width: 400px;
+}
+
+p {
+  color: $global-muted-color;
+}

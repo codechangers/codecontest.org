@@ -2,13 +2,15 @@
 // ========================================================================
 
 // Color
-$global-color:                                #170f28;
+$global-color:                                #121212;
+$global-color-two:                            #944894;
 $global-muted-color:                          #8f919e;
-$global-primary-background:                   #51307e;
-$global-secondary-background:                 #222;
+$global-primary-background:                   #944894;
+$global-secondary-background:                 #fff;
+$global-primary-background-three:             #bfebff;
 $global-warning-background:                   #fbc418;
 $global-success-background:                   #403e56;
-$global-danger-background:                    #f0506e;
+$global-danger-background:                    #ff62a5;
 $base-link-color:                               $global-color;
 $base-link-hover-color:                         $global-color;
 $link-muted-hover-color:                        $global-color;
@@ -42,7 +44,7 @@ $border-radius-large:                           16px;
 
 // Pre & Code
 $base-code-font-family:                         Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
-$base-code-color:                               darken($global-primary-background, 3%);
+$base-code-color:                               $global-secondary-background;
 $base-pre-font-size:                            $global-small-font-size;
 $base-pre-line-height:                          1.65;
 $base-pre-font-family:                          $base-code-font-family;
@@ -86,7 +88,7 @@ $label-padding-vertical:                        2px;
 
 // Navbar
 $navbar-background:                           #fff;
-$navbar-nav-item-color:                         $global-color;
+$navbar-nav-item-color:                         $global-secondary-background;
 $navbar-nav-item-hover-color:                   $global-primary-background;
 $navbar-nav-item-active-color:                  $global-primary-background;
 $navbar-nav-item-font-size:                     0.9375rem;
