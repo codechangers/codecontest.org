@@ -8,7 +8,7 @@ author: jason
 {% include blocks/gettingStarted.md %}
 
 ## 2. Background
-_2.1_ The first thing we are going to do is upload a background image for our game. **Include Upload Tutorial**
+_2.1_ The first thing we are going to do is upload a background image for our game ([Need Help?](/tutorials/images/)).
 
 _2.2_ Then we will load the image into the game.
 ```javascript
@@ -39,7 +39,7 @@ _2.3_ After that we will draw the background.
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**
 
 ## 3. Players
-_3.1_ We are going to add some character options. The first thing we need to do is upload all of our character images. **Include Upload Tutorial**
+_3.1_ We are going to add some character options. The first thing we need to do is upload all of our character images ([Need Help?](/tutorials/images/)).
 
 _3.2_ We need to set the players default image.
 ```javascript
@@ -110,7 +110,7 @@ _4.1_ We need to add the goals characters.
 }
 ```
 
-_4.2_ Then we need to upload a goal image. **Include Upload Tutorial**
+_4.2_ Then we need to upload a goal image ([Need Help?](/tutorials/images/)).
 
 _4.3_ Next we need to load the goal image.
 ```javascript
@@ -182,7 +182,7 @@ onLeave(client) {
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and each player should now have a goal!**
 
 ## 5. Soccer Balls
-_5.1_ First we need to upload the picture of our soccer ball. **Include Upload Tutorial**
+_5.1_ First we need to upload the picture of our soccer ball ([Need Help?](/tutorials/images/)).
 
 _5.2_ Then we need to setup the soccer ball characters.
 ```javascript
@@ -420,7 +420,7 @@ _7.5_ Finally we need to add a game over check.
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to score goals!**
 
 ## 8. Block Shop
-_8.1_ First we need to upload pictures of our blocks. **Include Upload Tutorial**
+_8.1_ First we need to upload pictures of our blocks ([Need Help?](/tutorials/images/)).
 
 _8.2_ Then we need to create our store items.
 ```javascript

@@ -4,9 +4,10 @@ subtitle: Learn how to make a super cool Runner game
 tags: [customize]
 ---
 ## 1. Follow the build your game tutorial
-To start, follow the build your game tutorial video from the tutorials tab on the website. You should now have a movable character, and be able to have multiple players join your server.
+{% include blocks/gettingStarted.md %}
+
 ## 2. Add the background
- First, make sure that you have the image that you want for your background added to your assets folder. Then, in the `game.js ` file in our `preload` _function_  we'll write a `loadImage` _function_ like this:
+ First, make sure that you have the image that you want for your background added to your asset folder ([Need Help?](/tutorials/images/)). Then, in the `game.js` file in our `preload` _function_  we'll write a `loadImage` _function_ like this:
 ```javascript
 // In repl click on: code > client > src > game.js
 
@@ -285,7 +286,7 @@ const speed = 10;// Click here and hit enter
 // Then add this new line of code:
 const speed = player.speed;
 ```
-Now, in the `game.js` file in our `preload` _function_ we add a new image. First make sure you have the image in your assets folder.
+Now, in the `game.js` file in our `preload` _function_ we add a new image. First make sure you have the image in your asset folder ([Need Help?](/tutorials/images/)).
 ```javascript
 // In repl click on: code > client > src > game.js
 
@@ -406,4 +407,7 @@ g.getAllCharacters('players', player  => { player.x = 270; player.y = 1990; play
 g.getAllCharacters('players', player  => { player.x = 270; player.y = 1990; player.spriteName = `player${team.score}` });
 ```
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  change your character's image every level!**
+
+## 9. Moving forward
+{% include blocks/movingForward.md %}
 

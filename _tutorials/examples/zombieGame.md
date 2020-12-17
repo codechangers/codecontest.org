@@ -7,7 +7,7 @@ author: jason
 ## 1. Follow the build your game tutorial
 {% include blocks/gettingStarted.md %}
 ## 2. Add the background
-Next, we'll get the background and our game boundaries setup. First, make sure that you have the image that you want for your background added to your asset folder **(Click on: code > client > asset)**. Next, let's use the [drawBackground](/docs/drawBackground/) _function_ to create our game background. To do this we'll go into our **game.js** file and into our `preload` _method_ and add the background image that we want to use. We do this by writing a [loadImage](/docs/loadImage/) _function_ like this:
+Next, we'll get the background and our game boundaries setup. First, make sure that you have the image that you want for your background added to your asset folder **(Click on: code > client > asset)** ([Need Help?](/tutorials/images/)). Next, let's use the [drawBackground](/docs/drawBackground/) _function_ to create our game background. To do this we'll go into our **game.js** file and into our `preload` _method_ and add the background image that we want to use. We do this by writing a [loadImage](/docs/loadImage/) _function_ like this:
 > **Note:** Put your own image name here if it isn't called `grass.png`.
 
 ```javascript
@@ -68,7 +68,7 @@ create() {
 Make sure that you **don't** write a new [getCharacters](/docs/getCharacters/) _function_, just change the one you already had for `'players'`.
 
 ## 4.  Add the zombies
-Now let's add the Zombies! First, we need to upload a new image to use for the zombies, so we go back into our `preload` _function_ in the **game.js** file and add a new image called zombies:
+Now let's add the Zombies! First, we need to upload a new image to use for the zombies ([Need Help?](/tutorials/images/)), so we go back into our `preload` _function_ in the **game.js** file and add a new image called zombies:
 ```javascript
 // Click on: code > client > src > game.js
 
@@ -188,7 +188,7 @@ init() {
 	// End of the new code.
 }
 ```
-Then we'll want to add an image for the bullet in the `preload` _method_ in **game.js**:
+Then we'll want to add an image for the bullet in the `preload` _method_ in **game.js**: ([Need Help?](/tutorials/images/))
 ```javascript
 // Click on: code > client > src > game.js
 
