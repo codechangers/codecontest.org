@@ -8,4 +8,4 @@ hero:
     search: false
 ---
 
-{% include cta.html title="Need Help?" button_text="Meet with a mentor!" button_url="https://meet.google.com/gmp-cgky-udm" subtitle="Proofread your code, check with your team and classmates, and if you’re still stuck" %}
+{% include cta.html title="Need Help?" button_text="Meet with a mentor!" button_url="/help" subtitle="Proofread your code, check with your team and classmates, and if you’re still stuck" %}

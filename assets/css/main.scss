@@ -33,3 +33,11 @@
 p {
   color: $global-muted-color;
 }
+
+.uk-nav-default>li>a:hover, .uk-nav-default>li>a:focus {
+  color: $global-secondary-background;
+}
+
+.uk-nav-primary>li>a:hover, .uk-nav-primary>li>a:focus {
+  color: $global-secondary-background;
+}
