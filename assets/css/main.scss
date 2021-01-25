@@ -21,3 +21,23 @@
 // Other vendor styles
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
+
+.uk-sticky {
+  background: black;
+}
+
+.uk-logo {
+  max-width: 400px;
+}
+
+p {
+  color: $global-muted-color;
+}
+
+.uk-nav-default>li>a:hover, .uk-nav-default>li>a:focus {
+  color: $global-secondary-background;
+}
+
+.uk-nav-primary>li>a:hover, .uk-nav-primary>li>a:focus {
+  color: $global-secondary-background;
+}

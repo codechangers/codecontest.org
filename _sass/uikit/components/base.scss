@@ -74,7 +74,7 @@ $base-pre-line-height:                           1.5 !default;
 $base-pre-font-family:                           $base-code-font-family !default;
 $base-pre-color:                                 $global-color !default;
 
-$base-selection-background:                      #39f !default;
+$base-selection-background:                      #000000 !default;
 $base-selection-color:                           $global-inverse-color !default;
 
 
@@ -587,7 +587,7 @@ textarea { touch-action: manipulation; }
 // Inverse
 // ========================================================================
 
-$inverse-base-color:                            $inverse-global-color !default;
+$inverse-base-color:                            $global-secondary-background !default;
 $inverse-base-link-color:                       $inverse-global-emphasis-color !default;
 $inverse-base-link-hover-color:                 $inverse-global-emphasis-color !default;
 $inverse-base-code-color:                       $inverse-global-color !default;

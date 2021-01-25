@@ -23,7 +23,13 @@ We built a website to help you upload your code. You can access the website at [
 
 6. Here are the error codes that you will commonly find and here is how you should respond:
 
-#### Cannot GET/
+#### Game Not Found
+
+<img src="/uploads/resources/building.png" max-width="300">
+
+This will show up immediately after you create your game. It should take somewhere from 10 - 15 minutes for this to go away. After 15 minutes have passed, if this error is still present you should ask for help.
+
+#### Cannot GET /
 
 <img src="/uploads/resources/cannotGet.png" max-width="300">
 
@@ -33,7 +39,7 @@ This is the first error you will usually see, this just means your game is still
 
 <img src="/uploads/resources/502.png" max-width="300">
 
-You will usually see this after the game is being built, but before it's active on your url, you should only see this error for a couple of seconds. Refresh a couple times and it should be fixed. If you see this error for an extended period of time, it usually means there is an error in your code.
+You will usually see this after the game is being built, but before it's active on your url, you should only see this error for a couple of seconds. Refresh a couple times and it should be fixed. If you see this error for an extended period of time, it usually means there is an error in your code. You can restart your game on blobbert.io to double check if it is a code error. You will be able to tell, because if your game crashes again, then it is most likely a code error.
 
 #### 504
 

@@ -4,7 +4,7 @@ To draw the background the `drawBackground` _function_ should be used, and the `
 // File: code/client/src/game.js
 preload(){
 	...
-+	g.loadImage('grass', 'grass.png');
+	g.loadImage('grass', 'grass.png');
 }
 ```
 After that, still in the **game.js** file a `drawBackground` _function_ should be used in the `create` _method_, to set the size of the image, and the background for the game.
@@ -12,7 +12,7 @@ After that, still in the **game.js** file a `drawBackground` _function_ should b
 // File: code/client/src/game.js
 create(){
 	...
-+	g.drawBackground('grass', 1, 2000, 2000)
+	g.drawBackground('grass', 1, 2000, 2000)
 }
 ```
 The _string_, should be the name that you gave to your image. The first number can be changed to scale the size of your image, ie. 0.5 for half size. The last two numbers can be changed to customize the width and height of your background. 
@@ -24,7 +24,7 @@ The first step to setting up the boundaries for the game is to tell the server t
 // File: code/server/rooms/room.js
 onInit(){
 	...
-+	g.setBounds(2000, 2000);
+	g.setBounds(2000, 2000);
 }
 ```
 Make sure it is written after the `setup` _function_. The numbers can be changed to customize the width and height of the game bounds. 
@@ -37,12 +37,12 @@ To get the camera to follow a _character_ the `getCharacters` _function_ for tha
 // File: code/client/src/game.js
 create(){
 	...
-+	g.getCharacters('players',
-+		(player) => {
-+			if (player.id === g.myId()) {
-+				g.cameraFollow(player.sprite);
-+			}
-+		});
+	g.getCharacters('players',
+		(player) => {
+			if (player.id === g.myId()) {
+				g.cameraFollow(player.sprite);
+			}
+		});
 }
 ```
 
