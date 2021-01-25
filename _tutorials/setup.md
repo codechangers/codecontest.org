@@ -3,7 +3,7 @@ title: Build Your Game
 tags: [customize]
 author: jason
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AgLijCaT6eA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9TJwuiQym3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In order to code out a project you will need to create a folder that stores all of your code related files, your assets (images, sound). You will also need to be able to open these files in a text editor.
 

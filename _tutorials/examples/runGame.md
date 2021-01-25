@@ -7,13 +7,7 @@ tags: [customize]
 {% include blocks/gettingStarted.md %}
 
 ## 2. Add the background
-<<<<<<< HEAD:_tutorials/examples/RunGameTutorial.md
- First, make sure that you have the image that you want for your background added to your assets folder. Then, in the `game.js ` file in our `preload` _function_  we'll write a `loadImage` _function_ like this:<br>
- <img src="../assets/rungame/1.jpg" alt="Example Code">
- <br>Added Code:
-=======
  First, make sure that you have the image that you want for your background added to your asset folder ([Need Help?](/tutorials/images/)). Then, in the `game.js` file in our `preload` _function_  we'll write a `loadImage` _function_ like this:
->>>>>>> 3fbd76dcfb6cb6ef1da8aa431d3e7146d9468a2a:_tutorials/examples/runGame.md
 ```javascript
 g.loadImage('background',  'background.png');
 ```
