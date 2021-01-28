@@ -533,13 +533,128 @@
         }
     }
 
-    .hero-image {
-        margin-top: -28px;
-        margin-bottom: 30px;
-        img {
-            max-height: 220px;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #bgvid{
+        position: absolute;
+        max-width: 5000px;
+        width: 150vw;
+        overflow: hidden;
+        height: 100vh;
     }
+    .white-text{
+        color:white;
+    }
+    .bolded{
+        font-size:50px;
+    }
+    .big-text{
+        margin:0;
+        font-size:150px;
+    }
+    .home-section {
+        margin:0;
+        text-align:center;
+        z-index:10;
+    }
+    .dark-hero{
+        background-image: url("/uploads/darkHeroImage.png");
+        background-size:cover;
+    }
+    .hero-image {
+        background-image: url("/uploads/HeroImage.png");
+        position:relative;
+        background-attachment: fixed;
+        width:100vw;
+        top: 0px;
+        height: 50vh;
+        background-size: cover;
+    }
+    .home-section-large{
+        padding:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+    }
+    .home-section-medium{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width:80vw;
+        z-index: 10;
+        margin-bottom:100px;
+    }
+    .button{
+        background-image: url(/uploads/retroButtons.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 75px;
+        background-size: cover;
+        font-size:40px;
+        margin-top:20px;
+        margin-bottom:50px;
+    }
+    .sponsor{
+        background-image:url("/uploads/sparkfun-logo-white.png");
+        width: 215px;
+        height: 100px;
+        background-size: cover;
+    }
+    .sponsor1{
+        background-image:url("/uploads/ImagiLabs\ logo_white.png");
+        width:150px;
+        height:100px;
+        background-size:cover;
+    }
+    .img1{
+        background-image:url("/uploads/ages10-14.png");
+        width:15vw;
+        height:15vw;
+        background-size:cover;
+    }
+    .img2{
+        background-image:url("/uploads/threepeople.png");
+        width:15vw;
+        height:15vw;
+        background-size:cover;
+    }
+    video{
+        width:100vw;
+        height:auto;
+    }
+    .double-text-box1{
+        width:50vw;
+    }
+    .double-text-box2{
+        width:45vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .uk-section {
         .uk-h1 {

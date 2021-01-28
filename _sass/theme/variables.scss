@@ -161,3 +161,37 @@ $docs-sidebar-width-l:                          360px;
 // Changelog
 $timeline-border-width:                         4px;
 $timeline-dot-diameter:                         20px;
+.marquee {
+    width: 100vw;
+    background-color: $global-color-two;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .marquee span {
+    color:black;
+    display: inline-block;
+    will-change: transform;
+    /* show the marquee just outside the paragraph */
+    animation: marquee 90s linear infinite;
+  }
+  /* Make it move */
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-75%, 0);
+    }
+  }
+  /* Respect user preferences about animations */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee { 
+      white-space: normal 
+    }
+    .marquee span {
+      animation: none;
+      padding-left: 0;
+    }
+  }
