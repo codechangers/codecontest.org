@@ -75,11 +75,6 @@
 
     a { color: $article-meta-link-color; }
 
-    a:hover {
-        color: $article-meta-link-hover-color;
-        text-decoration: none;
-    }
-
 }
 @mixin hook-article-misc(){}
 @mixin hook-inverse-article-title(){}
@@ -180,12 +175,6 @@
     .uk-link  {
         color: $inverse-base-link-color;
         @if(mixin-exists(hook-inverse-base-link)) {@include hook-inverse-base-link();}
-    }
-
-    a:hover,
-    .uk-link:hover {
-        color: $inverse-base-link-hover-color;
-        @if(mixin-exists(hook-inverse-base-link-hover)) {@include hook-inverse-base-link-hover();}
     }
 
     //
@@ -1027,12 +1016,6 @@
     .uk-link-muted a {
         color: $inverse-link-muted-color;
         @if(mixin-exists(hook-inverse-link-muted)) {@include hook-inverse-link-muted();}
-    }
-
-    a.uk-link-muted:hover,
-    .uk-link-muted a:hover {
-        color: $inverse-link-muted-hover-color;
-        @if(mixin-exists(hook-inverse-link-muted-hover)) {@include hook-inverse-link-muted-hover();}
     }
 
     a.uk-link-text:hover,

@@ -532,6 +532,19 @@
             border-top: 1px solid $global-primary-background;
         }
     }
+    body{
+        font-family:"Pixelar Regular W01 Regular";
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -547,17 +560,17 @@
 
 
     #bgvid{
-        position: absolute;
-        max-width: 5000px;
-        width: 150vw;
-        overflow: hidden;
-        height: 100vh;
+        max-width: 178vh;
+        width: 178vh;
+        height: 100%;
     }
     .white-text{
         color:white;
+        font-family:"Pixelar Regular W01 Regular";
     }
     .bolded{
         font-size:50px;
+        font-family: "Pixelar Regular W01 Regular";
     }
     .big-text{
         margin:0;
@@ -581,6 +594,16 @@
         height: 50vh;
         background-size: cover;
     }
+    .videocont{
+        position:relative;
+        width:100vw;
+        height:100vh;
+        overflow:hidden;
+    }
+    .video-foreground{
+        position:absolute;
+        top:0;
+    }
     .home-section-large{
         padding:50px;
         display: flex;
@@ -588,13 +611,20 @@
         align-items: center;
         z-index: 10;
     }
-    .home-section-medium{
+    .sponsor-section{
         display: flex;
         align-items: center;
         justify-content:space-between;
         width:80vw;
         z-index: 10;
-        margin-bottom:100px;
+    }
+    .home-section-medium{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-between;
+        width:100vw;
+        z-index: 10;
     }
     .button{
         background-image: url(/uploads/retroButtons.png);
@@ -607,6 +637,11 @@
         font-size:40px;
         margin-top:20px;
         margin-bottom:50px;
+        color:#d9dde0;
+    }
+    .button:hover{
+        text-decoration:none;
+        color:white;
     }
     .sponsor{
         background-image:url("/uploads/sparkfun-logo-white.png");
@@ -620,27 +655,94 @@
         height:100px;
         background-size:cover;
     }
-    .img1{
+    .img2{
         background-image:url("/uploads/ages10-14.png");
-        width:15vw;
-        height:15vw;
+        margin:20px;
+        width:20vw;
+        height:20vw;
         background-size:cover;
     }
-    .img2{
-        background-image:url("/uploads/threepeople.png");
-        width:15vw;
-        height:15vw;
+    .img1{
+        background-image:url("/uploads/teamwork.png");
+        margin:20px;
+        width:20vw;
+        height:20vw;
         background-size:cover;
+    }
+    .img3{
+        background-image:url("/uploads/lightning.png");
+        margin:20px;
+        width:20vw;
+        height:20vw;
+        background-size:cover;
+    }
+    .photo1{
+        background-image:url("/uploads/students1.png");
+        width:100vw;
+        height:100%;
+        background-size:cover;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .photo2{
+        background-image:url("/uploads/students2.png");
+        width:100vw;
+        height:100%;
+        background-size:cover;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .photo3{
+        background-image:url("/uploads/students3.png");
+        width:100vw;
+        height:100%;
+        background-size:cover;
+        padding-top:50px;
+        padding-bottom:50px;
     }
     video{
         width:100vw;
         height:auto;
     }
     .double-text-box1{
-        width:50vw;
+        text-align:center;
     }
-    .double-text-box2{
-        width:45vw;
+    .uk-navbar-container{
+        position:fixed;
+        width:100%;
+        background-color:#272727;
+        height:80px;
+        z-index:980;
+        top:0;
+    }
+    .margin-top{
+        margin-top:80px;
+    }
+    .footer-link{
+        color:#d9dde0;
+    }
+    .footer-link:hover{
+        text-decoration:none;
+        color:white;
+    }
+    .footer-container{
+        height:60px;
+        padding:20px 50px 20px 50px;
+    }
+    .left{
+        width:30%;
+        display:flex;
+        justify-content:space-between;
+    }
+    .photo{
+        margin-bottom:30px;
+        width:22%;
+        height:0;
+        padding-bottom: 22%;
+        background-size:cover;
+    }
+    #gallery{
+        padding-bottom:20px;
     }
 
 
@@ -656,6 +758,41 @@
 
 
 
+
+
+
+
+
+    .gallery{
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+        justify-content:space-between;
+    }
+    .student1{
+        background-image:url("/uploads/students1.jpg");
+    }
+    .student2{
+        background-image:url("/uploads/students2.jpg");
+    }
+    .student3{
+        background-image:url("/uploads/students3.jpg");
+    }
+    .student4{
+        background-image:url("/uploads/students8.jpg");
+    }
+    .student5{
+        background-image:url("/uploads/students5.jpg");
+    }
+    .student6{
+        background-image:url("/uploads/students6.jpg");
+    }
+    .student7{
+        background-image:url("/uploads/students7.jpg");
+    }
+    .student8{
+        background-image:url("/uploads/students4.jpg");
+    }
     .uk-section {
         .uk-h1 {
             margin-bottom: 12px;

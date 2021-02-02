@@ -51,12 +51,6 @@ a.uk-link-text:not(:hover),
     @if(mixin-exists(hook-link-text)) {@include hook-link-text();}
 }
 
-a.uk-link-text:hover,
-.uk-link-text a:hover {
-    color: $link-text-hover-color;
-    @if(mixin-exists(hook-link-text-hover)) {@include hook-link-text-hover();}
-}
-
 
 /* Heading
  ========================================================================== */
@@ -67,12 +61,6 @@ a.uk-link-heading:not(:hover),
     @if(mixin-exists(hook-link-heading)) {@include hook-link-heading();}
 }
 
-a.uk-link-heading:hover,
-.uk-link-heading a:hover {
-    color: $link-heading-hover-color;
-    text-decoration: $link-heading-hover-text-decoration;
-    @if(mixin-exists(hook-link-heading-hover)) {@include hook-link-heading-hover();}
-}
 
 
 /* Reset
@@ -81,15 +69,6 @@ a.uk-link-heading:hover,
 /*
  * `!important` needed to override inverse component
  */
-
-a.uk-link-reset,
-a.uk-link-reset:hover,
-.uk-link-reset a,
-.uk-link-reset a:hover {
-    color: inherit !important;
-    text-decoration: none !important;
-    @if(mixin-exists(hook-link-reset)) {@include hook-link-reset();}
-}
 
 
 // Hooks
