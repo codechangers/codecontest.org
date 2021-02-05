@@ -10,17 +10,21 @@
 
 <header class="uk-background-{{ align }}-center uk-background-cover" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
     <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
-
         {% include navbar.html %}
-
-        <div class="uk-section section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-            <div class="uk-container uk-container-small">
-                {% if page.hero.image %}
-                <p class="hero-image uk-text-center"><img src="{{ site.uploads | absolute_url }}{{ page.hero.image }}" alt="Hero"></p>
-                {% endif %}
-                <h1 class="uk-heading-primary uk-text-center uk-margin-remove-top">{{ page.hero.title }}</h1>
-                {% if page.hero.subtitle %}<p class="uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
-                <a class="uk-button uk-button-large uk-button-primary uk-align-center" style="max-width:300px;" href="/tutorials/welcometutorials/">START HERE!</a>
+        <p class="marquee margin-top">
+            <span>
+                Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
+            </span>
+        </p>
+        
+            {% if page.hero.image %}
+            <div class = "hero-image"></div>
+            {% endif %}
+            <div class="home-section-large">
+                <h1 class="home-section bolded">{{ page.hero.title }}</h1>
+                <p class="home-section big-text white-text">WIN PRIZES</p>
+                {% if page.hero.subtitle %}<p class="home-section white-text">{{ page.hero.subtitle }}</p>{% endif %}
+                <a class="button" href="/">Sign up</a>
                 {% if page.hero.search %}
                 <div class="hero-search">
 
@@ -48,9 +52,64 @@
 
                 </div>
                 {% endif %}
-
+        </div>
+                <div class="home-section-medium photo1">
+                        <div class="img1"></div>
+                            <div class="double-text-box1">
+                                <h4 class="white-text">Use your coding, creativity, teamwork and problem solving<br> to make your own custom .io game, in a mission to win incredible prizes.</h4>
+                            </div>
+                </div>
+                <div class="home-section-medium photo2">
+                        <div class="img2"></div>
+                        <div class="double-text-box1">
+                            <h4 class="white-text">Code contest is for those of you ages 10-14 <br>with little or no coding experience...</h4>
+                        </div>
+                </div>
+                <div class="home-section-medium photo3">
+                    <div class="img3"></div>
+                    <div class="double-text-box1">
+                        <h4 class="white-text">...and was created to give you everything you need <br>so you can rise to the challenge.</h4>
+                    </div>
+                </div>
+        <div class="home-section-large" id="gallery">
+            <div class="gallery">
+                <div class="student1 photo"></div>
+                <div class="student2 photo"></div>
+                <div class="student3 photo"></div>
+                <div class="student4 photo"></div>
+                <div class="student5 photo"></div>
+                <div class="student6 photo"></div>
+                <div class="student7 photo"></div>
+                <div class="student8 photo"></div>
             </div>
         </div>
-
+            <video controls><source src="/uploads/home-video.mp4" type="video/mp4"></video>
+        <div class="home-section-large dark-hero">
+            <h1 class="bolded">Sponsors</h1>
+            <div class="sponsor-section">
+                <div class="sponsor"></div>
+                <div class="sponsor1"></div>
+            </div>
+        </div>
+        <!--<div class="home-section-large">
+            <h1 class="bolded">Got what it takes?</h1>
+            <div class="home-section-medium">
+                <a class="button" href="/contact">Sign up</a>
+                <a class="button" href="/contact">Events</a>
+            </div>
+        </div>-->
+        <p class="marquee">
+            <span>
+                Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
+            </span>
+        </p>
+        <!--<div class="footer-container">
+            <div class = "left">
+                <a href="/contact" class='footer-link'>Events</a>
+                <a href="/contact" class='footer-link'>About</a>
+                <a href="/contact" class='footer-link'>Contact</a>
+            </div>
+            <div class = "right"></div>
+        </div>-->
     </div>
 </header>

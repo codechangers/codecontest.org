@@ -2,10 +2,8 @@
 layout: page
 width: expand
 hero:
-    title: Let's Build an .io Game!
-    subtitle: This website will take you through the whole process of how to set up your project, coding and exporting your game, and uploading your game to your own .io url.  
-    image:
+    title: Build a video game
+    subtitle: Join forces with friends or compete alone in your city or under one of our partners with Code Contest.
+    image: /HeroImage.png/
     search: false
 ---
-
-{% include cta.html title="Need Help?" button_text="Meet with a mentor!" button_url="/help" subtitle="Proofread your code, check with your team and classmates, and if you’re still stuck" %}

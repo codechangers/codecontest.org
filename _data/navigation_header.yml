@@ -16,14 +16,29 @@ left:
 
 right:
 
-    - title: Home
-      url: /
+   # - title: HOME
+  #    url: /
 
-    - title: Tutorials
-      url: /tutorials/welcometutorials/
+ #   - title: ABOUT
+#      url: /
 
-    - title: Documentation
-      url: /docs/welcome/
+    #- title: EVENTS
+     # url: /
+
+    #- title: SPONSOR/HOST
+   #   url: /
+
+   # - title: TEACHER RESOURCES
+  #    url: /
+
+   # - title: CONTACT
+   #   url: /contact/
+    
+   # - title: SIGN UP
+   #   url: /
+    
+   # - title: LOGIN
+   #   url: /
 
   #  - title: Example Games
   #    url: /examples/

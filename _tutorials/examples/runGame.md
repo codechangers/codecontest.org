@@ -9,14 +9,11 @@ tags: [customize]
 ## 2. Add the background
  First, make sure that you have the image that you want for your background added to your asset folder ([Need Help?](/tutorials/images/)). Then, in the `game.js` file in our `preload` _function_  we'll write a `loadImage` _function_ like this:
 ```javascript
-// In repl click on: code > client > src > game.js
-
-// Scroll down until you see this code:
-preload(){// Click here and hit enter
-// Then add this new line of code:
 g.loadImage('background',  'background.png');
 ```
-After that we stay in the `game.js` file and write a `drawBackground` function in our `create ` _function_, which will look like this:
+After that we stay in the `game.js` file and write a `drawBackground` function in our `create ` _function_, which will look like this:<br>
+ <img src="../assets/rungame/2.jpg" alt="Example Code">
+ <br>Added Code:
 ```javascript
 // In repl click on: code > client > src > game.js
 
