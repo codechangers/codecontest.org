@@ -698,11 +698,12 @@
         background-size:cover;
     }
     .img2{
-        background-image:url("/uploads/ages10-14.png");
-        margin:20px;
-        width:20vw;
-        height:20vw;
-        background-size:cover;
+        background-image: url("/uploads/ages10-14.png");
+    margin: 20px;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 40%;
+    background-size: cover;
     }
     .img1{
         background-image:url("/uploads/teamwork.png");
@@ -727,12 +728,15 @@
         padding-bottom:50px;
     }
     .photo2{
-        background-image:url("/uploads/students-bg2.jpg");
-        width:100vw;
-        height:100%;
-        background-size:cover;
-        padding-top:50px;
-        padding-bottom:50px;
+        position: fixed;
+    background-image: url("/uploads/students-bg2.jpg");
+    width: 100vw;
+    height: 725px;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    top: 0;
+    z-index: -1;
     }
     .photo3{
         background-image:url("/uploads/students-bg3.jpg");
