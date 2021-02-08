@@ -18,28 +18,26 @@
         </p>
         
             {% if page.hero.image %}
-            <div id="denver-parallax">
-                <div id="parallax" class="parallax">
                     <div class="group">
-                        <div id="hero1" class="layer"> 
+                        <div id="hero1" class="layer rellax"  data-rellax-speed="-12"> 
                             <img src="/uploads/hero-layer-1.png">
                         </div>
-                        <div id="hero2" class="layer">
+                        <div id="hero2" class="layer rellax" data-rellax-speed="-10">
                             <img src="/uploads/hero-layer-2.png">
                         </div>
-                        <div id="hero3" class="layer">
+                        <div id="hero3" class="layer rellax" data-rellax-speed="-8">
                             <img src="/uploads/hero-layer-3.png">
                         </div>
-                        <div id="hero4" class="layer">
+                        <div id="hero4" class="layer rellax" data-rellax-speed="-6">
                             <img src="/uploads/hero-layer-4.png">
                         </div>
-                        <div id="hero5" class="layer">
+                        <div id="hero5" class="layer rellax" data-rellax-speed="-4">
                             <img src="/uploads/hero-layer-5.png">
                         </div>
-                        <div id="hero6" class="layer">
+                        <div id="hero6" class="layer rellax" data-rellax-speed="-2">
                             <img src="/uploads/hero-layer-6.png">
                         </div>
-                        <div id="hero7" class="layer">
+                        <div id="hero7" class="layer rellax" data-rellax-speed="0">
                             <img src="/uploads/hero-layer-7.png">
                             <div class="home-section-large hero-front">
                                 <h1 class="home-section bolded">{{ page.hero.title }}</h1>
@@ -77,11 +75,8 @@
                         </div>
                         
                     </div>
-                </div>
-            
-            </div>
             {% endif %}
-                <div class="home-section-medium photo1">
+                <div class="home-section-medium photo1" class="rellax" data-rellax-speed="-3">
                         <div class="img1"></div>
                             <div class="double-text-box1">
                                 <h4 class="white-text">Use your coding, creativity, teamwork and problem solving<br> to make your own custom .io game, in a mission to win incredible prizes.</h4>
@@ -119,9 +114,14 @@
                 <div class="sponsor1"></div>
             </div>
         </div>
-        <div class="home-section-large">
-            <h1 class="bolded">Got what it takes?</h1>
-            <div class="home-section-medium">
+        <div class="videocont">
+            <video autoplay muted loop id="bgvid">
+            <source src="../uploads/background-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-foreground">
+            <h1 class="bolded">Think You Got What It Takes?</h1>
+            <div class="sponsor-section">
                 <a class="button" href="/contact">Sign up</a>
                 <a class="button" href="/contact">Events</a>
             </div>
@@ -131,13 +131,13 @@
                 Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
             </span>
         </p>
-        <div class="footer-container">
+        <!--<div class="footer-container">
             <div class = "left">
                 <a href="/contact" class='footer-link'>Events</a>
                 <a href="/contact" class='footer-link'>About</a>
                 <a href="/contact" class='footer-link'>Contact</a>
             </div>
             <div class = "right"></div>
-        </div>
+        </div>-->
     </div>
 </header>

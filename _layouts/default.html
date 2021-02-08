@@ -30,7 +30,14 @@
 
 
     {% include hook-pre-closing-body.html %}
-
+    <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script>
+    window.onload = function(){
+    var rellax = new Rellax('.rellax', {
+        center: true
+        });
+    }
+    </script>
     </body>
 
 </html>

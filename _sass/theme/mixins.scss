@@ -535,6 +535,11 @@
     body{
         font-family:"Pixelar Regular W01 Regular";
     }
+    @media (max-width: 768px){
+        .group{
+            display:none;
+        }
+    }
 
 
 
@@ -555,48 +560,21 @@
 
 
 
-    .parallax {
-        perspective: 1px;
-        perspective-origin: center;
-        overflow-y: auto;
-        overflow-x: hidden;
-        margin-top: 0;
-        height: 100vh;
-        background-color: #120d26;
-      }
+
       
-      .parallax .group {
+      .group {
         position: relative;
-        transform-style: preserve-3d;
         background-color: #120d26;
+        overflow: hidden;
+        width: 100%;
+        height: calc(56vw + 500px)
       }
-      
-      .parallax .layer {
+     .layer {
         position: absolute;
         width: 100%;
         overflow: hidden;
+        top:-42px;
       }
-      #hero1{
-        transform: translateZ(-2.5px) scale(3.5) translateY(-8vh);
-      }
-      #hero2{
-        transform: translateZ(-2.25px) scale(3.25) translateY(-8vh);
-    }
-    #hero3{
-        transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
-    }
-    #hero4{
-        transform: translateZ(-.5px) scale(1.5) translateY(-4vh);
-    }
-    #hero5{
-        transform: translateZ(-.25px) scale(1.25) translateY(-1vh);
-    }
-    #hero6{
-        transform: translateZ(0px) scale(1) translateY(-1vh);
-    }
-    #hero7{
-        transform: translateZ(.25px) scale(.75) translateY(-8vh);
-    }
     .hero-front {
         position: relative;
         margin-top: -5px;
@@ -620,9 +598,7 @@
 
 
     #bgvid{
-        max-width: 178vh;
-        width: 178vh;
-        height: 100%;
+        width: 100vw;
     }
     .white-text{
         color:white;
@@ -642,7 +618,7 @@
         z-index:10;
     }
     .dark-hero{
-        background-image: url("/uploads/darkHeroImage.png");
+        background-image: url("/uploads/dark-hero-image.jpg");
         background-size:cover;
     }
     .hero-image {
@@ -657,12 +633,16 @@
     .videocont{
         position:relative;
         width:100vw;
-        height:100vh;
         overflow:hidden;
     }
     .video-foreground{
-        position:absolute;
-        top:0;
+        position: relative;
+        top: -37vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        margin-bottom: -200px;
     }
     .home-section-large{
         padding:50px;
@@ -670,6 +650,8 @@
         flex-direction: column;
         align-items: center;
         z-index: 10;
+        width: calc(100% - 100px);
+        background-color: #120d26;
     }
     .sponsor-section{
         display: flex;
@@ -737,7 +719,7 @@
         background-size:cover;
     }
     .photo1{
-        background-image:url("/uploads/students1.png");
+        background-image:url("/uploads/students-bg1.jpg");
         width:100vw;
         height:100%;
         background-size:cover;
@@ -745,7 +727,7 @@
         padding-bottom:50px;
     }
     .photo2{
-        background-image:url("/uploads/students2.png");
+        background-image:url("/uploads/students-bg2.jpg");
         width:100vw;
         height:100%;
         background-size:cover;
@@ -753,7 +735,7 @@
         padding-bottom:50px;
     }
     .photo3{
-        background-image:url("/uploads/students3.png");
+        background-image:url("/uploads/students-bg3.jpg");
         width:100vw;
         height:100%;
         background-size:cover;
@@ -839,7 +821,7 @@
         background-image:url("/uploads/students3.jpg");
     }
     .student4{
-        background-image:url("/uploads/students8.jpg");
+        background-image:url("/uploads/students4.jpg");
     }
     .student5{
         background-image:url("/uploads/students5.jpg");
@@ -851,7 +833,7 @@
         background-image:url("/uploads/students7.jpg");
     }
     .student8{
-        background-image:url("/uploads/students4.jpg");
+        background-image:url("/uploads/students8.jpg");
     }
     .uk-section {
         .uk-h1 {
