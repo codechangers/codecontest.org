@@ -555,6 +555,66 @@
 
 
 
+    .parallax {
+        perspective: 1px;
+        perspective-origin: center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-top: 0;
+        height: 100vh;
+        background-color: #120d26;
+      }
+      
+      .parallax .group {
+        position: relative;
+        transform-style: preserve-3d;
+        background-color: #120d26;
+      }
+      
+      .parallax .layer {
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+      }
+      #hero1{
+        transform: translateZ(-2.5px) scale(3.5) translateY(-8vh);
+      }
+      #hero2{
+        transform: translateZ(-2.25px) scale(3.25) translateY(-8vh);
+    }
+    #hero3{
+        transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+    }
+    #hero4{
+        transform: translateZ(-.5px) scale(1.5) translateY(-4vh);
+    }
+    #hero5{
+        transform: translateZ(-.25px) scale(1.25) translateY(-1vh);
+    }
+    #hero6{
+        transform: translateZ(0px) scale(1) translateY(-1vh);
+    }
+    #hero7{
+        transform: translateZ(.25px) scale(.75) translateY(-8vh);
+    }
+    .hero-front {
+        position: relative;
+        margin-top: -5px;
+        background-color: #120d26;
+        width: 100vw;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

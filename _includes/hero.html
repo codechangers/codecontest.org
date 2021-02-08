@@ -18,41 +18,69 @@
         </p>
         
             {% if page.hero.image %}
-            <div class = "hero-image"></div>
-            {% endif %}
-            <div class="home-section-large">
-                <h1 class="home-section bolded">{{ page.hero.title }}</h1>
-                <p class="home-section big-text white-text">WIN PRIZES</p>
-                {% if page.hero.subtitle %}<p class="home-section white-text">{{ page.hero.subtitle }}</p>{% endif %}
-                <a class="button" href="/">Sign up</a>
-                {% if page.hero.search %}
-                <div class="hero-search">
-
-                    <!-- Html Elements for Search -->
-                    <div class="uk-position-relative">
-                        <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
-                            <span class="uk-search-icon-flip" data-uk-search-icon></span>
-                            <input id="search-hero" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
-                        </form>
-                        <ul id="search-hero-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+            <div id="denver-parallax">
+                <div id="parallax" class="parallax">
+                    <div class="group">
+                        <div id="hero1" class="layer"> 
+                            <img src="/uploads/hero-layer-1.png">
+                        </div>
+                        <div id="hero2" class="layer">
+                            <img src="/uploads/hero-layer-2.png">
+                        </div>
+                        <div id="hero3" class="layer">
+                            <img src="/uploads/hero-layer-3.png">
+                        </div>
+                        <div id="hero4" class="layer">
+                            <img src="/uploads/hero-layer-4.png">
+                        </div>
+                        <div id="hero5" class="layer">
+                            <img src="/uploads/hero-layer-5.png">
+                        </div>
+                        <div id="hero6" class="layer">
+                            <img src="/uploads/hero-layer-6.png">
+                        </div>
+                        <div id="hero7" class="layer">
+                            <img src="/uploads/hero-layer-7.png">
+                            <div class="home-section-large hero-front">
+                                <h1 class="home-section bolded">{{ page.hero.title }}</h1>
+                                <p class="home-section big-text white-text">WIN PRIZES</p>
+                                {% if page.hero.subtitle %}<p class="home-section white-text">{{ page.hero.subtitle }}</p>{% endif %}
+                                <a class="button" href="/">Sign up</a>
+                                {% if page.hero.search %}
+                                <div class="hero-search">
+                
+                                    <!-- Html Elements for Search -->
+                                    <div class="uk-position-relative">
+                                        <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
+                                            <span class="uk-search-icon-flip" data-uk-search-icon></span>
+                                            <input id="search-hero" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
+                                        </form>
+                                        <ul id="search-hero-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                                    </div>
+                
+                                    <script>
+                                    SimpleJekyllSearch({
+                                        searchInput: document.getElementById('search-hero'),
+                                        resultsContainer: document.getElementById('search-hero-results'),
+                                        noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
+                                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                                        json: "{{ '/search.json' | relative_url }}"
+                                    });
+                
+                                    searchResults("search-hero");
+                
+                                    </script>
+                
+                                </div>
+                                {% endif %}
+                        </div>
+                        </div>
+                        
                     </div>
-
-                    <script>
-                    SimpleJekyllSearch({
-                        searchInput: document.getElementById('search-hero'),
-                        resultsContainer: document.getElementById('search-hero-results'),
-                        noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
-                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                        json: "{{ '/search.json' | relative_url }}"
-                    });
-
-                    searchResults("search-hero");
-
-                    </script>
-
                 </div>
-                {% endif %}
-        </div>
+            
+            </div>
+            {% endif %}
                 <div class="home-section-medium photo1">
                         <div class="img1"></div>
                             <div class="double-text-box1">
@@ -91,25 +119,25 @@
                 <div class="sponsor1"></div>
             </div>
         </div>
-        <!--<div class="home-section-large">
+        <div class="home-section-large">
             <h1 class="bolded">Got what it takes?</h1>
             <div class="home-section-medium">
                 <a class="button" href="/contact">Sign up</a>
                 <a class="button" href="/contact">Events</a>
             </div>
-        </div>-->
+        </div>
         <p class="marquee">
             <span>
                 Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
             </span>
         </p>
-        <!--<div class="footer-container">
+        <div class="footer-container">
             <div class = "left">
                 <a href="/contact" class='footer-link'>Events</a>
                 <a href="/contact" class='footer-link'>About</a>
                 <a href="/contact" class='footer-link'>Contact</a>
             </div>
             <div class = "right"></div>
-        </div>-->
+        </div>
     </div>
 </header>
