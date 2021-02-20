@@ -58,8 +58,8 @@
                     <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{% if site.logo %}<img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title | escape }}">{% else %}{{ site.title | escape }}{% endif %}</a>
                 </div>
                 <div class="uk-navbar-right">
-                    {% if site.navbar.search %}
-                        {% unless page.hero%}
+                    <!--{% if site.navbar.search %}
+                        {% unless page.hero %}
                             <div>
                                 <a id="search-navbar-toggle" class="uk-navbar-toggle" uk-search-icon href="#"></a>
                                 <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
@@ -80,7 +80,7 @@
                             searchResults("search-navbar");
                             </script>
                         {% endunless %}
-                    {% endif %}
+                    {% endif %}-->
 
                     <ul class="uk-navbar-nav uk-visible@m">
                         {% for link in site.data.navigation_header.right %}

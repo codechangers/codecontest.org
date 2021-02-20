@@ -4,9 +4,24 @@
     {% include head.html %}
 
     <body>
-
-    {% if page.hero %}
+    {% if page.login %}
+        {% include login.html %}
+    {% elsif page.hero %}
         {% include hero.html %}
+    {% elsif page.about %}
+        {% include about.html %}
+    {% elsif page.events %}
+        {% include events.html %}
+    {% elsif page.coming %}
+        {% include coming.html %}
+    {% elsif page.sponsor %}
+        {% include sponsor.html %}
+    {% elsif page.host %}
+        {% include host.html %}
+    {% elsif page.contact %}
+        {% include contact.html %}
+    {% elsif page.signup %}
+        {% include signup.html %}
     {% else %}
         {% include navbar.html %}
     {% endif %}
@@ -31,6 +46,7 @@
 
     {% include hook-pre-closing-body.html %}
     <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
     <script>
     window.onload = function(){
     var rellax = new Rellax('.rellax', {

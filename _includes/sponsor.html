@@ -1,0 +1,57 @@
+{% if page.header.image %}
+    {% assign image = page.header.image %}
+{% endif %}
+
+{% if page.header.align %}
+    {% assign align = page.header.align %}
+{% else %}
+    {% assign align = "center" %}
+{% endif %}
+{% include navbar.html %}
+<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+    <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
+        <div class =" login-page">
+            <div>
+                <div class="login-box sponsor-hero margin-top dark-hero1">
+                    <h1 class ="big-text">Sponsor</h1>
+                </div>
+                <div class="home-section-large">
+                    <h2 class="form-header">Join the Cause</h2>
+                    <p>Sponsor a Code Contest near you</p>
+                    <a href="/coming" class="button">Sponsor Today</a>
+                </div>
+                <div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg11 flex-centered"><div class ="hexagon style11"></div><p>Amazing marketing opportunity</p></div>
+                        <div class ="host-img bg12 flex-centered"><div class ="hexagon style12"></div><p>Local and national exposure</p></div>
+                    </div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg13 flex-centered"><div class ="hexagon style13"></div><p>Give kids an opportunity they may not be able to afford</p></div>
+                        <div class ="host-img bg14 flex-centered"><div class ="hexagon style14"></div><p>Connect with your community</p></div>
+                    </div>
+                    <div class="flexbox-row">
+                        <div class ="host-img-large bg15 flex-centered"><div class ="hexagon style15"></div><p>Inspire Kids</p></div>
+                    </div>
+                    <div class ="home-section-large">
+                        <h1>Sponsorship Tiers</h1>
+                        <img src="/uploads/sponsor-tiers.jpg" width="80%" height="inherit">
+                    </div>
+                    <div class ="home-section-large dark-hero1">
+                        <h1 class ="form-header">Sponsor Today</h1>
+                        <p>Contact us to sponsor a code contest near you</p>
+                        <input class="forms" type="text" id="username" name="username" placeholder="Contact Name">
+                        <input class="forms" type="text" id="password" name="password" placeholder="Email">
+                        <input class="forms" type="text" id="password" name="password" placeholder="Phone number">
+                        <a href="/coming" class="button">Submit</a>
+                    </div>
+                    <p class="marquee">
+                        <span>
+                            Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
+                        </span>
+                    </p>
+                    {% include foot.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
