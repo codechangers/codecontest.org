@@ -1,0 +1,29 @@
+{% if page.header.image %}
+    {% assign image = page.header.image %}
+{% endif %}
+
+{% if page.header.align %}
+    {% assign align = page.header.align %}
+{% else %}
+    {% assign align = "center" %}
+{% endif %}
+
+<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+    <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
+        <div class ="dark-hero1 login-page">
+            <a href="/">
+             <img src="../uploads/logo.png" width="300px" height="inherit" class="logo-link">
+            </a>
+            <div class = "page">
+                <div class="login-box">
+                    <h1 class ="form-header">LOG IN</h1>
+                    <input class="forms" type="text" id="username" name="username" placeholder="Username">
+                    <input class="forms" type="password" id="password" name="password" placeholder="Password">
+                    <p>Forgot Password?</p>
+                    <a href="/coming" class="button">Log In</a>
+                    <p>Don't have an account? <a href="/signup">Sign up here!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

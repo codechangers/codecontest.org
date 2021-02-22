@@ -1,0 +1,62 @@
+{% if page.header.image %}
+    {% assign image = page.header.image %}
+{% endif %}
+
+{% if page.header.align %}
+    {% assign align = page.header.align %}
+{% else %}
+    {% assign align = "center" %}
+{% endif %}
+{% include navbar.html %}
+<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+    <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
+        <div class ="dark-hero1 login-page">
+            <div>
+                <div class="login-box sponsor-hero margin-top dark-hero1">
+                    <h1 class ="big-text">Host</h1>
+                </div>
+                <div class="home-section-large">
+                    <h2 class="form-header">Join the Cause</h2>
+                    <p>Host a Code Contest near you</p>
+                    <a href="/coming" class="button">Host Today</a>
+                </div>
+                <div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg1 flex-centered"><div class ="hexagon style1"></div><p>Host within your company, community, city, or nationwide</p></div>
+                        <div class ="host-img bg2 flex-centered"><div class ="broken-hexagon style2"></div><p>Market to your desired audience</p></div>
+                    </div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg3 flex-centered"><div class ="hexagon style3"></div><p>Connect with the community</p></div>
+                        <div class ="host-img bg4 flex-centered"><div class ="hexagon style4"></div><p>Find Sponsors and partners</p></div>
+                    </div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg5 flex-centered"><div class ="hexagon style5"></div><p>Distribute prizes</p></div>
+                        <div class ="host-img bg6 flex-centered"><div class ="hexagon style6"></div><p>change the world by inspiring kids</p></div>
+                    </div>
+                    <div class ="home-section-large">
+                        <h1> Host Pricing Options</h1>
+                        <img src="/uploads/host-prices.jpg" width="80%" height="inherit">
+                    </div>
+                    <div class ="home-section-large">
+                        <h1>Prize Tiers</h1>
+                        <img src="/uploads/host-prizes.jpg" width="80%" height="inherit">
+                    </div>
+                    <div class ="home-section-large dark-hero1">
+                        <h1 class ="form-header">Host Today</h1>
+                        <p>Contact us to host a code contest near you</p>
+                        <input class="forms" type="text" id="username" name="username" placeholder="Contact Name">
+                        <input class="forms" type="text" id="password" name="password" placeholder="Email">
+                        <input class="forms" type="text" id="password" name="password" placeholder="Phone number">
+                        <a href="/coming" class="button">Submit</a>
+                    </div>
+                    <p class="marquee">
+                        <span>
+                            Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
+                        </span>
+                    </p>
+                    {% include foot.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

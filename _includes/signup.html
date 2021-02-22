@@ -1,0 +1,31 @@
+{% if page.header.image %}
+    {% assign image = page.header.image %}
+{% endif %}
+
+{% if page.header.align %}
+    {% assign align = page.header.align %}
+{% else %}
+    {% assign align = "center" %}
+{% endif %}
+
+<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+    <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
+        <div class ="dark-hero1 signup-page">
+            <a href="/">
+             <img src="../uploads/logo.png" width="300px" height="inherit" class="logo-link">
+            </a>
+            <div class = "page">
+                <div class="login-box">
+                    <h1 class ="form-header">Sign Up</h1>
+                    <div><input class="forms" type="text" id="firstname" name="username" placeholder="First Name"> <input class="forms" type="text" id="lastname" name="password" placeholder="Last Name"></div>
+                    <input class="forms" type="text" id="password" name="password" placeholder="Username">
+                    <input class="forms" type="text" id="password" name="password" placeholder="Email">
+                    <input class="forms" type="password" id="password" name="password" placeholder="password">
+                    <div><input type="checkbox">I agree to the Terms and Conditions and Privacy Policy</div>
+                    <a href="/coming" class="button">Join Now</a>
+                    <p>Already have an account? <a href="/login">Log in here!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

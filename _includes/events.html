@@ -1,0 +1,32 @@
+{% if page.header.image %}
+    {% assign image = page.header.image %}
+{% endif %}
+
+{% if page.header.align %}
+    {% assign align = page.header.align %}
+{% else %}
+    {% assign align = "center" %}
+{% endif %}
+{% include navbar.html %}
+<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+    <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
+        <div class ="login-page">
+            <div class="event-hero">
+                <h1>Events</h1>
+            </div>
+                <div class="home-section-large">
+                    <h2 class="not-bold">Join a Contest Near You</h2>
+                    <div class="sponsor-section">
+                        <a href="/signup" class="button">Sign Up</a>
+                        <a href="/login" class="button">Login</a>
+                    </div>
+                </div>
+            <p class="marquee">
+                <span>
+                    each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp  each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required  &nbsp &nbsp &nbsp &nbsp each team member must register individually  &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required &nbsp &nbsp &nbsp &nbsp each team member must register individually &nbsp &nbsp &nbsp &nbsp parent/gaurdian permission required 
+                </span>
+            </p>
+            {% include foot.html %}
+        </div>
+    </div>
+</header>

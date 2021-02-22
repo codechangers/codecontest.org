@@ -1,0 +1,109 @@
+{% if page.header.image %}
+    {% assign image = page.header.image %}
+{% endif %}
+
+{% if page.header.align %}
+    {% assign align = page.header.align %}
+{% else %}
+    {% assign align = "center" %}
+{% endif %}
+{% include navbar.html %}
+<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+    <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
+        <div class ="login-page">
+            <a href="/">
+             <img src="../uploads/logo.png" width="300px" height="inherit" class="logo-link">
+            </a>
+            <div >
+                <div class="login-box">
+                    <h1 class ="form-header about-hero">About</h1>
+                    <div class="home-section-large">
+                    <h2 class ="form-header">Code Contest</h2>
+                    <p>is a competitive, one-day event for kids 10-14 interested in creating their own .io video game and learning to code!  </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg7 flex-centered"><div class ="hexagon style7"></div><p>Win amazing prizes: from local coupons to Nintendo Switches!</p></div>
+                        <div class ="host-img bg8 flex-centered"><div class ="hexagon style8"></div><p>Work with a team of up to two, or create your own!</p></div>
+                    </div>
+                    <div class="flexbox-row">
+                        <div class ="host-img bg9 flex-centered"><div class ="hexagon style9"></div><p>Hosted by corporations, companies, districts, schools, and cities</p></div>
+                        <div class ="host-img bg10 flex-centered"><div class ="hexagon style10"></div><p>Supported by local donations and companies</p></div>
+                    </div>
+                </div>
+                <div class="home-section-large">
+                    <p>Created by the leading minds in tech education to give kids a memorable experience and an exciting introduction to coding.</p>
+                    <a href="/signup" class="button">Sign Up</a>
+                </div>
+                <div class="home-section-large pink">
+                    <h1 class="form-header"> Meet the Team </h1>
+                </div>
+                <div class="flexbox-row">
+
+                </div>
+                <div class="flexbox-row">
+                    <div class="Jason host-img">
+                        <div class="content">
+                            <h2>Jason S.</h2>
+                            <h3>Founder and CEO</h3>
+                            <p>Starting with CodeChangers in 2015, he’s helped educate over 10,000 children across the United States. He has a great love for solving problems, using technology, and creating with code!</p>
+                        </div>
+                    </div>
+                    <div class="Garett host-img">
+                        <div class="content">
+                            <h2>Garett G.</h2>
+                            <h3>Event Director</h3>
+                            <p>Garett is over the Code Contest day to day operations. Garett has had the opportunity to travel to a variety of countries to implement educational courses that have helped with sustainable projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbox-row">
+                    <div class="Mac host-img">
+                        <div class="content">
+                            <h2>Macuyler D.</h2>
+                            <h3>Software Developer</h3>
+                            <p>Macuyler has loved coding since he was 12 and he’s taught himself a lot in the years since. Coding allows him to be creative and he has built apps, websites, and many programs.</p>
+                        </div>
+                    </div>
+                    <div class="Madi host-img">
+                        <div class="content">
+                            <h2>Madi C.</h2>
+                            <h3>Director of Outreach</h3>
+                            <p>Madi is an experienced STEM teacher, project coordinator, and STEM program director. She has a passion for inspiring kids to be creative, critical thinkers and to look forward to a career in tech! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbox-row">
+                    <div class="Sydney host-img">
+                        <div class="content">
+                            <h2>Sydney S.</h2>
+                            <h3>Graphic Designer</h3>
+                            <p>Sydney designs and illustrates the assets for the Code Contest brand. When not designing, Sydney enjoys anything to do with the arts including piano ensemble, voice acting and creative writing.</p>
+                        </div>
+                    </div>
+                    <div class="Alex host-img">
+                        <div class="content">
+                            <h2>Alex K.</h2>
+                            <h3>Front-End Developer</h3>
+                            <p>Alex loves creating and designing new app ideas, or business ideas, helping other people’s dreams come to life. In his free time he loves rock climbing, snowboarding, and playing the guitar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class ="home-section-large">
+                    <h1 class="form-header">Get Involved</h1>
+                    <div class="sponsor-section">
+                        <a href="/coming" class="button">Sign Up</a>
+                        <a href="/host" class="button">Host</a>
+                    </div>
+                </div>
+                <p class="marquee">
+                    <span>
+                        Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp  Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest!  &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! &nbsp &nbsp &nbsp &nbsp Welcome to Code Contest! 
+                    </span>
+                </p>
+                {% include foot.html %}
+            </div>
+        </div>
+    </div>
+</header>
