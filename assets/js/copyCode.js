@@ -1,12 +1,4 @@
 const copyCode = (clickEvent) => {
-  // The magic happens here
-};
-
-document.querySelectorAll('.copy-code-button').forEach((copyCodeButton) => {
-  copyCodeButton.addEventListener('click', copyCode);
-});
-
-const copyCode = (clickEvent) => {
   const copyCodeButton = clickEvent.target;
   const tempTextArea = document.createElement('textarea');
   tempTextArea.textContent = copyCodeButton.getAttribute('data-code');
@@ -19,14 +11,12 @@ const copyCode = (clickEvent) => {
   selection.removeAllRanges();
   document.body.removeChild(tempTextArea);
 
-  // TODO more stuff here :)
+  copyCodeButton.classList.add('copied');
+    setTimeout(() => {
+      copyCodeButton.classList.remove('copied');
+  }, 2000);
 };
 
 document.querySelectorAll('.copy-code-button').forEach((copyCodeButton) => {
   copyCodeButton.addEventListener('click', copyCode);
 });
-
-copyCodeButton.classList.add('copied');
-  setTimeout(() => {
-    copyCodeButton.classList.remove('copied');
-}, 2000);

@@ -9,9 +9,6 @@ In order to code out a project you will need to create a folder that stores all 
 
 We have built this whole experience around repl.it. Repl.it is an online text editor that will let you open our starter project. It's important that you create a free account at repl.it. We like this option because you will be able to add your fellow team members to your project and you can all work together simultaneously.
 
-{% include code.html code=code lang="javascript" %}
-{% capture code %}{% raw %}var = jason;{% endraw %}{% endcapture %}
-
 <pre class="code-snippets">
 <button class="clipboard-copy" data-clipboard-target="#physics" data-toggle="tooltip" data-placement="bottom" title="Copy"><img src="/assets/static/glyphicons/clippy.svg" alt="clippy copy image icon"></button>
   <code id="physics">&lt;script src="https://codechangers.com/physics.js"&gt;&lt;/script&gt;</code>
@@ -36,15 +33,3 @@ We have built this whole experience around repl.it. Repl.it is an online text ed
     <img src="/uploads/resources/invite.png" width="300">
 
 Now you are all set up and ready to code. Repl.it has a "run" button at the top, for smaller projects that works great, for complex projects like this that won't work. Don't worry we will teach you how to see your project in action but don't worry if you hit `run` in repl.it and nothing happens.
-
-<script type="text/javascript">
-    function downloadJSAtOnload() {
-    var element = document.createElement("script");
-    element.src = "/assets/js/bundle-bootstrap-color-clippy-script.min.js";
-    document.body.appendChild(element);}
-    if (window.addEventListener)
-    window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-    window.attachEvent("onload", downloadJSAtOnload);
-    else window.onload = downloadJSAtOnload;
-  </script>
