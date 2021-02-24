@@ -22,11 +22,51 @@
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
 
+.code-header {
+  margin-bottom: calc(-1em * var(--line-height));
+  display: flex;
+  background: #3b3b3b;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 1.2rem;
+  z-index: 2;
+}
+
+.code-header pre {
+    margin-top: 0px;
+}
+
+.article-content pre {
+  margin-top: 0px;
+}
+
 .copy-code-container {
   display: flex;
   justify-content: flex-end;
-  padding: 1em;
+  padding: 0px;
   background: #3b3b3b;
+}
+
+.code-file-name-container{
+  display: flex;
+  align-items: center;
+  flex: 2;
+  justify-content: flex-start;
+}
+
+.code-file-name {
+  color: var(--color-black-2);
+    word-break: break-all;
+    --line-height: 1.83;
+    --font-size: 1.2rem;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: 400;
+}
+
+.code-file-name::before {
+  content: '📂';
+  margin-right: 0.4rem;
 }
 
 .copy-code-button {
@@ -38,11 +78,10 @@
     font-size: 1rem;
     background-color: #616161;
     color: #e7e7e7;
-    padding: 0.4em 0.5em;
-    border-radius: 5px;
+    padding: 5px 10px;
 
     &::before {
-        content: "Copy";
+        content: "Copy Code";
     }
 
     &::after {
