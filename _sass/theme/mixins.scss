@@ -532,11 +532,7 @@
             border-top: 1px solid $global-primary-background;
         }
     }
-    @media (max-width: 768px){
-        .group{
-            display:none;
-        }
-    }
+    
     .content{
         text-align:left;
         margin:40px;
@@ -554,8 +550,11 @@
             display:none;
         }
         &:hover{
+            .mobile{
+                display:none;
+            }
             .content{
-                display:block;
+                display:flex;
             }
             background-image:url("/uploads/Jason-colored.jpg");
         }
@@ -567,8 +566,11 @@
             display:none;
         }
         &:hover{
+            .mobile{
+                display:none;
+            }
             .content{
-                display:block;
+                display:flex;
             }
             background-image:url("/uploads/Garett-colored.jpg");
         }
@@ -580,8 +582,11 @@
             display:none;
         }
         &:hover{
+            .mobile{
+                display:none;
+            }
             .content{
-                display:block;
+                display:flex;
             }
             background-image:url("/uploads/Mac-colored.jpg");
         }
@@ -593,8 +598,11 @@
             display:none;
         }
         &:hover{
+            .mobile{
+                display:none;
+            }
             .content{
-                display:block;
+                display:flex;
             }
             background-image:url("/uploads/Madi-colored.jpg");
         }
@@ -606,8 +614,11 @@
             display:none;
         }
         &:hover{
+            .mobile{
+                display:none;
+            }
             .content{
-                display:block;
+                display:flex;
             }
             background-image:url("/uploads/Sydney-colored.jpg");
         }
@@ -619,8 +630,11 @@
             display:none;
         }
         &:hover{
+            .mobile{
+                display:none;
+            }
             .content{
-                display:block;
+                display:flex;
             }
             background-image:url("/uploads/Alex-colored.jpg");
         }
@@ -793,6 +807,9 @@
         width: 100%;
         height: calc(70vw + 675px)
       }
+      .group2{
+          display:none;
+      }
      .layer {
         position: absolute;
         width: 100%;
@@ -926,9 +943,7 @@
         background-size:cover;
     }
     .hero-image {
-        background-image: url("/uploads/HeroImage.png");
-        position:relative;
-        background-attachment: fixed;
+        background-image: url("/uploads/hero.png");
         width:100vw;
         top: 0px;
         height: 50vh;
@@ -1163,6 +1178,17 @@
             font-weight:300;
         }
     }
+.margin-right{
+    margin-top:10%;
+    margin-right:50%;
+    h2, h3{
+    color:black;
+    }
+}
+.margin-left{
+    margin-top:10%;
+    margin-left:50%;
+}
 
 
 
@@ -1174,11 +1200,102 @@
 
 
 
+.mobile{
+    display:none;
+}
 
 
-
-
-
+@media (max-width: 768px){
+        .sponsor{
+            margin-bottom:40px;
+        }
+        .social-media{
+            display:flex;
+            justify-content:center;
+        }
+        .contact-right{
+            margin-right:0px;
+        }
+        .foot{
+            margin-top:40px;
+        }
+        .footer{
+            flex-direction:column;
+        }
+        .sponsor-section{
+            flex-direction:column;
+        }
+        .content{
+            align-items:center;
+            text-align:center;
+            height:100%;
+            margin:0;
+        }
+        .flexbox-row{
+            flex-direction:column;
+        }
+        .host-img{
+            width: calc(100vw - 40px);
+            padding: 20px;
+            height: 50vw;
+        }
+        .host-img-large{
+            height:55vw;
+        }
+        .mobile{
+            display:block;
+        }
+        .non-mobile{
+            display:none;
+        }
+        .form-header{
+            font-size:55px;
+        }
+        .about-hero{
+            height:35vh;
+        }
+        .group{
+            display:none;
+        }
+        .home-section-large{
+            text-align:center;
+            padding:20px;
+            width: calc(100% - 40px);
+        }
+        .group2{
+            display:block;
+        }
+        .big-text{
+            font-size:80px;
+        }
+        .bolded{
+            font-size:40px;
+            text-align:center;
+        }
+        .double-text-box1 {
+            width: 90%;
+            margin-left: 5%;
+        }
+        #bgvid {
+            width: 125vw;
+            max-width: 700vw;
+        }
+        .video-foreground{
+            top: -63vw;
+            .bolded{
+                font-size: 30px;
+            }
+            .sponsor-section{
+                flex-direction:column;
+                .button{
+                    margin-bottom:0;
+                    width:200px;
+                    height:57px;
+                    font-size:30px;
+                }
+            }
+        }
+    }
 
 
     .gallery{

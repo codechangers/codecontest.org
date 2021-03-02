@@ -46,5 +46,14 @@
 
     {% include hook-pre-closing-body.html %}
     </body>
-
+    {% if page.hero %}
+    <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script>
+        window.onload = function(){
+        var rellax = new Rellax('.rellax', {
+          center: true
+        });
+        }
+      </script>
+    {% endif %}
 </html>

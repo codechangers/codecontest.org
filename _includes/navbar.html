@@ -131,11 +131,18 @@
                             {% endif %}
                         {% endfor %}
                     </ul>
-
+                    {% if page.hero %}
+                    {% if site.data.translation[site.lang].mobile_nav_site %}
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvashome" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">{{ site.data.translation[site.lang].mobile_nav_site }}</span></a>
+                    {% else %}
+                        <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvashome" data-uk-navbar-toggle-icon data-uk-toggle></a>
+                    {% endif %}
+                    {% else %}
                     {% if site.data.translation[site.lang].mobile_nav_site %}
                         <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">{{ site.data.translation[site.lang].mobile_nav_site }}</span></a>
                     {% else %}
                         <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+                    {% endif %}
                     {% endif %}
 
                 </div>
