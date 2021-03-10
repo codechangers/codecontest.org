@@ -24,6 +24,9 @@ g.cameraFollow(player.sprite);
 // Then add this new line of code:
 g.drawBackground( 'background',  3,  500,  2000 );
 ```
+{% capture code %}g.drawBackground( 'background',  3,  500,  2000 );{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
 Then we need to go into the `game.js` file and **delete** the `cameraBounds()` method.
 ```javascript
 // In repl click on: code > client > src > game.js
@@ -62,6 +65,8 @@ preload() {// Click here and hit enter
 // Then add this new line of code:
 	g.loadImage('enemy',  'enemy.png');
 ```
+{% capture code %}g.loadImage('enemy',  'enemy.png');{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 In the `room.js` file we need to put a `setupCharacters` _function_ in the `onInit` function.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -71,6 +76,8 @@ In the `room.js` file we need to put a `setupCharacters` _function_ in the `onIn
 	// Then add this new line of code:
 	g.setupCharacters('enemy');
 ```
+{% capture code %}g.setupCharacters('enemy');{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then, in the `game.js` file we need to put an `addCharacters` _function_ in the `init` _function_.
 ```javascript
 // In repl click on: code > client > src > game.js
@@ -80,6 +87,8 @@ g.addCharacters('players', 0.5);// Click here and hit enter
 // Then add this new line of code:
 g.addCharacters("enemy", .5)
 ```
+{% capture code %}g.addCharacters("enemy", .5){% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 And a getCharacters function in the create function.
 ```javascript
 // In repl click on: code > client > src > game.js
@@ -89,6 +98,8 @@ g.drawBackground( 'background', 3, 500, 2000 );// Click here and hit enter
 // Then add this new line of code:
 	g.getCharacters("enemy")
 ```
+{% capture code %}g.getCharacters("enemy"){% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Next, in the `room.js` _file_ in the `onInit` _function_. We’re going to put a `createACharacter` function in a for loop.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -99,6 +110,9 @@ g.setupCharacters('enemy');// Click here and hit enter
 	let i;
 	for  (i =  0; i <  15; i++)  { g.createACharacter('enemy', g.nextCharacterId('enemy'),  { x: Math.floor((Math.random()  *  500)  +  1), y: Math.floor((Math.random()  *  1900)  +  1)  })  }
 ```
+{% capture code %}let i;
+	for  (i =  0; i <  15; i++)  { g.createACharacter('enemy', g.nextCharacterId('enemy'),  { x: Math.floor((Math.random()  *  500)  +  1), y: Math.floor((Math.random()  *  1900)  +  1)  })  }{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  see enemies!**
 ## 4.  Add enemy movement and collision
 To do this we’ll go into our `onUpdate` _function_ in our `room.js` file and add a `handleCollision` _function_ that sends our characters back to the start.
@@ -115,6 +129,13 @@ g.handleCollision('players',  'enemy',  (player)  =>  {
 	}
 });
 ```
+{% capture code %}g.handleCollision('players',  'enemy',  (player)  =>  { 
+	if (player.safe === false) {
+		player.x =  270; 
+		player.y =  1980;
+	}
+});{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then,  in the `onUpdate` function in our `room.js` file we put a `getAllCharacters`  _function_. (for our callback function we will set up some if else statements for the movement.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -139,6 +160,21 @@ g.getAllCharacters('enemy', (enemy, i) => {
 	}
 });
 ```
+{% capture code %}
+g.getAllCharacters('enemy', (enemy, i) => {
+	if (enemy.x <= 575 && enemy.right == true) {
+		g.move(enemy, 'x', .01 * i + .1);
+	}
+	else if (enemy.x >= 25) {
+		enemy.right = false;
+		g.move(enemy, 'x', -.01 * i - .1);
+	}
+	else {
+		enemy.right = true;
+	}
+});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  interact with enemies!**
 # 5 set up safe zones and end zone
 
@@ -151,6 +187,10 @@ g.setSize(GAME_WIDTH, GAME_HEIGHT);// Click here and hit enter
 // Then add this new line of code:
 g.addLocations('safeZone');
 ```
+{% capture code %}
+g.addLocations('safeZone');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then, still in the `game.js` file in the `create` function we''ll put a  `getLocations` function **above** our `getCharacters` _functions_.
 ```javascript
 // In repl click on: code > client > src > game.js
@@ -162,6 +202,10 @@ g.useStore('The Store', [
 // Then add this new line of code:
 	g.getLocations('safeZone');
 ```
+{% capture code %}
+g.getLocations('safeZone');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then we will move into our `room.js` file in our `onInit` _function_ and use a `setupLocations` _function_ **above** our `setupCharacters` _functions_
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -171,6 +215,10 @@ g.setBounds(GAME_WIDTH, GAME_HEIGHT);// Click here and hit enter
 // Then add this new line of code:
 g.setupLocations('safeZone');
 ```
+{% capture code %}
+g.setupLocations('safeZone');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Now we are going to use 3 `createLocations` _functions_ right **under** the `setupLocations` _function_ that we just wrote, to create three different locations on the map.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -188,6 +236,18 @@ g.createALocation('safeZone', g.nextLocationId('safeZone'),  { x:  -47, y:  0, w
 g.getAllCharacters('players', player =>  { player.x =  270, player.y =  1990, player.spriteName =  'players'  });
 });
 ```
+{% capture code %}
+g.createALocation('safeZone', g.nextLocationId('safeZone'),  { x:  -47, y:  1940, width:  670, height:  100  },  '6cdc00', player =>  {
+	player.safe =  true;
+});
+g.createALocation('safeZone', g.nextLocationId('safeZone'),  { x:  -47, y:  1000, width:  670, height:  100  },  '6cdc00', player =>  {
+	player.safe =  true;
+});
+g.createALocation('safeZone', g.nextLocationId('safeZone'),  { x:  -47, y:  0, width:  670, height:  100  },  '6cdc00', player =>  {
+g.getAllCharacters('players', player =>  { player.x =  270, player.y =  1990, player.spriteName =  'players'  });
+});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Now we will go into our `onUpdate` _function_ in the `room.js` file and add a `getAllCharacters` _function_ and a `handleLocations` _function_. 
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -201,6 +261,11 @@ Now we will go into our `onUpdate` _function_ in the `room.js` file and add a `g
 g.getAllCharacters('players', player =>  { player.safe =  false  })
 g.handleLocations('safeZone',  'players');
 ```
+{% capture code %}
+g.getAllCharacters('players', player =>  { player.safe =  false  })
+g.handleLocations('safeZone',  'players');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Now when we make it to the end our players are sent back to the first, later we’ll set up level’s so that we progress every time we make it to the end.
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  use the safe zones!**
 # 6. Set up name tags
@@ -219,6 +284,16 @@ g.attachTo('players', client.sessionId,  {
 	text: data.name
 });
 ```
+{% capture code %}
+g.attachTo('players', client.sessionId,  {
+	name:  'nameTag',
+	x:  -50,
+	y:  -60,
+	type:  'text',
+	text: data.name
+});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 You can change where the name tag is created by changing the x and y values.
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  use the name tags!**
 # 7. Set up scoring
@@ -232,6 +307,10 @@ g.setupLocations('safeZone');// Click here and hit enter
 // Then add this new line of code:
 	g.setupCharacters("team");
 ```
+{% capture code %}
+g.setupCharacters("team");
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then, in the `game.js` file we need to put an `addCharacters` _function_ in the `init` _function_.
 ```javascript
 // In repl click on: code > client > src > game.js
@@ -241,6 +320,10 @@ g.addCharacters("enemy", .5)// Click here and hit enter
 // Then add this new line of code:
 	g.addCharacters("team")
 ```
+{% capture code %}
+g.addCharacters("team")
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 And a `getCharacters` function in the create _function_.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -250,6 +333,10 @@ g.getCharacters("enemy")// Click here and hit enter
 // Then add this new line of code:
 	g.getCharacters("team")
 ```
+{% capture code %}
+g.getCharacters("team")
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Now to get it working, we just need to go into our `room.js` file in the onInit function and use a `createACharacter` _function_ to create our team character. 
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -259,6 +346,10 @@ g.setupCharacters("team");// Click here and hit enter
 // Then add this new line of code:
 g.createACharacter('team',  'team',  { x:  10000, y:  10000, name:  'Level', score:  1  });
 ```
+{% capture code %}
+g.createACharacter('team',  'team',  { x:  10000, y:  10000, name:  'Level', score:  1  });
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Now in the `room.js` file in the `onInit` function in the third `createALocation` function that we wrote, we'll tell the score to up, and the difficulty to increase.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -271,6 +362,13 @@ team.score +=  1
 g.getAllCharacters('enemy', enemy =>  { g.deleteACharacter('enemy', enemy.id)  })
 for  (i =  0; i < team.score +  15; i++)  { g.createACharacter('enemy', g.nextCharacterId('enemy'),  { x: Math.floor((Math.random()  *  500)  +  1), y: Math.floor((Math.random()  *  1900)  +  1), right:  true  })  }
 ```
+{% capture code %}
+let team = g.getACharacter('team',  'team')
+team.score +=  1
+g.getAllCharacters('enemy', enemy =>  { g.deleteACharacter('enemy', enemy.id)  })
+for  (i =  0; i < team.score +  15; i++)  { g.createACharacter('enemy', g.nextCharacterId('enemy'),  { x: Math.floor((Math.random()  *  500)  +  1), y: Math.floor((Math.random()  *  1900)  +  1), right:  true  })  }
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able to complete levels for score!**
 # 8.  Set up Co-op gameplay
 
@@ -283,6 +381,10 @@ const speed = 10;// Click here and hit enter
 // Then add this new line of code:
 const speed = player.speed;
 ```
+{% capture code %}
+const speed = player.speed;
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Now, in the `game.js` file in our `preload` _function_ we add a new image. First make sure you have the image in your asset folder ([Need Help?](/tutorials/images/)).
 ```javascript
 // In repl click on: code > client > src > game.js
@@ -292,6 +394,10 @@ preload() {// Click here and hit enter
 // Then add this new line of code:
 g.loadImage('grave',  'Grave.png')
 ```
+{% capture code %}
+g.loadImage('grave',  'Grave.png')
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then, we need to **change** our `handleCollision` _function_ for players and enemies in the `onUpdate` _function_ in the `room.js` file.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -321,6 +427,25 @@ g.handleCollision('players',  'enemy',  (player)  =>  {
 	}
 });
 ```
+{% capture code %}
+g.handleCollision('players',  'enemy',  (player)  =>  {
+	if  (player.safe ==  false)  {
+		player.spriteName =  "grave";
+		player.speed =  0;
+		let result =  true;
+		g.getAllCharacters('players', player =>  {
+		if  (player.speed ==  5)  {
+			result =  false;
+		}
+	})
+	if  (result ==  true)  {
+		g.getACharacter('team',  'team').score =  1;
+		g.getAllCharacters('players', player =>  { player.x =  270, player.y =  1990, player.spriteName =  'players', player.speed =  5  });
+	}
+	}
+});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 Then we'll add a `handleCollision` _function_ for our players. We will put this in a `setTimeout` _function_. This will be written in our `onUpdate` _function_ in the `room.js` file.
 ```javascript
 // In repl click on: code > server > rooms > room.js
@@ -333,6 +458,10 @@ Then we'll add a `handleCollision` _function_ for our players. We will put this 
 // Then add this new line of code:
 setTimeout(function  ()  { g.handleCollision('players',  'players',  (player1)  =>  {  if  (player1.speed ==  0)  { player1.speed =  5, player1.spriteName =  'players'  }  })  },  500);
 ```
+{% capture code %}
+setTimeout(function  ()  { g.handleCollision('players',  'players',  (player1)  =>  {  if  (player1.speed ==  0)  { player1.speed =  5, player1.spriteName =  'players'  }  })  },  500);
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 And we should now have a fully functioning game! Feel free to customize it and change or add whatever you like!
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able to save your friends if they get hit!**
 

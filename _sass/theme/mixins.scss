@@ -555,6 +555,7 @@
             }
             .content{
                 display:flex;
+                flex-direction:column;
             }
             background-image:url("/uploads/Jason-colored.jpg");
         }
@@ -571,6 +572,7 @@
             }
             .content{
                 display:flex;
+                flex-direction:column;
             }
             background-image:url("/uploads/Garett-colored.jpg");
         }
@@ -587,6 +589,7 @@
             }
             .content{
                 display:flex;
+                flex-direction:column;
             }
             background-image:url("/uploads/Mac-colored.jpg");
         }
@@ -603,6 +606,7 @@
             }
             .content{
                 display:flex;
+                flex-direction:column;
             }
             background-image:url("/uploads/Madi-colored.jpg");
         }
@@ -619,6 +623,7 @@
             }
             .content{
                 display:flex;
+                flex-direction:column;
             }
             background-image:url("/uploads/Sydney-colored.jpg");
         }
@@ -635,6 +640,7 @@
             }
             .content{
                 display:flex;
+                flex-direction:column;
             }
             background-image:url("/uploads/Alex-colored.jpg");
         }
@@ -943,6 +949,7 @@
         background-size:cover;
     }
     .hero-image {
+        margin-top:80px;
         background-image: url("/uploads/hero.png");
         width:100vw;
         top: 0px;
@@ -971,6 +978,11 @@
         z-index: 10;
         width: calc(100% - 100px);
         background-color: #120d26;
+    }
+    .home-section-help{
+        padding:100px;
+        width: calc(100% - 200px);
+        align-items:flex-start;
     }
     .dark{
         background-color: #000006;
@@ -1189,6 +1201,118 @@
     margin-top:10%;
     margin-left:50%;
 }
+#hero3\.5{
+    top:17vw;
+}
+.home-nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    height: 80px;
+    a{
+        transition:1s;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        &:hover{
+            text-decoration:none;
+        }
+    }
+}
+.home-nav-left {
+    width: 50vw;
+    display:flex;
+    align-items:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu_checkbox
+{
+    display: none;
+}
+
+label
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right:10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+label div
+{
+    width: 6px;
+    height: 6px;
+    background-color: #6d4da6;
+    margin-left: 0;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    transition: 0.5s ease width, 0.5s ease margin-left, 0.5s ease margin-bottom, 0.5s ease background-color;
+}
+
+label div:first-child
+{
+    width: 22px;
+}
+
+label div:nth-child(2)
+{
+    width: 15px;
+}
+
+label div:last-child
+{
+    width: 30px;
+    margin-bottom: 0;
+}
+.mobile-nav{
+    display:none;
+}
+#menu_checkbox:checked + label
+{
+    transform: translateY(-50%) rotateZ(-90deg);
+    .mobile-nav{
+        display: block;
+        transform: translateY(50%) translateY(-326px) translateX(-235px) rotateZ(
+    90deg
+    );
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 141px;
+    }
+}
+
+#menu_checkbox:checked + label div
+{
+    width: 6px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+    background-color: #ed63ad;
+    
+}
+
+
+
+
 
 
 
@@ -1203,9 +1327,18 @@
 .mobile{
     display:none;
 }
-
-
+@media (max-width: 639px){
+label{
+    margin-right:33px;
+}
+}
 @media (max-width: 768px){
+        .home-nav-left{
+            width:70vw;
+        }
+        .home-nav-right{
+            width:30vw;
+        }
         .sponsor{
             margin-bottom:40px;
         }
@@ -1317,16 +1450,16 @@
         background-image:url("/uploads/students4.jpg");
     }
     .student5{
-        background-image:url("/uploads/students5.jpg");
-    }
-    .student6{
         background-image:url("/uploads/students6.jpg");
     }
-    .student7{
+    .student6{
         background-image:url("/uploads/students7.jpg");
     }
-    .student8{
+    .student7{
         background-image:url("/uploads/students8.jpg");
+    }
+    .student8{
+        background-image:url("/uploads/students5.jpg");
     }
     .uk-section {
         .uk-h1 {
@@ -1368,8 +1501,10 @@
     .pink{
         background-color: #944894;
         }
-    .px h1, h2, h3, h4, p, a{
+    .px {
+        h1, h2, h3, h4, p, a{
         font-family:"Pixelar Regular W01 Regular" !important;
+        }
     }
 
     @media (min-width: $breakpoint-small) {
