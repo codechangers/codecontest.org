@@ -21,6 +21,10 @@ preload() {
 	g.loadImage('background', 'grass.jpg');
 }
 ```
+{% capture code %}
+g.loadImage('background', 'grass.jpg');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _2.3_ After that we will draw the background.
 ```javascript
@@ -36,6 +40,10 @@ _2.3_ After that we will draw the background.
 	g.drawBackground('background', 0.8);
 }
 ```
+{% capture code %}
+g.drawBackground('background', 0.8);
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**
 
 ## 3. Players
@@ -50,6 +58,10 @@ _3.2_ We need to set the players default image.
 // And change it to say:
 	g.loadImage('players', 'circle1.png');
 ```
+{% capture code %}
+g.loadImage('players', 'circle1.png');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _3.3_ Then we will load all of the new images.
 ```javascript
@@ -67,6 +79,14 @@ _3.3_ Then we will load all of the new images.
 // End of the new code
 }
 ```
+{% capture code %}
+	g.loadImage('blobbert', 'circle1.png');
+	g.loadImage('grunch', 'circle2.png');
+	g.loadImage('neon', 'circle3.png');
+	g.loadImage('nimbo', 'circle4.png');
+	g.loadImage('tangles', 'circle5.png');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _3.4_ Next we need to add a player select screen.
 ```javascript
@@ -85,6 +105,16 @@ _3.4_ Next we need to add a player select screen.
 // End of the new code
 	g.useHowToScreen('How to play', {
 ```
+{% capture code %}
+	g.usePlayerSelectScreen({
+		blobbert: 'circle1.png',
+		grunch: 'circle2.png',
+		neon: 'circle3.png',
+		nimbo: 'circle4.png',
+		tangles: 'circle5.png',
+	});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _3.5_ After that we need to send the player's choice to the server.
 ```javascript
@@ -96,6 +126,10 @@ _3.5_ After that we need to send the player's choice to the server.
 // And make it say this:
 	g.useLoginScreen((name, spriteName) => g.connect({ name, spriteName }));
 ```
+{% capture code %}
+	g.useLoginScreen((name, spriteName) => g.connect({ name, spriteName }));
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to choose your character!**
 
 ## 4. Goals
@@ -109,6 +143,10 @@ _4.1_ We need to add the goals characters.
 	g.addCharacters('goals', 0.6);
 }
 ```
+{% capture code %}
+	g.addCharacters('goals', 0.6);
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _4.2_ Then we need to upload a goal image ([Need Help?](/tutorials/images/)).
 
@@ -122,6 +160,10 @@ _4.3_ Next we need to load the goal image.
 	g.loadImage('goals', 'goal.png');
 }
 ```
+{% capture code %}
+	g.loadImage('goals', 'goal.png');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _4.4_ Then we need to set the player depth.
 ```javascript
@@ -136,6 +178,14 @@ _4.4_ Then we need to set the player depth.
 		}
 	});
 ```
+{% capture code %}
+		player.sprite.depth = 5;
+		if (player.id === g.myId()) {
+			g.cameraFollow(player.sprite);
+		}
+	});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _4.5_ We also need to get the goals.
 ```javascript
@@ -146,6 +196,10 @@ _4.5_ We also need to get the goals.
 // Then add this new line of code:
 	g.getCharacters('goals');
 ```
+{% capture code %}
+	g.getCharacters('goals');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _4.6_ In our server code we need to setup the goals.
 ```javascript
@@ -157,6 +211,10 @@ _4.6_ In our server code we need to setup the goals.
 	g.setupCharacters('goals');
 }
 ```
+{% capture code %}
+	g.setupCharacters('goals');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _4.7_ Then we need to create each player's goal.
 ```javascript
@@ -167,6 +225,10 @@ _4.7_ Then we need to create each player's goal.
 // Then add this new line of code:
 	g.createACharacter('goals', client.sessionId, { x, y });
 ```
+{% capture code %}
+	g.createACharacter('goals', client.sessionId, { x, y });
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _4.8_ Finally we need to delete a goal when someone leaves.
 ```javascript
@@ -179,6 +241,10 @@ onLeave(client) {
 	g.deleteACharacter('goals', client.sessionId);
 }
 ```
+{% capture code %}
+	g.deleteACharacter('goals', client.sessionId);
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and each player should now have a goal!**
 
 ## 5. Soccer Balls
@@ -194,6 +260,10 @@ _5.2_ Then we need to setup the soccer ball characters.
 	g.addCharacters('soccerBalls', 0.2);
 }
 ```
+{% capture code %}
+	g.addCharacters('soccerBalls', 0.2);
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _5.3_ Next we need to load the soccer ball image.
 ```javascript
@@ -205,6 +275,10 @@ _5.3_ Next we need to load the soccer ball image.
 	g.loadImage('soccerBalls', 'ball.png');
 }
 ```
+{% capture code %}
+	g.loadImage('soccerBalls', 'ball.png');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _5.4_ Finally we need to get the soccer balls.
 ```javascript
@@ -216,6 +290,10 @@ _5.4_ Finally we need to get the soccer balls.
 	g.getCharacters('soccerBalls');
 }
 ```
+{% capture code %}
+	g.getCharacters('soccerBalls');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _5.5_ In our server code we need to setup the soccer balls.
 ```javascript
@@ -227,6 +305,10 @@ _5.5_ In our server code we need to setup the soccer balls.
 	g.setupCharacters('soccerBalls');
 }
 ```
+{% capture code %}
+	g.setupCharacters('soccerBalls');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _5.6_ Then we need to add a ball.
 ```javascript
@@ -237,6 +319,10 @@ _5.6_ Then we need to add a ball.
 // Then add these new lines of code:
 	this.addABall();
 ```
+{% capture code %}
+	this.addABall();
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _5.7_ Finally we need to create one ball for every two players.
 ```javascript
@@ -264,6 +350,23 @@ addABall() {
 // End of the new code
 onUpdate(dt) {
 ```
+{% capture code %}
+	addABall() {
+	const playersPerBall = 2;
+	const numOf = (t) => Object.keys(this.state[t]).length;
+	if (
+		numOf('players') % playersPerBall === 0 &&
+		numOf('soccerBalls') < numOf('players') / playersPerBall
+	) {
+		g.createACharacter('soccerBalls',
+			g.nextCharacterId('soccerBalls'), {
+				x: GAME_WIDTH / 2,
+				y: GAME_HEIGHT / 2,
+			});
+	}
+}
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and a soccer ball should appear once 2 players join!**
 
 ## 6. Kick the ball
@@ -280,6 +383,12 @@ _6.1_ The first thing we need to do is set all of our characters as circles.
 	g.setupCharacters('goals', 'circle');
 	g.setupCharacters('soccerBalls', 'circle');
 ```
+{% capture code %}
+	g.setupCharacters('players', 'circle');
+	g.setupCharacters('goals', 'circle');
+	g.setupCharacters('soccerBalls', 'circle');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _6.2_ After that we need to do is add some values to our soccerBalls.
 ```javascript
@@ -295,6 +404,11 @@ _6.2_ After that we need to do is add some values to our soccerBalls.
 			// End of the new code
 			});
 ```
+{% capture code %}
+	dx: 0,
+	dy: 0,
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _6.3_ Next we need to make the soccerBalls move based on those values.
 ```javascript
@@ -317,6 +431,20 @@ onUpdate(dt) {
 // End of the new code
 }
 ```
+{% capture code %}
+		const friction = (dv) => dv > -0.01 && dv < 0.01 ? 0 : dv - dv / 6000;
+	g.getAllCharacters('soccerBalls', (ball) => {
+		g.move(ball, 'x', ball.dx);
+		g.move(ball, 'y', ball.dy);
+		const bounceX = (ball.x <= ball.width / 2 ||
+			ball.x >= GAME_WIDTH - ball.width / 2) ? -1 : 1;
+		const bounceY = (ball.y <= ball.height / 2 ||
+			ball.y >= GAME_HEIGHT - ball.height / 2) ? -1 : 1;
+		ball.dx = bounceX * friction(ball.dx);
+		ball.dy = bounceY * friction(ball.dy);
+	});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _6.4_ After that, we need to set the values when we kick the ball.
 ```javascript
@@ -333,6 +461,13 @@ _6.4_ After that, we need to set the values when we kick the ball.
 // End of the new code
 }
 ```
+{% capture code %}
+	g.handleCollision('players', 'soccerBalls', (player, ball) => {
+		ball.dx = g.getXTowards(player, ball.x, ball.y);
+		ball.dy = g.getYTowards(player, ball.x, ball.y);
+	});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to kick the soccer ball!**
 
 ## 7. Score a goal
@@ -346,6 +481,11 @@ _7.1_ First we need to add data to the players.
 	g.createACharacter('players', client.sessionId,
 		{ ...data, x, y, score: 0, lives: 3, block3s: 0, block5s: 0 });
 ```
+{% capture code %}
+	g.createACharacter('players', client.sessionId,
+		{ ...data, x, y, score: 0, lives: 3, block3s: 0, block5s: 0 });
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _7.2_ Then we need to add a kicker to the ball.
 ```javascript
@@ -362,6 +502,10 @@ _7.2_ Then we need to add a kicker to the ball.
 			kicker: '',
 		});
 ```
+{% capture code %}
+		kicker: '',
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _7.3_ Next we need to keep track of who kicked the ball last.
 ```javascript
@@ -375,6 +519,10 @@ _7.3_ Next we need to keep track of who kicked the ball last.
 		ball.kicker = player.id;
 	});
 ```
+{% capture code %}
+		ball.kicker = player.id;
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _7.4_ Next we need to update the lives and scores when a goal is made.
 ```javascript
@@ -396,6 +544,18 @@ _7.4_ Next we need to update the lives and scores when a goal is made.
 // End of the new code
 }
 ```
+{% capture code %}
+		g.handleCollision('goals', 'soccerBalls', (goal, ball) => {
+		if (ball.kicker !== goal.id) {
+			g.getACharacter('players', ball.kicker).score += 1;
+			g.getACharacter('players', goal.id).lives -= 1;
+			g.deleteACharacter('soccerBalls', ball.id);
+			setTimeout(() => this.addABall(), 3000);
+		}
+	});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
 
 _7.5_ Finally we need to add a game over check.
 ```javascript
@@ -417,6 +577,15 @@ _7.5_ Finally we need to add a game over check.
 // End of the new code
 	});
 ```
+{% capture code %}
+},
+	() => {},
+	(id, attr, value) => {
+		if (id === g.myId() && attr === 'lives' && value <= 0) {
+			location.reload();
+		}
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to score goals!**
 
 ## 8. Block Shop
@@ -435,6 +604,11 @@ _8.2_ Then we need to create our store items.
 	// End of the new code
 	]);
 ```
+{% capture code %}
+		new g.StoreItem('block3.png', '3 Block', 'Points', 3, 'buy3'),
+		new g.StoreItem('block5.png', '5 Block', 'Points', 4, 'buy5'),
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _8.3_ Next we need to create the buy actions.
 ```javascript
@@ -452,6 +626,11 @@ const actions = {
 // End of the new code
 };
 ```
+{% capture code %}
+	buy3: () => g.purchase(player, 'score', 3, 'block3s', 1),
+	buy5: () => g.purchase(player, 'score', 4, 'block5s', 1),
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to buy blocks!**
 
 ## 9. Place blocks
@@ -465,6 +644,11 @@ _9.1_ First we need to add block characters.
 	g.addCharacters('blocks', 0.5);
 }
 ```
+{% capture code %}
+	g.addCharacters('blocks', 0.5);
+}
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _9.2_ Then we need to load our block images.
 ```javascript
@@ -481,6 +665,15 @@ _9.2_ Then we need to load our block images.
 // End of the new code
 }
 ```
+{% capture code %}
+	g.loadImage('block1', 'block1.png');
+	g.loadImage('block2', 'block2.png');
+	g.loadImage('block3', 'block3.png');
+	g.loadImage('block4', 'block4.png');
+	g.loadImage('block5', 'block5.png');
+}
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _9.3_ Next we need to get our blocks.
 ```javascript
@@ -492,6 +685,10 @@ _9.3_ Next we need to get our blocks.
 	g.getCharacters('blocks');
 }
 ```
+{% capture code %}
+g.getCharacters('blocks');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _9.4_ We also need to place a block when we click.
 ```javascript
@@ -507,6 +704,12 @@ click(x, y) {
 // End of the new code
 }
 ```
+{% capture code %}
+if (g.canSend()) {
+		g.sendAction('placeBlock', {x, y});
+	}
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _9.5_ Then we need to setup the blocks.
 ```javascript
@@ -519,6 +722,10 @@ _9.5_ Then we need to setup the blocks.
 	g.setupCharacters('blocks');
 }
 ```
+{% capture code %}
+g.setupCharacters('blocks');
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _9.6_ After that we need to add the blocks into the game.
 ```javascript
@@ -540,6 +747,18 @@ _9.6_ After that we need to add the blocks into the game.
 // End of the new code
 };
 ```
+{% capture code %}
+	placeBlock: ({ x, y }) => {
+		if (player.block5s > 0) {
+			g.createACharacter('blocks', g.nextCharacterId('blocks'),
+				{x, y, health: 5, spriteName: 'block5'});
+		} else if (player.block3s > 0) {
+			g.createACharacter('blocks', g.nextCharacterId('blocks'),
+				{x, y, health: 3, spriteName: 'block3'});
+		}
+	},
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 _9.7_ Finally we need to have the ball run into the blocks.
 ```javascript
@@ -565,6 +784,20 @@ _9.7_ Finally we need to have the ball run into the blocks.
 // End of the new code
 }
 ```
+{% capture code %}
+	g.handleCollision('soccerBalls', 'blocks', (ball, block) => {
+		ball.dx = g.getXTowards(block, ball.x, ball.y);
+		ball.dy = g.getYTowards(block, ball.x, ball.y);
+		const bh = block.health - 1;
+		if (bh > 0) {
+			block.health = bh;
+			block.spriteName = `block${bh}`;
+		} else {
+			g.deleteACharacter('blocks', block.id);
+		}
+	});
+{% endcapture %}
+{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to place down blocks!**
 
 ## 10. Moving forward
