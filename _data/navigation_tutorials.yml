@@ -1,20 +1,67 @@
-- title: Tutorials
+- title: 1. Set Up Your Project
   docs:
-  - welcometutorials
-  - setup
+  - setup1
+  - setup2
   - uploadtoserver
   - images
   - downloads
   - splitScreen
 
-- title: Example Games
+- title: 2. Pick a Game to Build
   docs:
-  - examples/horseGame
-  - examples/runGame
-  - examples/soccerGame
-  - examples/zombieGame
+  - pickagame
 
-- title: Building Blocks
+- title: Build a Run Game
+  docs:
+  - examples/runGame1
+  - examples/runGame2
+  - examples/runGame3
+  - examples/runGame4
+  - examples/runGame5
+  - examples/runGame6
+  - examples/runGame7
+  - examples/runGame8
+  - examples/runGame9
+
+- title: Build a Soccer Game
+  docs:
+  - examples/soccerGame1
+  - examples/soccerGame2
+  - examples/soccerGame3
+  - examples/soccerGame4
+  - examples/soccerGame5
+  - examples/soccerGame6
+  - examples/soccerGame7
+  - examples/soccerGame8
+  - examples/soccerGame9
+  - examples/soccerGame10
+
+- title: Build a Zombie Game
+  docs:
+  - examples/zombieGame1
+  - examples/zombieGame2
+  - examples/zombieGame3
+  - examples/zombieGame4
+  - examples/zombieGame5
+  - examples/zombieGame6
+  - examples/zombieGame7
+  - examples/zombieGame8
+  - examples/zombieGame9
+  - examples/zombieGame10
+  - examples/zombieGame12
+
+- title: Build a Horse Game
+  docs:
+  - examples/horseGame1
+  - examples/horseGame2
+  - examples/horseGame3
+  - examples/horseGame4
+  - examples/horseGame5
+  - examples/horseGame6
+  - examples/horseGame7
+  - examples/horseGame8
+
+- title: Extra Game Features
   docs:
   - blocks/addAStore
   - blocks/additionalInputs

@@ -22,6 +22,16 @@
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
 
+article.uk-article {
+    padding-top: 30px;
+}
+
+.article-content ::marker {
+  display: list-item;
+  color: lightsalmon;
+  font-weight: bold;
+}
+
 .code-header {
   margin-bottom: calc(-1em * var(--line-height));
   display: flex;

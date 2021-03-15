@@ -119,7 +119,7 @@ $article-title-line-height:                     1.4;
 $article-title-font-size:                       2.125rem;
 
 // Section
-$section-padding-vertical-m:                    60px;
+$section-padding-vertical-m:                    80px;
 
 // Card
 $card-small-body-padding-horizontal:            25px;
@@ -188,8 +188,8 @@ $timeline-dot-diameter:                         20px;
   }
   /* Respect user preferences about animations */
   @media (prefers-reduced-motion: reduce) {
-    .marquee { 
-      white-space: normal 
+    .marquee {
+      white-space: normal
     }
     .marquee span {
       animation: none;

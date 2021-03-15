@@ -1,0 +1,32 @@
+{% assign tutorials = site.data.navigation_tutorials | map: 'tutorials' | join: ',' | split: ',' %}
+
+{% for tutorial in tutorials.docs %}
+  {% assign tutorial_url = tutorial | prepend:"/tutorials/" | append:"/" %}
+  {% if tutorial_url == page.url %}
+    <div class="uk-margin-large-top paginate-post">
+        <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
+            <div>
+                {% if forloop.first %}
+                {% else %}
+                  {% assign previous = forloop.index0 | minus: 1 %}
+                  {% assign previous_page = tutorials.docs[previous] | prepend:"/tutorials/" | append:"/" %}
+                  {% assign previous_doc = site.tutorials | where:"url", previous_page | first %}
+                    <h5 style="text-align:left;">{{previous_doc.title}}</h5>
+                    <div><a class="remove-underline hvr-back" href="{{previous_page}}">&larr; {{ site.data.translation[site.lang].previous | default: "Previous" }}</a></div>
+                {% endif %}
+            </div>
+            <div>
+                {% if forloop.last %}
+                {% else %}I
+                  {% assign next = forloop.index0 | plus: 1 %}
+                  {% assign next_page = tutorials.docs[next] | prepend:"/tutorials/" | append:"/" %}
+                  {% assign next_doc = site.tutorials | where:"url", next_page | first %}
+                    <h5 style="text-align:right;">{{next_doc.title}}</h5>
+                    <div class="uk-text-right"><a class="remove-underline hvr-forward" href="{{next_page}}">{{ site.data.translation[site.lang].next | default: "Next" }} &rarr;</a></div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% break %}
+  {% endif %}
+{% endfor %}

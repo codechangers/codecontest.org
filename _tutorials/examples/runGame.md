@@ -56,7 +56,7 @@ g.createACharacter('players', client.sessionId,  { x:  270, y:  1990, safe:  fal
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  your game board should be set up!**
 ## 3. Create Enemies
 
-First, we need to go into the `preload` _function_ in `game.js` and add a new image named after the new character set. 
+First, we need to go into the `preload` _function_ in `game.js` and add a new image named after the new character set.
 ```javascript
 // In repl click on: code > client > src > game.js
 
@@ -122,16 +122,16 @@ To do this we’ll go into our `onUpdate` _function_ in our `room.js` file and a
 // Scroll down until you see this code:
 onUpdate(dt) {// Click here and hit enter
 // Then add this new line of code:
-g.handleCollision('players',  'enemy',  (player)  =>  { 
+g.handleCollision('players',  'enemy',  (player)  =>  {
 	if (player.safe === false) {
-		player.x =  270; 
+		player.x =  270;
 		player.y =  1980;
 	}
 });
 ```
-{% capture code %}g.handleCollision('players',  'enemy',  (player)  =>  { 
+{% capture code %}g.handleCollision('players',  'enemy',  (player)  =>  {
 	if (player.safe === false) {
-		player.x =  270; 
+		player.x =  270;
 		player.y =  1980;
 	}
 });{% endcapture %}
@@ -142,7 +142,7 @@ Then,  in the `onUpdate` function in our `room.js` file we put a `getAllCharacte
 
 // Scroll down until you see this code:
 if (player.safe === false) {
-		player.x =  270; 
+		player.x =  270;
 		player.y =  1980;
 	}
 });// Click here and hit enter
@@ -248,7 +248,7 @@ g.getAllCharacters('players', player =>  { player.x =  270, player.y =  1990, pl
 });
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
-Now we will go into our `onUpdate` _function_ in the `room.js` file and add a `getAllCharacters` _function_ and a `handleLocations` _function_. 
+Now we will go into our `onUpdate` _function_ in the `room.js` file and add a `getAllCharacters` _function_ and a `handleLocations` _function_.
 ```javascript
 // In repl click on: code > server > rooms > room.js
 
@@ -337,7 +337,7 @@ g.getCharacters("enemy")// Click here and hit enter
 g.getCharacters("team")
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
-Now to get it working, we just need to go into our `room.js` file in the onInit function and use a `createACharacter` _function_ to create our team character. 
+Now to get it working, we just need to go into our `room.js` file in the onInit function and use a `createACharacter` _function_ to create our team character.
 ```javascript
 // In repl click on: code > server > rooms > room.js
 
@@ -403,9 +403,9 @@ Then, we need to **change** our `handleCollision` _function_ for players and ene
 // In repl click on: code > server > rooms > room.js
 
 // Scroll down until you see this code:
-g.handleCollision('players',  'enemy',  (player)  =>  { 
+g.handleCollision('players',  'enemy',  (player)  =>  {
 	if (player.safe === false) {
-		player.x =  270; 
+		player.x =  270;
 		player.y =  1980;
 	}
 });
@@ -466,7 +466,7 @@ And we should now have a fully functioning game! Feel free to customize it and c
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able to save your friends if they get hit!**
 
 # *Bonus
-If you want to change your character image with each level you complete you can do this last step. 
+If you want to change your character image with each level you complete you can do this last step.
 
 The first thing we will need to do is add 20 images into our `preload` _function_ and name them accordingly:
 ```javascript
@@ -496,7 +496,7 @@ g.loadImage('player18', 'player18.png');
 g.loadImage('player19', 'player19.png');
 g.loadImage('player20', 'player20.png');
 ```
-Then, we will go into our `room.js` file into our `onUpdate` _function_ and change our `setTimeout` _function_ to look like this 
+Then, we will go into our `room.js` file into our `onUpdate` _function_ and change our `setTimeout` _function_ to look like this
 ```javascript
 // In repl click on: code > server > rooms > room.js
 
@@ -505,7 +505,7 @@ setTimeout(function () { g.handleCollision('players', 'players', (player1) => { 
 //change it to this
 g.handleCollision('players', 'players', (player1) => { if (player1.speed == 0) { player1.speed = 5; player1.spriteName = `player${g.getACharacter('team', 'team').score}` } }) }, 500);
 ```
-Then we'll change the `getAllCharacters` _function_ that's inside of the if statement in our `onUpdate` _function_. 
+Then we'll change the `getAllCharacters` _function_ that's inside of the if statement in our `onUpdate` _function_.
 ```javascript
 // In repl click on: code > server > rooms > room.js
 
@@ -536,4 +536,3 @@ g.getAllCharacters('players', player  => { player.x = 270; player.y = 1990; play
 
 ## 9. Moving forward
 {% include blocks/movingForward.md %}
-

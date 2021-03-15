@@ -10,11 +10,7 @@ author: jason
 2. [Upload Your Game to the Server](/tutorials/uploadtoserver)
 
 ## Checkpoint 2
-Pick an example game:
- - [Horse Game](/tutorials/examples/horseGame/)
- - [Run Game](/tutorials/examples/runGame/)
- - [Soccer Game](/tutorials/examples/soccerGame/)
- - [Zombie Game](/tutorials/examples/zombieGame/)
+1. [Pick an Example Game](/pickagame/)
 
 ## Checkpoint 3
 Customize your game with more tutorials:
