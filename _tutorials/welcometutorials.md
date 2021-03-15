@@ -38,4 +38,4 @@ Use the Documentation to make fine tuned adjustments:
  - [Documentation](/docs/welcome/)
 
 ## Checkpoint 5
- - [Submit your game!](https://docs.google.com/forms/d/e/1FAIpQLSc_Fr_3vfLv6J4cVgW3KUM_-C9i5T23Xw-KWw1zx8u7dc5Hng/viewform?usp=sf_link)
+ - [Submit your game!](https://forms.gle/e5gUgfFGUeXznh2m8)

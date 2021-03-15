@@ -1,9 +1,14 @@
-    <nav class="uk-navbar-container uk-active">
+    <nav class="uk-navbar-container uk-active px">
         <div class="uk-container">
             <div data-uk-navbar>
                 <div class="home-nav-left">
                     <a href="/">
-                        <img src="../uploads/logo.png" alt="CodeContest logo" width="65%">
+                        {% unless page.help %}
+                            <img src="../uploads/logo.png" alt="CodeContest logo" width="65%">
+                        {% endunless %}
+                        {% if page.help %}
+                            <img src="../../uploads/logo.png" alt="CodeContest logo" width="65%">
+                        {% endif %}
                     </a>
                 </div>
                 <div class="home-nav-right">

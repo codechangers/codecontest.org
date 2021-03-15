@@ -8,21 +8,21 @@
     {% assign align = "center" %}
 {% endif %}
 {% include home-nav.html %}
-<header class="uk-background-{{ align }}-center uk-background-cover px" style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
+<header class="uk-background-{{ align }}-center uk-background-cover " style="{% if page.header.background %}background-color: {{ page.header.background }};{% endif %}{% if page.header.image %} background-image: url({% if image contains 'http' %}{{ image }}{% else %}{{ site.uploads | absolute_url }}{{ image }}{% endif %});{% endif %}">
     <div class="uk-overlay-header" style="{% if page.header.overlay %}background: {{ page.header.overlay }};{% endif %}">
         <div class ="dark-hero1 login-page">
-            <div class ="px">
+            <div>
                 <div class="login-box sponsor-hero margin-top dark-hero1">
-                    <h1 class ="form-header">Need Help?</h1>
+                    <h1 class ="form-header px">Need Help?</h1>
                 </div>
                 <div class="home-section-large home-section-help">
-                    <h2 class="form-header">Follow These Steps</h2>
+                    <h2 class="form-header px">Follow These Steps</h2>
                     <p>Step 1: Proofread and triple check that your code doesn’t have any spelling errors. </p>
                     <p>Step 2: Ask a classmate, check the tutorial again, look at the Docs section on the website, and then ask your teacher or room supervisor!</p>
                     <p>Step 3: Hop on the Mentor Help Line! </p>
-                    <h2 class="form-header">Important!</h2>
+                    <h2 class="form-header px">Important!</h2>
                     <p>Wait in the meeting room for a mentor to put you into a breakout room for help. If you do not see any mentors, they are helping others, but will be back to help you shortly! Be patient and read through your code again while you wait!  </p>
-                    <p>Click <a>this link</a> to access the Zoom call. </p>
+                    <p>Click <a href="https://us02web.zoom.us/j/83274050563?pwd=dDNxTDBQQmp3Z3ZiUVczSlNhRjI3dz09" target="_blank" rel=”nofollow”> <b>this link</b></a> to access the Zoom call. </p>
                     <p>The passcode for your call is: ICSD</p> 
                 </div>
                     <p class="marquee non-mobile">
