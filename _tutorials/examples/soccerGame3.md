@@ -13,12 +13,16 @@ author: jason
 3. Click and drag your files into this folder. Make sure your files are named something very easy and obvious (it is best to not use spaces or symbols), for example "zombies.png" or "shark.png". You will resize the images within the code, so don't worry if it seems to big or small right now.
 4. Repeat steps 1-3 until all of your characters are uplaoded into the Assets folder.
 
+<hr class="uk-margin-medium">
+
 ##### 2. Go into the `loadImage` _function_ in `game.js` and change the name of your character.
 
 {% capture code %}
 g.loadImage('players', 'circle1.png');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 3. Add the rest of your character images in the `loadImage` _function_ in `game.js`
 
@@ -32,7 +36,9 @@ g.loadImage('players', 'circle1.png');
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
 > **You can change the names of the characters to whatever you want, they don't have to be named blobbert, grunch, etc**
-##### 4. Add a player select Screen in `game.js`
+
+<hr class="uk-margin-medium">
+##### 4. Add a player select Screen in `game.js` after the `useLoginScreen()` function.
 
 {% capture code %}
 	g.usePlayerSelectScreen({
@@ -45,11 +51,15 @@ g.loadImage('players', 'circle1.png');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
-##### 5. In `game.js` change the Login Screen to send the player's choice.
+<hr class="uk-margin-medium">
+
+##### 5. In `game.js` change the Login Screen code and replace it with the following code.
 
 {% capture code %}
 	g.useLoginScreen((name, spriteName) => g.connect({ name, spriteName }));
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to choose your character!**

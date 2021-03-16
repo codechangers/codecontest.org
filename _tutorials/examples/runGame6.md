@@ -14,8 +14,10 @@ g.attachTo('players', client.sessionId,  {
 	text: data.name
 });
 {% endcapture %}
-{% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+{% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
 You can change where the name tag is created by changing the x and y values.
+
+<hr class="uk-margin-medium">
 
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  use the name tags!**

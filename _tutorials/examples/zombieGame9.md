@@ -21,4 +21,6 @@ author: jason
 
 When you write yours, you will need to keep adding to your list of controls, and your contributors until you have added everything needed for your game.
 
+<hr class="uk-margin-medium">
+
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**

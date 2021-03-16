@@ -12,6 +12,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 2. in `game.js`, Add `loadImage` functions to add the block images
 
 {% capture code %}
@@ -24,12 +26,16 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 3. In `game.js`, Add `getCharacters` function to add the blocks to the game.
 
 {% capture code %}
 g.getCharacters('blocks');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 4. In `game.js`, Add an `if` statement so that when you click the moouse it will place a block.
 
@@ -39,6 +45,8 @@ if (g.canSend()) {
 	}
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 5. In `room.js`, Add `setupCharacters`, function to setup the block.
 
@@ -62,6 +70,8 @@ g.setupCharacters('blocks');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 7. In `room.js`, Add code so that the balls collide with the blocks.
 
 {% capture code %}
@@ -78,5 +88,7 @@ g.setupCharacters('blocks');
 	});
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to place down blocks!**

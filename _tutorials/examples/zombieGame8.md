@@ -5,7 +5,7 @@ tags: [customize]
 author: jason
 ---
 
-## 8. Set the player's rotation
+##### 1. in `game.js`, in the `mousemove()` function.
   Our next step is to get our character to rotate so that it will always face towards our mouse. To start we will add a [sendAction](/docs/sendAction/) _function_ into the `mousemove` _method_ in our **game.js** file under our `click` _method_.
 ```javascript
 // Click on: code > client > src > game.js
@@ -21,6 +21,8 @@ mousemove(x, y) {
 	g.sendAction('mousemove', {x, y});
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+##### 2. 
 Now, we can create a `mousemove` action in **room.js**, we'll put it in the `onMessage` _method_ right under our `click` action. So just like when we added our `click` action we need to add a comma after the last action that was written, which is probably the `click` action. So we write a comma and then hit the return key to start a new line where we write our `mousemove` action.
 ```javascript
 // Click on: code > server > rooms > room.js

@@ -20,14 +20,14 @@ right:
   #    url: /
 
   - title: Tutorials
-    url: /tutorials/welcometutorials/
+    url: /tutorials/start/
 
   - title: Docs
     url: /docs/welcome/
-    
+
   - title: Help
     url: /help/icsd/
-    
+
   - title: Teachers
     url: /teachers/
 

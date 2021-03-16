@@ -10,12 +10,16 @@ const speed = player.speed;
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 2. In the `game.js` file in our `preload` _function_ we add a new image. First make sure you have the image in your asset folder ([Need Help?](/tutorials/images/)).
 
 {% capture code %}
 g.loadImage('grave',  'Grave.png')
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 3. Change our `handleCollision` _function_ for players and enemies in the `onUpdate` _function_ in the `room.js` file.
 
@@ -38,6 +42,9 @@ g.handleCollision('players',  'enemy',  (player)  =>  {
 });
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
+
 ##### 4. Add a `handleCollision` _function_ for our players. We will put this in a `setTimeout` _function_. This will be written in our `onUpdate` _function_ in the `room.js` file.
 
 {% capture code %}
@@ -47,7 +54,11 @@ setTimeout(function  ()  { g.handleCollision('players',  'players',  (player1)  
 
 And we should now have a fully functioning game! Feel free to customize it and change or add whatever you like!
 
+<hr class="uk-margin-medium">
+
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able to save your friends if they get hit!**
+
+<hr class="uk-margin-medium">
 
 #### *Bonus
 If you want to change your character image with each level you complete you can do this last step.
@@ -87,11 +98,15 @@ g.handleCollision('players', 'players', (player1) => { if (player1.speed == 0) {
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 2. Change the `getAllCharacters` _function_ that's inside of the if statement in our `onUpdate` _function_.
 {% capture code %}
 g.getAllCharacters('players', player  => { player.x = 270; player.y = 1990; player.spriteName = `player${g.getACharacter('team', 'team').score}`; player.speed = 5 });
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 3. Change the `createACharacter` _function_ in our `onJoin` _function_ to look like this:
 {% capture code %}
@@ -99,10 +114,14 @@ g.createACharacter('players', client.sessionId, { width:  75, height:  75, x:  2
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 4. Change the first `getAllCharacters` in our `createALocation` _function_ in the `onInit` _function_ to look like this:
 {% capture code %}
 g.getAllCharacters('players', player  => { player.x = 270; player.y = 1990; player.spriteName = `player${team.score}` });
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
+
+<hr class="uk-margin-medium">
 
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  change your character's image every level!**

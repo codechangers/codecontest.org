@@ -7,3 +7,5 @@ author: jason
 
 ## 10. Moving forward
 {% include blocks/movingForward.md %}
+
+<hr class="uk-margin-medium">

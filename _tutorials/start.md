@@ -1,18 +1,19 @@
 ---
-title: Welcome to the Tutorials
+title: Welcome to CodeContest
 subtitle: Navigate through these docs to learn how the implement the CodeChangers io Game Library
 tags: [customize]
 author: jason
 ---
 
-## Checkpoint 1
-1. [Build Your Game](/tutorials/setup)
-2. [Upload Your Game to the Server](/tutorials/uploadtoserver)
+## Get Your Game Set Up
+1. [Create A Repl Account](/tutorials/setup1)
+2. [Download Your Repl Project](/tutorials/setup2)
+3. [Upload Your Code to Blobbert.io](/tutorials/uploadtoserver)
 
-## Checkpoint 2
-1. [Pick an Example Game](/pickagame/)
+## Pick A Game To Build
+1. [Pick an Example Game](/tutorials/pickagame/)
 
-## Checkpoint 3
+## Continue Customizing Your Game
 Customize your game with more tutorials:
  - [Add a Store](/tutorials/blocks/addAStore/)
  - [Additional Inputs](/tutorials/blocks/additionalInputs/)
@@ -29,9 +30,9 @@ Customize your game with more tutorials:
  - [Use Barriers](/tutorials/blocks/useBarrier/)
  - [useItems](/tutorials/blocks/useItems/)
 
-## Checkpoint 4
+## Fine Tune Your Game
 Use the Documentation to make fine tuned adjustments:
  - [Documentation](/docs/welcome/)
 
-## Checkpoint 5
- - [Submit your game!](https://forms.gle/e5gUgfFGUeXznh2m8)
+## Submit Your Game
+ - [Submit your game!](https://forms.gle/pLGXfZFjoeFzsmwe8)
