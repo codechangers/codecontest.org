@@ -19,29 +19,17 @@ right:
    # - title: HOME
   #    url: /
 
-  - title: ABOUT
-    url: /about/
+  - title: Tutorials
+    url: /tutorials/welcometutorials/
 
-  - title: EVENTS
-    url: /events
-
-  - title: SPONSOR
-    url: /sponsor/
-
-   # - title: TEACHER RESOURCES
-  #    url: /
-  - title: HOST
-    url: /host/
-
-
-  - title: CONTACT
-    url: /contactus/
+  - title: Docs
+    url: /docs/welcome/
     
-  - title: SIGN UP
-    url: /signup
+  - title: Help
+    url: /help/icsd/
     
-  - title: LOGIN
-    url: /login
+  - title: Teachers
+    url: /teachers/
 
   #  - title: Example Games
   #    url: /examples/
