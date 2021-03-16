@@ -36,7 +36,7 @@
   - examples/soccerGame9
   - examples/soccerGame10
 
-- title: Build a Zombie Game
+- title: Build a Shooter Game
   docs:
   - examples/zombieGame1
   - examples/zombieGame2
@@ -49,17 +49,6 @@
   - examples/zombieGame9
   - examples/zombieGame10
   - examples/zombieGame12
-
-- title: Build a Horse Game
-  docs:
-  - examples/horseGame1
-  - examples/horseGame2
-  - examples/horseGame3
-  - examples/horseGame4
-  - examples/horseGame5
-  - examples/horseGame6
-  - examples/horseGame7
-  - examples/horseGame8
 
 - title: Extra Game Features
   docs:

@@ -4,6 +4,7 @@ subtitle: Learn how to create an awesome online soccer game!
 tags: [customize]
 author: jason
 ---
+
 ## 1. Follow the build your game tutorial
 {% include blocks/gettingStarted.md %}
 
@@ -802,4 +803,3 @@ _9.7_ Finally we need to have the ball run into the blocks.
 
 ## 10. Moving forward
 {% include blocks/movingForward.md %}
-
