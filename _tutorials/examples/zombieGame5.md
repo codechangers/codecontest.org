@@ -20,6 +20,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 2. In `room.js`, Create a `handleCollision()` function inside the `onUpdate()` function so that our health bar will update when we collide with zombies.
 
 {% capture code %}
@@ -30,5 +32,7 @@ author: jason
 	});
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**

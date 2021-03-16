@@ -5,14 +5,16 @@ tags: [customize]
 author: jason
 ---
 
-##### 1. In `game.js`, delete `g.connect();` and reaplce it with login screen code.
+##### 1. In `game.js`, delete `g.connect();` and replace it with login screen code.
 
 {% capture code %}
 	g.useLoginScreen(name => g.connect ({name}), 'Zombies', 'Username', 'Start!');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
-##### 2. In `game.js`, add code to customize the login screen.
+<hr class="uk-margin-medium">
+
+##### 2. In `game.js`, add this code to the bottom of your `onJoin()` function to customize the login screen.
 
 {% capture code %}
 	g.attachTo('players', client.sessionId, {  
@@ -25,11 +27,15 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
-##### 3. In `room.js`, Delete the existing `createACharacter()` function and reaplce it with a new one!
+<hr class="uk-margin-medium">
+
+##### 3. In `room.js`, Delete the existing `createACharacter()` function and replace it with a new one!
 
 {% capture code %}
 	g.createACharacter('players', client.sessionId, { x: 200, y: 200, score: 0, ...data });
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**

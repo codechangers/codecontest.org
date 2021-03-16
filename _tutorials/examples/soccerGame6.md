@@ -14,6 +14,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 2. In `room.js`, add a `dx` and `dy`.
 
 {% capture code %}
@@ -21,6 +23,8 @@ author: jason
 	dy: 0,
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 3. In `room.js`, add come code so that the balls move inside the `onUpdate(dt)` function.
 
@@ -39,6 +43,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 4. In `room.js`, Add the values for the collision right after the code we just added.
 
 {% capture code %}
@@ -48,5 +54,7 @@ author: jason
 	});
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should be able to kick the soccer ball!**

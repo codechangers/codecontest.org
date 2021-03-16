@@ -1,11 +1,12 @@
+- title: CodeContest Overview
+  docs:
+  - start
+
 - title: 1. Set Up Your Project
   docs:
   - setup1
   - setup2
   - uploadtoserver
-  - images
-  - downloads
-  - splitScreen
 
 - title: 2. Pick a Game to Build
   docs:
@@ -13,7 +14,6 @@
 
 - title: Build a Run Game
   docs:
-  - examples/runGame1
   - examples/runGame2
   - examples/runGame3
   - examples/runGame4
@@ -38,7 +38,6 @@
 
 - title: Build a Shooter Game
   docs:
-  - examples/zombieGame1
   - examples/zombieGame2
   - examples/zombieGame3
   - examples/zombieGame4
@@ -66,3 +65,9 @@
   - blocks/setupLeaderboard
   - blocks/useBarrier
   - blocks/useItems
+
+- title: Help
+  docs:
+  - images
+  - downloads
+  - splitScreen

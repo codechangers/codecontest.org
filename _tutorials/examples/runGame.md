@@ -176,6 +176,7 @@ g.getAllCharacters('enemy', (enemy, i) => {
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 >  **Download  your  zip,  and  [upload  it](/tutorials/uploadtoserver/)  to  [blobbert.io](https://blobbert.io/),  and  you  should  be  able  to  interact with enemies!**
+
 # 5 set up safe zones and end zone
 
 First, we'll go into our `game.js` file and use an `addLocations` _function_ **above** our `addCharacters` function.

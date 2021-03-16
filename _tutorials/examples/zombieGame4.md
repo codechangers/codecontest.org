@@ -5,7 +5,9 @@ tags: [customize]
 author: jason
 ---
 
-##### 1. In `game.js` Use `loadImage()` function to add some Zombies.
+#### Find an Image for the Zombies in Your Game
+
+##### 1. In `game.js` Use `loadImage()` function to add some Zombies inside the `preload()` function.
 {% capture code %}
 	g.loadImage('zombies', 'zombie.png');
 {% endcapture %}
@@ -25,6 +27,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 4. In `room.js`, add a `setInterval()` function to randomly spawn zombies across the map inside the `onInit()` function.
 
 {% capture code %}
@@ -38,6 +42,8 @@ author: jason
 
 > **The number at the end will determine how long to wait until it spawns another zombie, and the two 2000 numbers are the bounds for where the zombies should spawn.**
 
+<hr class="uk-margin-medium">
+
 ##### 5. In `room.js`, add the `follow()` function inside the `onUpdate()` function so that zombies will follow you.
 
 {% capture code %}
@@ -46,5 +52,7 @@ author: jason
 {% include code.html copyable=true code=code lang="javascript" file="code/serve/rooms/rooom.js" %}
 
 > **You can change the numbers to change the distance the zombies will come to your character, and the speed of the zombies.**
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**

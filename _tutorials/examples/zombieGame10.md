@@ -25,6 +25,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 3. In `room.js`, add a character with a score of 100 using the `getACharacter()` function.
 
 {% capture code %}
@@ -32,5 +34,7 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 Now the scoreboard should be set up and our game is almost finished!
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**

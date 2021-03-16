@@ -11,12 +11,16 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 2. in `game.js`, Create `loadImage()` function to load the image for the bullets.
 
 {% capture code %}
 	g.loadImage('bullets', 'bullet.png');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 3. In `game.js`, Create a `getCharacters()` function to add the bullets to the game in the `create()` function.
 
@@ -25,12 +29,16 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 4. In `room.js`, Create a `setupCharacters()` function inside the `onInit()` function to set them up on the server.
 
 {% capture code %}
 	g.setupCharacters('bullets');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 5. In `room.js`, Create `onMessage()`method to get our bullets to shoot.
 
@@ -40,6 +48,8 @@ author: jason
 		},
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
+
+<hr class="uk-margin-medium">
 
 ##### 6. In `room.js`, Add code to make the bullets animate and go in the right direction.
 
@@ -55,6 +65,8 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
+<hr class="uk-margin-medium">
+
 ##### 7. In `game.js`, Make sure your Click Function looks like this.
 Now there is only two more things we need to do to make our bullets shoot, first check and make sure your **game.js** file has a `click` _method_ that looks like this:
 
@@ -65,14 +77,18 @@ click(x, y) {
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
-##### 8. In `room.js`, add the `handleAnimations()` function in the the `onUpdate()` function for our bullets.
+<hr class="uk-margin-medium">
+
+##### 8. In `room.js`, add the `handleAnimations()` function in the `onUpdate()` function for our bullets.
 
 {% capture code %}
 	g.handleAnimations('bullets');
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
-##### 9. In `room.js`, Add code to handle the collision and delete the zombies if they collide with the bullets.
+<hr class="uk-margin-medium">
+
+##### 9. In `room.js`, Add code to handle the collision and delete the zombies if they collide with the bullets in the `onUpdate()` function.
 
 {% capture code %}
 	g.handleCollision('bullets', 'zombies', (bullet, zombie) => {
@@ -83,5 +99,7 @@ click(x, y) {
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
 Now you should have working bullets that can kill the zombies when you shoot!
+
+<hr class="uk-margin-medium">
 
 > **Download your zip, and [upload it](/tutorials/uploadtoserver/) to [blobbert.io](https://blobbert.io/), and you should have a background!**
