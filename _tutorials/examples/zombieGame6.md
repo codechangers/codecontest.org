@@ -41,7 +41,7 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/server/rooms/room.js" %}
 
-##### 6. In `room.js`, Add code to make the bullets animate and go in the right direction.
+##### 6. In `room.js`, in the `onMessage()` function in the click method that you just  created Add code to make the bullets animate and go in the right direction.
 
 {% capture code %}
 			const index = g.nextCharacterId('bullets');

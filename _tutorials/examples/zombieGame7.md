@@ -12,7 +12,7 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
-##### 2. In `game.js`, add code to customize the login screen.
+##### 2. In `room.js`, add code to customize the login screen.
 
 {% capture code %}
 	g.attachTo('players', client.sessionId, {  

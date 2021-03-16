@@ -25,7 +25,7 @@ author: jason
 {% endcapture %}
 {% include code.html copyable=true code=code lang="javascript" file="code/client/src/game.js" %}
 
-##### 3. In `room.js`, add a character with a score of 100 using the `getACharacter()` function.
+##### 3. In `room.js`, in the onupdate function, inside of your handleCollision method add a character with a score of 100 using the `getACharacter()` function.
 
 {% capture code %}
 	g.getACharacter('players', bullet.playerId).score += 100;
